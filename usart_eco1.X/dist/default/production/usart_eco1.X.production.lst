@@ -1,0 +1,1433 @@
+
+
+Microchip Technology PIC LITE Macro Assembler V1.30 build 55553 
+                                                                                               Sun Apr 20 01:50:44 2014
+
+Microchip Technology Omniscient Code Generator (Lite mode) build 55553
+     1                           	processor	16F628A
+     2                           	opt	pw 120
+     3                           	opt	lm
+     4                           	psect	strings,global,class=STRING,delta=2
+     5                           	psect	cinit,global,class=CODE,merge=1,delta=2
+     6                           	psect	bitbssCOMMON,global,bit,class=COMMON,space=1,delta=1
+     7                           	psect	bssBANK0,global,class=BANK0,space=1,delta=1
+     8                           	psect	cstackCOMMON,global,class=COMMON,space=1,delta=1
+     9                           	psect	cstackBANK0,global,class=BANK0,space=1,delta=1
+    10                           	psect	maintext,global,class=CODE,split=1,delta=2
+    11                           	psect	text1,local,class=CODE,merge=1,delta=2
+    12                           	psect	text2,local,class=CODE,merge=1,delta=2
+    13                           	psect	text3,local,class=CODE,merge=1,delta=2
+    14                           	psect	text4,local,class=CODE,merge=1,delta=2
+    15                           	psect	text5,local,class=CODE,merge=1,delta=2
+    16                           	psect	text6,local,class=CODE,merge=1,delta=2
+    17                           	psect	intentry,global,class=CODE,delta=2
+    18                           	dabs	1,0x7E,2
+    19  0000                     	;# 
+    20  0001                     	;# 
+    21  0002                     	;# 
+    22  0003                     	;# 
+    23  0004                     	;# 
+    24  0005                     	;# 
+    25  0006                     	;# 
+    26  000A                     	;# 
+    27  000B                     	;# 
+    28  000C                     	;# 
+    29  000E                     	;# 
+    30  000E                     	;# 
+    31  000F                     	;# 
+    32  0010                     	;# 
+    33  0011                     	;# 
+    34  0012                     	;# 
+    35  0015                     	;# 
+    36  0015                     	;# 
+    37  0016                     	;# 
+    38  0017                     	;# 
+    39  0018                     	;# 
+    40  0019                     	;# 
+    41  001A                     	;# 
+    42  001F                     	;# 
+    43  0081                     	;# 
+    44  0085                     	;# 
+    45  0086                     	;# 
+    46  008C                     	;# 
+    47  008E                     	;# 
+    48  0092                     	;# 
+    49  0098                     	;# 
+    50  0099                     	;# 
+    51  009A                     	;# 
+    52  009B                     	;# 
+    53  009C                     	;# 
+    54  009D                     	;# 
+    55  009F                     	;# 
+    56  0006                     _PORTB	set	6
+    57  001A                     _RCREG	set	26
+    58  0018                     _RCSTA	set	24
+    59  0019                     _TXREG	set	25
+    60  005F                     _GIE	set	95
+    61  005E                     _PEIE	set	94
+    62  0065                     _RCIF	set	101
+    63  0064                     _TXIF	set	100
+    64  0099                     _SPBRG	set	153
+    65  0086                     _TRISB	set	134
+    66  0098                     _TXSTA	set	152
+    67  0465                     _RCIE	set	1125
+    68  0464                     _TXIE	set	1124
+    69                           
+    70                           	psect	strings
+    71  014B                     __pstrings:	
+    72  014B                     stringtab:	
+    73  014B                     __stringtab:	
+    74  014B                     stringcode:	
+    75                           ;	String table - string pointers are 1 byte each
+    76                           
+    77  014B                     stringdir:	
+    78  014B  3001               	movlw	high stringdir
+    79  014C  008A               	movwf	10
+    80  014D  0804               	movf	4,w
+    81  014E  0A84               	incf	4,f
+    82  014F  0782               	addwf	2,f
+    83  0150                     __stringbase:	
+    84  0150  3400               	retlw	0
+    85  0151                     __end_of__stringtab:	
+    86  0151                     __stringdata:	
+    87  0151                     STR_2:	
+    88  0151  3445               	retlw	69	;'E'
+    89  0152  346E               	retlw	110	;'n'
+    90  0153  3420               	retlw	32	;' '
+    91  0154  344D               	retlw	77	;'M'
+    92  0155  3469               	retlw	105	;'i'
+    93  0156  346E               	retlw	110	;'n'
+    94  0157  3469               	retlw	105	;'i'
+    95  0158  3463               	retlw	99	;'c'
+    96  0159  346F               	retlw	111	;'o'
+    97  015A  346D               	retlw	109	;'m'
+    98  015B  3420               	retlw	32	;' '
+    99  015C  3468               	retlw	104	;'h'
+   100  015D  3461               	retlw	97	;'a'
+   101  015E  3462               	retlw	98	;'b'
+   102  015F  3469               	retlw	105	;'i'
+   103  0160  346C               	retlw	108	;'l'
+   104  0161  3469               	retlw	105	;'i'
+   105  0162  3474               	retlw	116	;'t'
+   106  0163  3465               	retlw	101	;'e'
+   107  0164  3420               	retlw	32	;' '
+   108  0165  346E               	retlw	110	;'n'
+   109  0166  3465               	retlw	101	;'e'
+   110  0167  3477               	retlw	119	;'w'
+   111  0168  346C               	retlw	108	;'l'
+   112  0169  3469               	retlw	105	;'i'
+   113  016A  346E               	retlw	110	;'n'
+   114  016B  3465               	retlw	101	;'e'
+   115  016C  3420               	retlw	32	;' '
+   116  016D  3463               	retlw	99	;'c'
+   117  016E  346F               	retlw	111	;'o'
+   118  016F  346E               	retlw	110	;'n'
+   119  0170  3420               	retlw	32	;' '
+   120  0171  343C               	retlw	60	;'<'
+   121  0172  3463               	retlw	99	;'c'
+   122  0173  3474               	retlw	116	;'t'
+   123  0174  3472               	retlw	114	;'r'
+   124  0175  346C               	retlw	108	;'l'
+   125  0176  342D               	retlw	45	;'-'
+   126  0177  3461               	retlw	97	;'a'
+   127  0178  343E               	retlw	62	;'>'
+   128  0179  3420               	retlw	32	;' '
+   129  017A  3461               	retlw	97	;'a'
+   130  017B  342E               	retlw	46	;'.'
+   131  017C  3420               	retlw	32	;' '
+   132  017D  340A               	retlw	10
+   133  017E  340D               	retlw	13
+   134  017F  3400               	retlw	0
+   135  0180                     STR_3:	
+   136  0180  3444               	retlw	68	;'D'
+   137  0181  3469               	retlw	105	;'i'
+   138  0182  3467               	retlw	103	;'g'
+   139  0183  3469               	retlw	105	;'i'
+   140  0184  3474               	retlw	116	;'t'
+   141  0185  3465               	retlw	101	;'e'
+   142  0186  342C               	retlw	44	;','
+   143  0187  3420               	retlw	32	;' '
+   144  0188  3479               	retlw	121	;'y'
+   145  0189  346F               	retlw	111	;'o'
+   146  018A  3420               	retlw	32	;' '
+   147  018B  346C               	retlw	108	;'l'
+   148  018C  3465               	retlw	101	;'e'
+   149  018D  3420               	retlw	32	;' '
+   150  018E  3476               	retlw	118	;'v'
+   151  018F  346F               	retlw	111	;'o'
+   152  0190  3479               	retlw	121	;'y'
+   153  0191  3420               	retlw	32	;' '
+   154  0192  3461               	retlw	97	;'a'
+   155  0193  3420               	retlw	32	;' '
+   156  0194  3464               	retlw	100	;'d'
+   157  0195  3461               	retlw	97	;'a'
+   158  0196  3472               	retlw	114	;'r'
+   159  0197  3420               	retlw	32	;' '
+   160  0198  3465               	retlw	101	;'e'
+   161  0199  3463               	retlw	99	;'c'
+   162  019A  346F               	retlw	111	;'o'
+   163  019B  342E               	retlw	46	;'.'
+   164  019C  3420               	retlw	32	;' '
+   165  019D  340A               	retlw	10
+   166  019E  340D               	retlw	13
+   167  019F  3400               	retlw	0
+   168  01A0                     STR_1:	
+   169  01A0  3455               	retlw	85	;'U'
+   170  01A1  3473               	retlw	115	;'s'
+   171  01A2  3461               	retlw	97	;'a'
+   172  01A3  346E               	retlw	110	;'n'
+   173  01A4  3464               	retlw	100	;'d'
+   174  01A5  346F               	retlw	111	;'o'
+   175  01A6  3420               	retlw	32	;' '
+   176  01A7  3473               	retlw	115	;'s'
+   177  01A8  3465               	retlw	101	;'e'
+   178  01A9  3472               	retlw	114	;'r'
+   179  01AA  3469               	retlw	105	;'i'
+   180  01AB  3461               	retlw	97	;'a'
+   181  01AC  346C               	retlw	108	;'l'
+   182  01AD  3420               	retlw	32	;' '
+   183  01AE  344D               	retlw	77	;'M'
+   184  01AF  3450               	retlw	80	;'P'
+   185  01B0  346C               	retlw	108	;'l'
+   186  01B1  3461               	retlw	97	;'a'
+   187  01B2  3462               	retlw	98	;'b'
+   188  01B3  3420               	retlw	32	;' '
+   189  01B4  3478               	retlw	120	;'x'
+   190  01B5  3463               	retlw	99	;'c'
+   191  01B6  3438               	retlw	56	;'8'
+   192  01B7  3420               	retlw	32	;' '
+   193  01B8  340A               	retlw	10
+   194  01B9  340D               	retlw	13
+   195  01BA  3400               	retlw	0
+   196  01BB                     __end_of__stringdata:	
+   197                           
+   198                           ; #config settings
+   199  0000                     
+   200                           	psect	cinit
+   201  0011                     start_initialization:	
+   202  0011                     __initialization:	
+   203                           
+   204                           ; Clear objects allocated to BITCOMMON
+   205  0011  01F8               	clrf	(__pbitbssCOMMON/(0+8))& (0+127)
+   206                           
+   207                           ; Clear objects allocated to BANK0
+   208  0012  01BE               	clrf	__pbssBANK0& (0+127)
+   209  0013                     end_of_initialization:	
+   210                           ;End of C runtime variable initialization code
+   211                           
+   212  0013                     __end_of__initialization:	
+   213  0013  0183               	clrf	3
+   214  0014  29E3               	ljmp	_main	;jump to C main() function
+   215                           
+   216                           	psect	bitbssCOMMON
+   217  03C0                     __pbitbssCOMMON:	
+   218  03C0                     _flag_interrupcao:	
+   219  03C0                     	ds	1
+   220                           
+   221                           	psect	bssBANK0
+   222  003E                     __pbssBANK0:	
+   223  003E                     _caracter:	
+   224  003E                     	ds	1
+   225                           
+   226                           	psect	cstackCOMMON
+   227  0070                     __pcstackCOMMON:	
+   228  0070                     ?_RS232:	
+   229  0070                     ??_RS232:	
+   230                           ; 0 bytes @ 0x0
+   231                           
+   232  0070                     ?_escreve:	
+   233                           ; 0 bytes @ 0x0
+   234                           
+   235  0070                     ?_imprime:	
+   236                           ; 0 bytes @ 0x0
+   237                           
+   238  0070                     ?_main:	
+   239                           ; 0 bytes @ 0x0
+   240                           
+   241                           
+   242                           ; 0 bytes @ 0x0
+   243  0070                     	ds	5
+   244  0075                     ??_escreve:	
+   245  0075                     ??___aldiv:	
+   246                           ; 0 bytes @ 0x5
+   247                           
+   248  0075                     ?_strlen:	
+   249                           ; 0 bytes @ 0x5
+   250                           
+   251  0075                     escreve@valor:	
+   252                           ; 2 bytes @ 0x5
+   253                           
+   254                           
+   255                           ; 1 bytes @ 0x5
+   256  0075                     	ds	2
+   257  0077                     ??_imprime:	
+   258                           
+   259                           ; 0 bytes @ 0x7
+   260  0077                     	ds	1
+   261  0078                     ??_main:	
+   262                           
+   263                           	psect	cstackBANK0
+   264  0020                     __pcstackBANK0:	
+   265                           ; 0 bytes @ 0x8
+   266                           
+   267  0020                     ??_strlen:	
+   268  0020                     ?___aldiv:	
+   269                           ; 0 bytes @ 0x0
+   270                           
+   271  0020                     ___aldiv@divisor:	
+   272                           ; 4 bytes @ 0x0
+   273                           
+   274                           
+   275                           ; 4 bytes @ 0x0
+   276  0020                     	ds	4
+   277  0024                     strlen@s:	
+   278  0024                     ___aldiv@dividend:	
+   279                           ; 1 bytes @ 0x4
+   280                           
+   281                           
+   282                           ; 4 bytes @ 0x4
+   283  0024                     	ds	1
+   284  0025                     strlen@cp:	
+   285                           
+   286                           ; 1 bytes @ 0x5
+   287  0025                     	ds	1
+   288  0026                     imprime@tamanho:	
+   289                           
+   290                           ; 1 bytes @ 0x6
+   291  0026                     	ds	1
+   292  0027                     imprime@indice:	
+   293                           
+   294                           ; 1 bytes @ 0x7
+   295  0027                     	ds	1
+   296  0028                     imprime@frase:	
+   297  0028                     ___aldiv@counter:	
+   298                           ; 1 bytes @ 0x8
+   299                           
+   300                           
+   301                           ; 1 bytes @ 0x8
+   302  0028                     	ds	1
+   303  0029                     ___aldiv@sign:	
+   304                           
+   305                           ; 1 bytes @ 0x9
+   306  0029                     	ds	1
+   307  002A                     ___aldiv@quotient:	
+   308                           
+   309                           ; 4 bytes @ 0xA
+   310  002A                     	ds	4
+   311  002E                     ?_inicializa_RS232:	
+   312  002E                     inicializa_RS232@velocidade:	
+   313                           ; 0 bytes @ 0xE
+   314                           
+   315                           
+   316                           ; 4 bytes @ 0xE
+   317  002E                     	ds	4
+   318  0032                     inicializa_RS232@modo:	
+   319                           
+   320                           ; 2 bytes @ 0x12
+   321  0032                     	ds	2
+   322  0034                     ??_inicializa_RS232:	
+   323                           
+   324                           ; 0 bytes @ 0x14
+   325  0034                     	ds	4
+   326  0038                     inicializa_RS232@valor:	
+   327                           
+   328                           ; 2 bytes @ 0x18
+   329  0038                     	ds	2
+   330  003A                     _inicializa_RS232$460:	
+   331                           
+   332                           ; 4 bytes @ 0x1A
+   333  003A                     	ds	4
+   334                           
+   335                           	psect	maintext
+   336  01E3                     __pmaintext:	
+   337 ;;
+   338 ;;Main: autosize = 0, tempsize = 0, incstack = 0, save=0
+   339 ;;
+   340 ;; *************** function _main *****************
+   341 ;; Defined at:
+   342 ;;		line 90 in file "usart_eco1_main.c"
+   343 ;; Parameters:    Size  Location     Type
+   344 ;;		None
+   345 ;; Auto vars:     Size  Location     Type
+   346 ;;		None
+   347 ;; Return value:  Size  Location     Type
+   348 ;;		None               void
+   349 ;; Registers used:
+   350 ;;		wreg, fsr0l, fsr0h, status,2, status,0, pclath, cstack
+   351 ;; Tracked objects:
+   352 ;;		On entry : 17F/0
+   353 ;;		On exit  : 0/0
+   354 ;;		Unchanged: 0/0
+   355 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2
+   356 ;;      Params:         0       0       0       0
+   357 ;;      Locals:         0       0       0       0
+   358 ;;      Temps:          0       0       0       0
+   359 ;;      Totals:         0       0       0       0
+   360 ;;Total ram usage:        0 bytes
+   361 ;; Hardware stack levels required when called:    4
+   362 ;; This function calls:
+   363 ;;		_escreve
+   364 ;;		_imprime
+   365 ;;		_inicializa_RS232
+   366 ;; This function is called by:
+   367 ;;		Startup code after reset
+   368 ;; This function uses a non-reentrant model
+   369 ;;
+   370                           
+   371                           
+   372                           ;psect for function _main
+   373  01E3                     _main:	
+   374                           
+   375                           ;usart_eco1_main.c: 92: TRISB = 0X02;
+   376                           
+   377                           ;incstack = 0
+   378                           ; Regs used in _main: [wreg-fsr0h+status,2+status,0+pclath+cstack]
+   379  01E3  3002               	movlw	2
+   380  01E4  1683               	bsf	3,5	;RP0=1, select bank1
+   381  01E5  1303               	bcf	3,6	;RP1=0, select bank1
+   382  01E6  0086               	movwf	6	;volatile
+   383                           
+   384                           ;usart_eco1_main.c: 93: PORTB = 0;
+   385  01E7  1283               	bcf	3,5	;RP0=0, select bank0
+   386  01E8  1303               	bcf	3,6	;RP1=0, select bank0
+   387  01E9  0186               	clrf	6	;volatile
+   388                           
+   389                           ;usart_eco1_main.c: 94: inicializa_RS232(9600,1);
+   390  01EA  3000               	movlw	0
+   391  01EB  00B1               	movwf	inicializa_RS232@velocidade+3
+   392  01EC  3000               	movlw	0
+   393  01ED  00B0               	movwf	inicializa_RS232@velocidade+2
+   394  01EE  3025               	movlw	37
+   395  01EF  00AF               	movwf	inicializa_RS232@velocidade+1
+   396  01F0  3080               	movlw	128
+   397  01F1  00AE               	movwf	inicializa_RS232@velocidade
+   398  01F2  3001               	movlw	1
+   399  01F3  00B2               	movwf	inicializa_RS232@modo
+   400  01F4  3000               	movlw	0
+   401  01F5  00B3               	movwf	inicializa_RS232@modo+1
+   402  01F6  2015               	fcall	_inicializa_RS232
+   403                           
+   404                           ;usart_eco1_main.c: 95: PEIE = 1;
+   405  01F7  170B               	bsf	11,6	;volatile
+   406                           
+   407                           ;usart_eco1_main.c: 96: GIE = 1;
+   408  01F8  178B               	bsf	11,7	;volatile
+   409                           
+   410                           ;usart_eco1_main.c: 97: imprime("Usando serial MPlab xc8 \n\r");
+   411  01F9  3050               	movlw	(STR_1-__stringbase)& (0+255)
+   412  01FA  2207               	fcall	_imprime
+   413                           
+   414                           ;usart_eco1_main.c: 98: imprime("En Minicom habilite newline con <ctrl-a> a. \n\r");
+   415  01FB  3001               	movlw	(STR_2-__stringbase)& (0+255)
+   416  01FC  2207               	fcall	_imprime
+   417                           
+   418                           ;usart_eco1_main.c: 99: imprime("Digite, yo le voy a dar eco. \n\r");
+   419  01FD  3030               	movlw	(STR_3-__stringbase)& (0+255)
+   420  01FE  2207               	fcall	_imprime
+   421  01FF                     l857:	
+   422                           ;usart_eco1_main.c: 100: for(;;)
+   423                           
+   424                           
+   425                           ;usart_eco1_main.c: 101: {
+   426                           ;usart_eco1_main.c: 102: if(flag_interrupcao == 1)
+   427  01FF  1C78               	btfss	_flag_interrupcao/(0+8),_flag_interrupcao& (0+7)
+   428  0200  29FF               	goto	l857
+   429                           
+   430                           ;usart_eco1_main.c: 103: {
+   431                           ;usart_eco1_main.c: 105: escreve(caracter);
+   432  0201  1283               	bcf	3,5	;RP0=0, select bank0
+   433  0202  1303               	bcf	3,6	;RP1=0, select bank0
+   434  0203  083E               	movf	_caracter,w
+   435  0204  223B               	fcall	_escreve
+   436                           
+   437                           ;usart_eco1_main.c: 106: flag_interrupcao = 0;
+   438  0205  1078               	bcf	_flag_interrupcao/(0+8),_flag_interrupcao& (0+7)
+   439                           
+   440                           ;usart_eco1_main.c: 107: }
+   441                           ;usart_eco1_main.c: 109: }
+   442  0206  29FF               	goto	l857
+   443  0207                     __end_of_main:	
+   444                           
+   445                           	psect	text1
+   446  0015                     __ptext1:	
+   447 ;; *************** function _inicializa_RS232 *****************
+   448 ;; Defined at:
+   449 ;;		line 43 in file "usart_eco1_main.c"
+   450 ;; Parameters:    Size  Location     Type
+   451 ;;  velocidade      4   14[BANK0 ] long 
+   452 ;;  modo            2   18[BANK0 ] int 
+   453 ;; Auto vars:     Size  Location     Type
+   454 ;;  valor           2   24[BANK0 ] int 
+   455 ;; Return value:  Size  Location     Type
+   456 ;;		None               void
+   457 ;; Registers used:
+   458 ;;		wreg, status,2, status,0, pclath, cstack
+   459 ;; Tracked objects:
+   460 ;;		On entry : 0/0
+   461 ;;		On exit  : 0/0
+   462 ;;		Unchanged: 0/0
+   463 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2
+   464 ;;      Params:         0       6       0       0
+   465 ;;      Locals:         0       6       0       0
+   466 ;;      Temps:          0       4       0       0
+   467 ;;      Totals:         0      16       0       0
+   468 ;;Total ram usage:       16 bytes
+   469 ;; Hardware stack levels used:    1
+   470 ;; Hardware stack levels required when called:    2
+   471 ;; This function calls:
+   472 ;;		___aldiv
+   473 ;; This function is called by:
+   474 ;;		_main
+   475 ;; This function uses a non-reentrant model
+   476 ;;
+   477                           
+   478                           
+   479                           ;psect for function _inicializa_RS232
+   480  0015                     _inicializa_RS232:	
+   481                           
+   482                           ;usart_eco1_main.c: 49: RCSTA = 0x90;
+   483                           
+   484                           ;incstack = 0
+   485                           ; Regs used in _inicializa_RS232: [wreg+status,2+status,0+pclath+cstack]
+   486  0015  3090               	movlw	144
+   487  0016  1283               	bcf	3,5	;RP0=0, select bank0
+   488  0017  1303               	bcf	3,6	;RP1=0, select bank0
+   489  0018  0098               	movwf	24	;volatile
+   490                           
+   491                           ;usart_eco1_main.c: 52: int valor;
+   492                           ;usart_eco1_main.c: 53: if(modo == 1)
+   493  0019  3001               	movlw	1
+   494  001A  0632               	xorwf	inicializa_RS232@modo,w
+   495  001B  0433               	iorwf	inicializa_RS232@modo+1,w
+   496  001C  1D03               	skipz
+   497  001D  2861               	goto	l721
+   498                           
+   499                           ;usart_eco1_main.c: 54: {
+   500                           ;usart_eco1_main.c: 55: TXSTA = 0x24;
+   501  001E  3024               	movlw	36
+   502  001F  1683               	bsf	3,5	;RP0=1, select bank1
+   503  0020  1303               	bcf	3,6	;RP1=0, select bank1
+   504  0021  0098               	movwf	24	;volatile
+   505                           
+   506                           ;usart_eco1_main.c: 56: valor =(int)(((4000000/velocidade)-16)/16);
+   507  0022  30F0               	movlw	240
+   508  0023  1283               	bcf	3,5	;RP0=0, select bank0
+   509  0024  1303               	bcf	3,6	;RP1=0, select bank0
+   510  0025  00B4               	movwf	??_inicializa_RS232
+   511  0026  30FF               	movlw	255
+   512  0027  00B5               	movwf	??_inicializa_RS232+1
+   513  0028  30FF               	movlw	255
+   514  0029  00B6               	movwf	??_inicializa_RS232+2
+   515  002A  30FF               	movlw	255
+   516  002B  00B7               	movwf	??_inicializa_RS232+3
+   517  002C  0831               	movf	inicializa_RS232@velocidade+3,w
+   518  002D  00A3               	movwf	___aldiv@divisor+3
+   519  002E  0830               	movf	inicializa_RS232@velocidade+2,w
+   520  002F  00A2               	movwf	___aldiv@divisor+2
+   521  0030  082F               	movf	inicializa_RS232@velocidade+1,w
+   522  0031  00A1               	movwf	___aldiv@divisor+1
+   523  0032  082E               	movf	inicializa_RS232@velocidade,w
+   524  0033  00A0               	movwf	___aldiv@divisor
+   525  0034  3000               	movlw	0
+   526  0035  00A7               	movwf	___aldiv@dividend+3
+   527  0036  303D               	movlw	61
+   528  0037  00A6               	movwf	___aldiv@dividend+2
+   529  0038  3009               	movlw	9
+   530  0039  00A5               	movwf	___aldiv@dividend+1
+   531  003A  3000               	movlw	0
+   532  003B  00A4               	movwf	___aldiv@dividend
+   533  003C  20BC               	fcall	___aldiv
+   534  003D  1283               	bcf	3,5	;RP0=0, select bank0
+   535  003E  1303               	bcf	3,6	;RP1=0, select bank0
+   536  003F  0820               	movf	?___aldiv,w
+   537  0040  07B4               	addwf	??_inicializa_RS232,f
+   538  0041  0821               	movf	?___aldiv+1,w
+   539  0042  1803               	skipnc
+   540  0043  0F21               	incfsz	?___aldiv+1,w
+   541  0044  2846               	goto	u190
+   542  0045  2847               	goto	u191
+   543  0046                     u190:	
+   544  0046  07B5               	addwf	??_inicializa_RS232+1,f
+   545  0047                     u191:	
+   546  0047  0822               	movf	?___aldiv+2,w
+   547  0048  1803               	skipnc
+   548  0049  0F22               	incfsz	?___aldiv+2,w
+   549  004A  284C               	goto	u192
+   550  004B  284D               	goto	u193
+   551  004C                     u192:	
+   552  004C  07B6               	addwf	??_inicializa_RS232+2,f
+   553  004D                     u193:	
+   554  004D  0823               	movf	?___aldiv+3,w
+   555  004E  1803               	skipnc
+   556  004F  0A23               	incf	?___aldiv+3,w
+   557  0050  07B7               	addwf	??_inicializa_RS232+3,f
+   558  0051  0837               	movf	??_inicializa_RS232+3,w
+   559  0052  00BD               	movwf	_inicializa_RS232$460+3
+   560  0053  0836               	movf	??_inicializa_RS232+2,w
+   561  0054  00BC               	movwf	_inicializa_RS232$460+2
+   562  0055  0835               	movf	??_inicializa_RS232+1,w
+   563  0056  00BB               	movwf	_inicializa_RS232$460+1
+   564  0057  0834               	movf	??_inicializa_RS232,w
+   565  0058  00BA               	movwf	_inicializa_RS232$460
+   566                           
+   567                           ;usart_eco1_main.c: 56: valor =(int)(((4000000/velocidade)-16)/16);
+   568  0059  3000               	movlw	0
+   569  005A  00A3               	movwf	___aldiv@divisor+3
+   570  005B  3000               	movlw	0
+   571  005C  00A2               	movwf	___aldiv@divisor+2
+   572  005D  3000               	movlw	0
+   573  005E  00A1               	movwf	___aldiv@divisor+1
+   574  005F  3010               	movlw	16
+   575  0060  28A3               	goto	L1
+   576  0061                     l721:	
+   577                           ;usart_eco1_main.c: 57: }
+   578                           
+   579                           
+   580                           ;usart_eco1_main.c: 58: else
+   581                           ;usart_eco1_main.c: 59: {
+   582                           ;usart_eco1_main.c: 60: TXSTA = 0x20;
+   583  0061  3020               	movlw	32
+   584  0062  1683               	bsf	3,5	;RP0=1, select bank1
+   585  0063  1303               	bcf	3,6	;RP1=0, select bank1
+   586  0064  0098               	movwf	24	;volatile
+   587                           
+   588                           ;usart_eco1_main.c: 61: valor =(int)(((4000000/velocidade)-64)/64);
+   589  0065  30C0               	movlw	192
+   590  0066  1283               	bcf	3,5	;RP0=0, select bank0
+   591  0067  1303               	bcf	3,6	;RP1=0, select bank0
+   592  0068  00B4               	movwf	??_inicializa_RS232
+   593  0069  30FF               	movlw	255
+   594  006A  00B5               	movwf	??_inicializa_RS232+1
+   595  006B  30FF               	movlw	255
+   596  006C  00B6               	movwf	??_inicializa_RS232+2
+   597  006D  30FF               	movlw	255
+   598  006E  00B7               	movwf	??_inicializa_RS232+3
+   599  006F  0831               	movf	inicializa_RS232@velocidade+3,w
+   600  0070  00A3               	movwf	___aldiv@divisor+3
+   601  0071  0830               	movf	inicializa_RS232@velocidade+2,w
+   602  0072  00A2               	movwf	___aldiv@divisor+2
+   603  0073  082F               	movf	inicializa_RS232@velocidade+1,w
+   604  0074  00A1               	movwf	___aldiv@divisor+1
+   605  0075  082E               	movf	inicializa_RS232@velocidade,w
+   606  0076  00A0               	movwf	___aldiv@divisor
+   607  0077  3000               	movlw	0
+   608  0078  00A7               	movwf	___aldiv@dividend+3
+   609  0079  303D               	movlw	61
+   610  007A  00A6               	movwf	___aldiv@dividend+2
+   611  007B  3009               	movlw	9
+   612  007C  00A5               	movwf	___aldiv@dividend+1
+   613  007D  3000               	movlw	0
+   614  007E  00A4               	movwf	___aldiv@dividend
+   615  007F  20BC               	fcall	___aldiv
+   616  0080  1283               	bcf	3,5	;RP0=0, select bank0
+   617  0081  1303               	bcf	3,6	;RP1=0, select bank0
+   618  0082  0820               	movf	?___aldiv,w
+   619  0083  07B4               	addwf	??_inicializa_RS232,f
+   620  0084  0821               	movf	?___aldiv+1,w
+   621  0085  1803               	skipnc
+   622  0086  0F21               	incfsz	?___aldiv+1,w
+   623  0087  2889               	goto	u200
+   624  0088  288A               	goto	u201
+   625  0089                     u200:	
+   626  0089  07B5               	addwf	??_inicializa_RS232+1,f
+   627  008A                     u201:	
+   628  008A  0822               	movf	?___aldiv+2,w
+   629  008B  1803               	skipnc
+   630  008C  0F22               	incfsz	?___aldiv+2,w
+   631  008D  288F               	goto	u202
+   632  008E  2890               	goto	u203
+   633  008F                     u202:	
+   634  008F  07B6               	addwf	??_inicializa_RS232+2,f
+   635  0090                     u203:	
+   636  0090  0823               	movf	?___aldiv+3,w
+   637  0091  1803               	skipnc
+   638  0092  0A23               	incf	?___aldiv+3,w
+   639  0093  07B7               	addwf	??_inicializa_RS232+3,f
+   640  0094  0837               	movf	??_inicializa_RS232+3,w
+   641  0095  00BD               	movwf	_inicializa_RS232$460+3
+   642  0096  0836               	movf	??_inicializa_RS232+2,w
+   643  0097  00BC               	movwf	_inicializa_RS232$460+2
+   644  0098  0835               	movf	??_inicializa_RS232+1,w
+   645  0099  00BB               	movwf	_inicializa_RS232$460+1
+   646  009A  0834               	movf	??_inicializa_RS232,w
+   647  009B  00BA               	movwf	_inicializa_RS232$460
+   648                           
+   649                           ;usart_eco1_main.c: 61: valor =(int)(((4000000/velocidade)-64)/64);
+   650  009C  3000               	movlw	0
+   651  009D  00A3               	movwf	___aldiv@divisor+3
+   652  009E  3000               	movlw	0
+   653  009F  00A2               	movwf	___aldiv@divisor+2
+   654  00A0  3000               	movlw	0
+   655  00A1  00A1               	movwf	___aldiv@divisor+1
+   656  00A2  3040               	movlw	64
+   657  00A3                     L1:	
+   658  00A3  00A0               	movwf	___aldiv@divisor
+   659  00A4  083D               	movf	_inicializa_RS232$460+3,w
+   660  00A5  00A7               	movwf	___aldiv@dividend+3
+   661  00A6  083C               	movf	_inicializa_RS232$460+2,w
+   662  00A7  00A6               	movwf	___aldiv@dividend+2
+   663  00A8  083B               	movf	_inicializa_RS232$460+1,w
+   664  00A9  00A5               	movwf	___aldiv@dividend+1
+   665  00AA  083A               	movf	_inicializa_RS232$460,w
+   666  00AB  00A4               	movwf	___aldiv@dividend
+   667  00AC  20BC               	fcall	___aldiv
+   668  00AD  1283               	bcf	3,5	;RP0=0, select bank0
+   669  00AE  1303               	bcf	3,6	;RP1=0, select bank0
+   670  00AF  0821               	movf	?___aldiv+1,w
+   671  00B0  01B9               	clrf	inicializa_RS232@valor+1
+   672  00B1  07B9               	addwf	inicializa_RS232@valor+1,f
+   673  00B2  0820               	movf	?___aldiv,w
+   674  00B3  01B8               	clrf	inicializa_RS232@valor
+   675  00B4  07B8               	addwf	inicializa_RS232@valor,f
+   676                           
+   677                           ;usart_eco1_main.c: 62: }
+   678                           ;usart_eco1_main.c: 63: SPBRG = valor;
+   679  00B5  0838               	movf	inicializa_RS232@valor,w
+   680  00B6  1683               	bsf	3,5	;RP0=1, select bank1
+   681  00B7  1303               	bcf	3,6	;RP1=0, select bank1
+   682  00B8  0099               	movwf	25	;volatile
+   683                           
+   684                           ;usart_eco1_main.c: 64: RCIE = 1;
+   685  00B9  168C               	bsf	12,5	;volatile
+   686                           
+   687                           ;usart_eco1_main.c: 65: TXIE = 0;
+   688  00BA  120C               	bcf	12,4	;volatile
+   689  00BB  0008               	return
+   690  00BC                     __end_of_inicializa_RS232:	
+   691                           
+   692                           	psect	text2
+   693  00BC                     __ptext2:	
+   694 ;; *************** function ___aldiv *****************
+   695 ;; Defined at:
+   696 ;;		line 6 in file "/opt/microchip/xc8/v1.30/sources/common/aldiv.c"
+   697 ;; Parameters:    Size  Location     Type
+   698 ;;  divisor         4    0[BANK0 ] long 
+   699 ;;  dividend        4    4[BANK0 ] long 
+   700 ;; Auto vars:     Size  Location     Type
+   701 ;;  quotient        4   10[BANK0 ] long 
+   702 ;;  sign            1    9[BANK0 ] unsigned char 
+   703 ;;  counter         1    8[BANK0 ] unsigned char 
+   704 ;; Return value:  Size  Location     Type
+   705 ;;                  4    0[BANK0 ] long 
+   706 ;; Registers used:
+   707 ;;		wreg, status,2, status,0
+   708 ;; Tracked objects:
+   709 ;;		On entry : 0/0
+   710 ;;		On exit  : 0/0
+   711 ;;		Unchanged: 0/0
+   712 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2
+   713 ;;      Params:         0       8       0       0
+   714 ;;      Locals:         0       6       0       0
+   715 ;;      Temps:          1       0       0       0
+   716 ;;      Totals:         1      14       0       0
+   717 ;;Total ram usage:       15 bytes
+   718 ;; Hardware stack levels used:    1
+   719 ;; Hardware stack levels required when called:    1
+   720 ;; This function calls:
+   721 ;;		Nothing
+   722 ;; This function is called by:
+   723 ;;		_inicializa_RS232
+   724 ;; This function uses a non-reentrant model
+   725 ;;
+   726                           
+   727                           
+   728                           ;psect for function ___aldiv
+   729  00BC                     ___aldiv:	
+   730                           
+   731                           ;incstack = 0
+   732                           ; Regs used in ___aldiv: [wreg+status,2+status,0]
+   733  00BC  1283               	bcf	3,5	;RP0=0, select bank0
+   734  00BD  1303               	bcf	3,6	;RP1=0, select bank0
+   735  00BE  01A9               	clrf	___aldiv@sign
+   736  00BF  1FA3               	btfss	___aldiv@divisor+3,7
+   737  00C0  28CE               	goto	l175
+   738  00C1  09A0               	comf	___aldiv@divisor,f
+   739  00C2  09A1               	comf	___aldiv@divisor+1,f
+   740  00C3  09A2               	comf	___aldiv@divisor+2,f
+   741  00C4  09A3               	comf	___aldiv@divisor+3,f
+   742  00C5  0AA0               	incf	___aldiv@divisor,f
+   743  00C6  1903               	skipnz
+   744  00C7  0AA1               	incf	___aldiv@divisor+1,f
+   745  00C8  1903               	skipnz
+   746  00C9  0AA2               	incf	___aldiv@divisor+2,f
+   747  00CA  1903               	skipnz
+   748  00CB  0AA3               	incf	___aldiv@divisor+3,f
+   749  00CC  01A9               	clrf	___aldiv@sign
+   750  00CD  0AA9               	incf	___aldiv@sign,f
+   751  00CE                     l175:	
+   752  00CE  1FA7               	btfss	___aldiv@dividend+3,7
+   753  00CF  28DF               	goto	l789
+   754  00D0  09A4               	comf	___aldiv@dividend,f
+   755  00D1  09A5               	comf	___aldiv@dividend+1,f
+   756  00D2  09A6               	comf	___aldiv@dividend+2,f
+   757  00D3  09A7               	comf	___aldiv@dividend+3,f
+   758  00D4  0AA4               	incf	___aldiv@dividend,f
+   759  00D5  1903               	skipnz
+   760  00D6  0AA5               	incf	___aldiv@dividend+1,f
+   761  00D7  1903               	skipnz
+   762  00D8  0AA6               	incf	___aldiv@dividend+2,f
+   763  00D9  1903               	skipnz
+   764  00DA  0AA7               	incf	___aldiv@dividend+3,f
+   765  00DB  3001               	movlw	1
+   766  00DC  00F5               	movwf	??___aldiv
+   767  00DD  0875               	movf	??___aldiv,w
+   768  00DE  06A9               	xorwf	___aldiv@sign,f
+   769  00DF                     l789:	
+   770  00DF  3000               	movlw	0
+   771  00E0  00AD               	movwf	___aldiv@quotient+3
+   772  00E1  3000               	movlw	0
+   773  00E2  00AC               	movwf	___aldiv@quotient+2
+   774  00E3  3000               	movlw	0
+   775  00E4  00AB               	movwf	___aldiv@quotient+1
+   776  00E5  3000               	movlw	0
+   777  00E6  00AA               	movwf	___aldiv@quotient
+   778  00E7  0823               	movf	___aldiv@divisor+3,w
+   779  00E8  0422               	iorwf	___aldiv@divisor+2,w
+   780  00E9  0421               	iorwf	___aldiv@divisor+1,w
+   781  00EA  0420               	iorwf	___aldiv@divisor,w
+   782  00EB  1903               	skipnz
+   783  00EC  2934               	goto	l811
+   784  00ED  01A8               	clrf	___aldiv@counter
+   785  00EE  0AA8               	incf	___aldiv@counter,f
+   786  00EF                     l797:	
+   787  00EF  1BA3               	btfsc	___aldiv@divisor+3,7
+   788  00F0  28FF               	goto	l799
+   789  00F1  3001               	movlw	1
+   790  00F2  00F5               	movwf	??___aldiv
+   791  00F3                     u285:	
+   792  00F3  1003               	clrc
+   793  00F4  0DA0               	rlf	___aldiv@divisor,f
+   794  00F5  0DA1               	rlf	___aldiv@divisor+1,f
+   795  00F6  0DA2               	rlf	___aldiv@divisor+2,f
+   796  00F7  0DA3               	rlf	___aldiv@divisor+3,f
+   797  00F8  0BF5               	decfsz	??___aldiv,f
+   798  00F9  28F3               	goto	u285
+   799  00FA  3001               	movlw	1
+   800  00FB  00F5               	movwf	??___aldiv
+   801  00FC  0875               	movf	??___aldiv,w
+   802  00FD  07A8               	addwf	___aldiv@counter,f
+   803  00FE  28EF               	goto	l797
+   804  00FF                     l799:	
+   805  00FF  3001               	movlw	1
+   806  0100  00F5               	movwf	??___aldiv
+   807  0101                     u305:	
+   808  0101  1003               	clrc
+   809  0102  0DAA               	rlf	___aldiv@quotient,f
+   810  0103  0DAB               	rlf	___aldiv@quotient+1,f
+   811  0104  0DAC               	rlf	___aldiv@quotient+2,f
+   812  0105  0DAD               	rlf	___aldiv@quotient+3,f
+   813  0106  0BF5               	decfsz	??___aldiv,f
+   814  0107  2901               	goto	u305
+   815  0108  0823               	movf	___aldiv@divisor+3,w
+   816  0109  0227               	subwf	___aldiv@dividend+3,w
+   817  010A  1D03               	skipz
+   818  010B  2916               	goto	u315
+   819  010C  0822               	movf	___aldiv@divisor+2,w
+   820  010D  0226               	subwf	___aldiv@dividend+2,w
+   821  010E  1D03               	skipz
+   822  010F  2916               	goto	u315
+   823  0110  0821               	movf	___aldiv@divisor+1,w
+   824  0111  0225               	subwf	___aldiv@dividend+1,w
+   825  0112  1D03               	skipz
+   826  0113  2916               	goto	u315
+   827  0114  0820               	movf	___aldiv@divisor,w
+   828  0115  0224               	subwf	___aldiv@dividend,w
+   829  0116                     u315:	
+   830  0116  1C03               	skipc
+   831  0117  2927               	goto	l807
+   832  0118  0820               	movf	___aldiv@divisor,w
+   833  0119  02A4               	subwf	___aldiv@dividend,f
+   834  011A  0821               	movf	___aldiv@divisor+1,w
+   835  011B  1C03               	skipc
+   836  011C  0F21               	incfsz	___aldiv@divisor+1,w
+   837  011D  02A5               	subwf	___aldiv@dividend+1,f
+   838  011E  0822               	movf	___aldiv@divisor+2,w
+   839  011F  1C03               	skipc
+   840  0120  0F22               	incfsz	___aldiv@divisor+2,w
+   841  0121  02A6               	subwf	___aldiv@dividend+2,f
+   842  0122  0823               	movf	___aldiv@divisor+3,w
+   843  0123  1C03               	skipc
+   844  0124  0F23               	incfsz	___aldiv@divisor+3,w
+   845  0125  02A7               	subwf	___aldiv@dividend+3,f
+   846  0126  142A               	bsf	___aldiv@quotient,0
+   847  0127                     l807:	
+   848  0127  3001               	movlw	1
+   849  0128                     u325:	
+   850  0128  1003               	clrc
+   851  0129  0CA3               	rrf	___aldiv@divisor+3,f
+   852  012A  0CA2               	rrf	___aldiv@divisor+2,f
+   853  012B  0CA1               	rrf	___aldiv@divisor+1,f
+   854  012C  0CA0               	rrf	___aldiv@divisor,f
+   855  012D  3EFF               	addlw	-1
+   856  012E  1D03               	skipz
+   857  012F  2928               	goto	u325
+   858  0130  3001               	movlw	1
+   859  0131  02A8               	subwf	___aldiv@counter,f
+   860  0132  1D03               	btfss	3,2
+   861  0133  28FF               	goto	l799
+   862  0134                     l811:	
+   863  0134  0829               	movf	___aldiv@sign,w
+   864  0135  1903               	btfsc	3,2
+   865  0136  2942               	goto	l815
+   866  0137  09AA               	comf	___aldiv@quotient,f
+   867  0138  09AB               	comf	___aldiv@quotient+1,f
+   868  0139  09AC               	comf	___aldiv@quotient+2,f
+   869  013A  09AD               	comf	___aldiv@quotient+3,f
+   870  013B  0AAA               	incf	___aldiv@quotient,f
+   871  013C  1903               	skipnz
+   872  013D  0AAB               	incf	___aldiv@quotient+1,f
+   873  013E  1903               	skipnz
+   874  013F  0AAC               	incf	___aldiv@quotient+2,f
+   875  0140  1903               	skipnz
+   876  0141  0AAD               	incf	___aldiv@quotient+3,f
+   877  0142                     l815:	
+   878  0142  082D               	movf	___aldiv@quotient+3,w
+   879  0143  00A3               	movwf	?___aldiv+3
+   880  0144  082C               	movf	___aldiv@quotient+2,w
+   881  0145  00A2               	movwf	?___aldiv+2
+   882  0146  082B               	movf	___aldiv@quotient+1,w
+   883  0147  00A1               	movwf	?___aldiv+1
+   884  0148  082A               	movf	___aldiv@quotient,w
+   885  0149  00A0               	movwf	?___aldiv
+   886  014A  0008               	return
+   887  014B                     __end_of___aldiv:	
+   888                           
+   889                           	psect	text3
+   890  0207                     __ptext3:	
+   891 ;; *************** function _imprime *****************
+   892 ;; Defined at:
+   893 ;;		line 74 in file "usart_eco1_main.c"
+   894 ;; Parameters:    Size  Location     Type
+   895 ;;  frase           1    wreg     PTR const unsigned char 
+   896 ;;		 -> STR_3(32), STR_2(47), STR_1(27), 
+   897 ;; Auto vars:     Size  Location     Type
+   898 ;;  frase           1    8[BANK0 ] PTR const unsigned char 
+   899 ;;		 -> STR_3(32), STR_2(47), STR_1(27), 
+   900 ;;  indice          1    7[BANK0 ] unsigned char 
+   901 ;;  tamanho         1    6[BANK0 ] unsigned char 
+   902 ;; Return value:  Size  Location     Type
+   903 ;;		None               void
+   904 ;; Registers used:
+   905 ;;		wreg, fsr0l, fsr0h, status,2, status,0, pclath, cstack
+   906 ;; Tracked objects:
+   907 ;;		On entry : 0/0
+   908 ;;		On exit  : 0/0
+   909 ;;		Unchanged: 0/0
+   910 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2
+   911 ;;      Params:         0       0       0       0
+   912 ;;      Locals:         0       3       0       0
+   913 ;;      Temps:          1       0       0       0
+   914 ;;      Totals:         1       3       0       0
+   915 ;;Total ram usage:        4 bytes
+   916 ;; Hardware stack levels used:    1
+   917 ;; Hardware stack levels required when called:    3
+   918 ;; This function calls:
+   919 ;;		_escreve
+   920 ;;		_strlen
+   921 ;; This function is called by:
+   922 ;;		_main
+   923 ;; This function uses a non-reentrant model
+   924 ;;
+   925                           
+   926                           
+   927                           ;psect for function _imprime
+   928  0207                     _imprime:	
+   929                           
+   930                           ;incstack = 0
+   931                           ; Regs used in _imprime: [wreg-fsr0h+status,2+status,0+pclath+cstack]
+   932                           ;imprime@frase stored from wreg
+   933  0207  1283               	bcf	3,5	;RP0=0, select bank0
+   934  0208  1303               	bcf	3,6	;RP1=0, select bank0
+   935  0209  00A8               	movwf	imprime@frase
+   936                           
+   937                           ;usart_eco1_main.c: 76: char indice = 0;
+   938  020A  01A7               	clrf	imprime@indice
+   939                           
+   940                           ;usart_eco1_main.c: 77: char tamanho = strlen(frase);
+   941  020B  0828               	movf	imprime@frase,w
+   942  020C  21BB               	fcall	_strlen
+   943  020D  0875               	movf	?_strlen,w
+   944  020E  00F7               	movwf	??_imprime
+   945  020F  0877               	movf	??_imprime,w
+   946  0210  1283               	bcf	3,5	;RP0=0, select bank0
+   947  0211  1303               	bcf	3,6	;RP1=0, select bank0
+   948  0212  00A6               	movwf	imprime@tamanho
+   949  0213                     l829:	
+   950                           ;usart_eco1_main.c: 78: while(indice < tamanho )
+   951                           
+   952  0213  0826               	movf	imprime@tamanho,w
+   953  0214  0227               	subwf	imprime@indice,w
+   954  0215  1803               	btfsc	3,0
+   955  0216  0008               	return
+   956                           
+   957                           ;usart_eco1_main.c: 79: {
+   958                           ;usart_eco1_main.c: 80: escreve(frase[indice]);
+   959  0217  0827               	movf	imprime@indice,w
+   960  0218  0728               	addwf	imprime@frase,w
+   961  0219  0084               	movwf	4
+   962  021A  214B               	fcall	stringdir
+   963  021B  223B               	fcall	_escreve
+   964                           
+   965                           ;usart_eco1_main.c: 81: _delay((unsigned long)((1)*(4000000/4000.0)));
+   966  021C  30F9               	movlw	249
+   967  021D  00F7               	movwf	??_imprime
+   968  021E                     u387:	
+   969  021E  0000               	nop
+   970  021F  0BF7               	decfsz	??_imprime,f
+   971  0220  2A1E               	goto	u387
+   972  0221  2A22               	nop2	;nop
+   973  0222  0000               	nop
+   974                           
+   975                           ;usart_eco1_main.c: 82: indice++;
+   976  0223  3001               	movlw	1
+   977  0224  00F7               	movwf	??_imprime
+   978  0225  0877               	movf	??_imprime,w
+   979  0226  1283               	bcf	3,5	;RP0=0, select bank0
+   980  0227  1303               	bcf	3,6	;RP1=0, select bank0
+   981  0228  07A7               	addwf	imprime@indice,f
+   982  0229  2A13               	goto	l829
+   983  022A                     __end_of_imprime:	
+   984                           
+   985                           	psect	text4
+   986  01BB                     __ptext4:	
+   987 ;; *************** function _strlen *****************
+   988 ;; Defined at:
+   989 ;;		line 4 in file "/opt/microchip/xc8/v1.30/sources/common/strlen.c"
+   990 ;; Parameters:    Size  Location     Type
+   991 ;;  s               1    wreg     PTR const unsigned char 
+   992 ;;		 -> STR_3(32), STR_2(47), STR_1(27), 
+   993 ;; Auto vars:     Size  Location     Type
+   994 ;;  s               1    4[BANK0 ] PTR const unsigned char 
+   995 ;;		 -> STR_3(32), STR_2(47), STR_1(27), 
+   996 ;;  cp              1    5[BANK0 ] PTR const unsigned char 
+   997 ;;		 -> STR_3(32), STR_2(47), STR_1(27), 
+   998 ;; Return value:  Size  Location     Type
+   999 ;;                  2    5[COMMON] unsigned int 
+  1000 ;; Registers used:
+  1001 ;;		wreg, fsr0l, fsr0h, status,2, status,0, pclath
+  1002 ;; Tracked objects:
+  1003 ;;		On entry : 0/0
+  1004 ;;		On exit  : 0/0
+  1005 ;;		Unchanged: 0/0
+  1006 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2
+  1007 ;;      Params:         2       0       0       0
+  1008 ;;      Locals:         0       2       0       0
+  1009 ;;      Temps:          0       4       0       0
+  1010 ;;      Totals:         2       6       0       0
+  1011 ;;Total ram usage:        8 bytes
+  1012 ;; Hardware stack levels used:    2
+  1013 ;; Hardware stack levels required when called:    1
+  1014 ;; This function calls:
+  1015 ;;		Nothing
+  1016 ;; This function is called by:
+  1017 ;;		_imprime
+  1018 ;; This function uses a non-reentrant model
+  1019 ;;
+  1020                           
+  1021                           
+  1022                           ;psect for function _strlen
+  1023  01BB                     _strlen:	
+  1024                           
+  1025                           ;incstack = 0
+  1026                           ; Regs used in _strlen: [wreg-fsr0h+status,2+status,0+pclath]
+  1027                           ;strlen@s stored from wreg
+  1028  01BB  1283               	bcf	3,5	;RP0=0, select bank0
+  1029  01BC  1303               	bcf	3,6	;RP1=0, select bank0
+  1030  01BD  00A4               	movwf	strlen@s
+  1031  01BE  0824               	movf	strlen@s,w
+  1032  01BF  00A0               	movwf	??_strlen
+  1033  01C0  0820               	movf	??_strlen,w
+  1034  01C1  00A5               	movwf	strlen@cp
+  1035  01C2                     l835:	
+  1036  01C2  0825               	movf	strlen@cp,w
+  1037  01C3  0084               	movwf	4
+  1038  01C4  214B               	fcall	stringdir
+  1039  01C5  3800               	iorlw	0
+  1040  01C6  1903               	btfsc	3,2
+  1041  01C7  29CD               	goto	l837
+  1042  01C8  3001               	movlw	1
+  1043  01C9  00A0               	movwf	??_strlen
+  1044  01CA  0820               	movf	??_strlen,w
+  1045  01CB  07A5               	addwf	strlen@cp,f
+  1046  01CC  29C2               	goto	l835
+  1047  01CD                     l837:	
+  1048  01CD  0824               	movf	strlen@s,w
+  1049  01CE  00A0               	movwf	??_strlen
+  1050  01CF  3080               	movlw	128
+  1051  01D0  00A1               	movwf	??_strlen+1
+  1052  01D1  09A0               	comf	??_strlen,f
+  1053  01D2  09A1               	comf	??_strlen+1,f
+  1054  01D3  0AA0               	incf	??_strlen,f
+  1055  01D4  1903               	skipnz
+  1056  01D5  0AA1               	incf	??_strlen+1,f
+  1057  01D6  0825               	movf	strlen@cp,w
+  1058  01D7  00A2               	movwf	??_strlen+2
+  1059  01D8  3080               	movlw	128
+  1060  01D9  00A3               	movwf	??_strlen+3
+  1061  01DA  0820               	movf	??_strlen,w
+  1062  01DB  0722               	addwf	??_strlen+2,w
+  1063  01DC  00F5               	movwf	?_strlen
+  1064  01DD  0821               	movf	??_strlen+1,w
+  1065  01DE  1803               	skipnc
+  1066  01DF  0A21               	incf	??_strlen+1,w
+  1067  01E0  0723               	addwf	??_strlen+3,w
+  1068  01E1  00F6               	movwf	?_strlen+1
+  1069  01E2  0008               	return
+  1070  01E3                     __end_of_strlen:	
+  1071                           
+  1072                           	psect	text5
+  1073  023B                     __ptext5:	
+  1074 ;; *************** function _escreve *****************
+  1075 ;; Defined at:
+  1076 ;;		line 68 in file "usart_eco1_main.c"
+  1077 ;; Parameters:    Size  Location     Type
+  1078 ;;  valor           1    wreg     unsigned char 
+  1079 ;; Auto vars:     Size  Location     Type
+  1080 ;;  valor           1    5[COMMON] unsigned char 
+  1081 ;; Return value:  Size  Location     Type
+  1082 ;;		None               void
+  1083 ;; Registers used:
+  1084 ;;		wreg
+  1085 ;; Tracked objects:
+  1086 ;;		On entry : 0/0
+  1087 ;;		On exit  : 0/0
+  1088 ;;		Unchanged: 0/0
+  1089 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2
+  1090 ;;      Params:         0       0       0       0
+  1091 ;;      Locals:         1       0       0       0
+  1092 ;;      Temps:          0       0       0       0
+  1093 ;;      Totals:         1       0       0       0
+  1094 ;;Total ram usage:        1 bytes
+  1095 ;; Hardware stack levels used:    1
+  1096 ;; Hardware stack levels required when called:    1
+  1097 ;; This function calls:
+  1098 ;;		Nothing
+  1099 ;; This function is called by:
+  1100 ;;		_imprime
+  1101 ;;		_main
+  1102 ;; This function uses a non-reentrant model
+  1103 ;;
+  1104                           
+  1105                           
+  1106                           ;psect for function _escreve
+  1107  023B                     _escreve:	
+  1108                           
+  1109                           ;incstack = 0
+  1110                           ; Regs used in _escreve: [wreg]
+  1111                           ;escreve@valor stored from wreg
+  1112  023B  00F5               	movwf	escreve@valor
+  1113                           
+  1114                           ;usart_eco1_main.c: 70: TXIF = 0;
+  1115  023C  1283               	bcf	3,5	;RP0=0, select bank0
+  1116  023D  1303               	bcf	3,6	;RP1=0, select bank0
+  1117  023E  120C               	bcf	12,4	;volatile
+  1118                           
+  1119                           ;usart_eco1_main.c: 71: TXREG = valor;
+  1120  023F  0875               	movf	escreve@valor,w
+  1121  0240  0099               	movwf	25	;volatile
+  1122  0241                     l45:	
+  1123                           ;usart_eco1_main.c: 72: while(TXIF ==0);
+  1124                           
+  1125  0241  1A0C               	btfsc	12,4	;volatile
+  1126  0242  0008               	return
+  1127  0243  2A41               	goto	l45
+  1128  0244                     __end_of_escreve:	
+  1129                           
+  1130                           	psect	text6
+  1131  022A                     __ptext6:	
+  1132 ;; *************** function _RS232 *****************
+  1133 ;; Defined at:
+  1134 ;;		line 35 in file "usart_eco1_main.c"
+  1135 ;; Parameters:    Size  Location     Type
+  1136 ;;		None
+  1137 ;; Auto vars:     Size  Location     Type
+  1138 ;;		None
+  1139 ;; Return value:  Size  Location     Type
+  1140 ;;		None               void
+  1141 ;; Registers used:
+  1142 ;;		wreg
+  1143 ;; Tracked objects:
+  1144 ;;		On entry : 0/0
+  1145 ;;		On exit  : 0/0
+  1146 ;;		Unchanged: 0/0
+  1147 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2
+  1148 ;;      Params:         0       0       0       0
+  1149 ;;      Locals:         0       0       0       0
+  1150 ;;      Temps:          5       0       0       0
+  1151 ;;      Totals:         5       0       0       0
+  1152 ;;Total ram usage:        5 bytes
+  1153 ;; Hardware stack levels used:    1
+  1154 ;; This function calls:
+  1155 ;;		Nothing
+  1156 ;; This function is called by:
+  1157 ;;		Interrupt level 1
+  1158 ;; This function uses a non-reentrant model
+  1159 ;;
+  1160                           
+  1161                           
+  1162                           ;psect for function _RS232
+  1163  022A                     _RS232:	
+  1164                           
+  1165                           ;usart_eco1_main.c: 37: caracter = RCREG;
+  1166  022A  081A               	movf	26,w	;volatile
+  1167  022B  00F0               	movwf	??_RS232
+  1168  022C  0870               	movf	??_RS232,w
+  1169  022D  00BE               	movwf	_caracter
+  1170                           
+  1171                           ;usart_eco1_main.c: 38: flag_interrupcao = 1;
+  1172  022E  1478               	bsf	_flag_interrupcao/(0+8),_flag_interrupcao& (0+7)
+  1173                           
+  1174                           ;usart_eco1_main.c: 39: RCIF = 0;
+  1175  022F  128C               	bcf	12,5	;volatile
+  1176  0230  0874               	movf	??_RS232+4,w
+  1177  0231  00FF               	movwf	127
+  1178  0232  0873               	movf	??_RS232+3,w
+  1179  0233  008A               	movwf	10
+  1180  0234  0872               	movf	??_RS232+2,w
+  1181  0235  0084               	movwf	4
+  1182  0236  0E71               	swapf	(??_RS232+1)^(0+-128),w
+  1183  0237  0083               	movwf	3
+  1184  0238  0EFE               	swapf	126,f
+  1185  0239  0E7E               	swapf	126,w
+  1186  023A  0009               	retfie
+  1187  023B                     __end_of_RS232:	
+  1188  007E                     btemp	set	126	;btemp
+  1189  007E                     wtemp	set	126
+  1190  007E                     wtemp0	set	126
+  1191  0080                     wtemp1	set	128
+  1192  0082                     wtemp2	set	130
+  1193  0084                     wtemp3	set	132
+  1194  0086                     wtemp4	set	134
+  1195  0088                     wtemp5	set	136
+  1196  007F                     wtemp6	set	127
+  1197  007E                     ttemp	set	126
+  1198  007E                     ttemp0	set	126
+  1199  0081                     ttemp1	set	129
+  1200  0084                     ttemp2	set	132
+  1201  0087                     ttemp3	set	135
+  1202  007F                     ttemp4	set	127
+  1203  007E                     ltemp	set	126
+  1204  007E                     ltemp0	set	126
+  1205  0082                     ltemp1	set	130
+  1206  0086                     ltemp2	set	134
+  1207  0080                     ltemp3	set	128
+  1208                           
+  1209                           	psect	intentry
+  1210  0004                     __pintentry:	
+  1211                           ;incstack = 0
+  1212                           ; Regs used in _RS232: [wreg]
+  1213                           
+  1214  0004                     interrupt_function:	
+  1215  007E                     saved_w	set	btemp
+  1216  0004  00FE               	movwf	btemp
+  1217  0005  0E03               	swapf	3,w
+  1218  0006  00F1               	movwf	??_RS232+1
+  1219  0007  0804               	movf	4,w
+  1220  0008  00F2               	movwf	??_RS232+2
+  1221  0009  080A               	movf	10,w
+  1222  000A  00F3               	movwf	??_RS232+3
+  1223  000B  1283               	bcf	3,5	;RP0=0, select bank0
+  1224  000C  1303               	bcf	3,6	;RP1=0, select bank0
+  1225  000D  087F               	movf	btemp+1,w
+  1226  000E  00F4               	movwf	??_RS232+4
+  1227  000F  2A2A               	ljmp	_RS232
+
+
+Data Sizes:
+    Strings     106
+    Constant    0
+    Data        0
+    BSS         1
+    Persistent  0
+    Stack       0
+
+Auto Spaces:
+    Space          Size  Autos    Used
+    COMMON           14      8       9
+    BANK0            80     30      31
+    BANK1            80      0       0
+    BANK2            48      0       0
+
+Pointer List with Targets:
+
+    strlen@s	PTR const unsigned char  size(1) Largest target is 47
+		 -> STR_3(CODE[32]), STR_2(CODE[47]), STR_1(CODE[27]), 
+
+    strlen@cp	PTR const unsigned char  size(1) Largest target is 47
+		 -> STR_3(CODE[32]), STR_2(CODE[47]), STR_1(CODE[27]), 
+
+    imprime@frase	PTR const unsigned char  size(1) Largest target is 47
+		 -> STR_3(CODE[32]), STR_2(CODE[47]), STR_1(CODE[27]), 
+
+
+Critical Paths under _main in COMMON
+
+    _main->_imprime
+    _inicializa_RS232->___aldiv
+    _imprime->_strlen
+
+Critical Paths under _RS232 in COMMON
+
+    None.
+
+Critical Paths under _main in BANK0
+
+    _main->_inicializa_RS232
+    _inicializa_RS232->___aldiv
+    _imprime->_strlen
+
+Critical Paths under _RS232 in BANK0
+
+    None.
+
+Critical Paths under _main in BANK1
+
+    None.
+
+Critical Paths under _RS232 in BANK1
+
+    None.
+
+Critical Paths under _main in BANK2
+
+    None.
+
+Critical Paths under _RS232 in BANK2
+
+    None.
+
+Call Graph Tables:
+
+ ---------------------------------------------------------------------------------
+ (Depth) Function   	        Calls       Base Space   Used Autos Params    Refs
+ ---------------------------------------------------------------------------------
+ (0) _main                                                 0     0      0    1470
+                            _escreve
+                            _imprime
+                   _inicializa_RS232
+ ---------------------------------------------------------------------------------
+ (1) _inicializa_RS232                                    20    14      6    1012
+                                             14 BANK0     16    10      6
+                            ___aldiv
+ ---------------------------------------------------------------------------------
+ (2) ___aldiv                                             15     7      8     724
+                                              5 COMMON     1     1      0
+                                              0 BANK0     14     6      8
+ ---------------------------------------------------------------------------------
+ (1) _imprime                                              4     4      0     436
+                                              7 COMMON     1     1      0
+                                              6 BANK0      3     3      0
+                            _escreve
+                             _strlen
+ ---------------------------------------------------------------------------------
+ (3) _strlen                                               8     6      2     160
+                                              5 COMMON     2     0      2
+                                              0 BANK0      6     6      0
+ ---------------------------------------------------------------------------------
+ (2) _escreve                                              1     1      0      22
+                                              5 COMMON     1     1      0
+ ---------------------------------------------------------------------------------
+ Estimated maximum stack depth 3
+ ---------------------------------------------------------------------------------
+ (Depth) Function   	        Calls       Base Space   Used Autos Params    Refs
+ ---------------------------------------------------------------------------------
+ (4) _RS232                                                5     5      0       0
+                                              0 COMMON     5     5      0
+ ---------------------------------------------------------------------------------
+ Estimated maximum stack depth 4
+ ---------------------------------------------------------------------------------
+
+ Call Graph Graphs:
+
+ _main (ROOT)
+   _escreve
+   _imprime
+     _escreve
+     _strlen
+   _inicializa_RS232
+     ___aldiv
+
+ _RS232 (ROOT)
+
+ Address spaces:
+Name               Size   Autos  Total    Cost      Usage
+BITCOMMON            E      0       1       0        7.1%
+EEDATA              80      0       0       0        0.0%
+NULL                 0      0       0       0        0.0%
+CODE                 0      0       0       0        0.0%
+COMMON               E      8       9       1       64.3%
+BITSFR0              0      0       0       1        0.0%
+SFR0                 0      0       0       1        0.0%
+BITSFR1              0      0       0       2        0.0%
+SFR1                 0      0       0       2        0.0%
+STACK                0      0       0       2        0.0%
+BANK0               50     1E      1F       3       38.8%
+BITSFR3              0      0       0       4        0.0%
+SFR3                 0      0       0       4        0.0%
+ABS                  0      0      28       4        0.0%
+BITBANK0            50      0       0       5        0.0%
+BITSFR2              0      0       0       5        0.0%
+SFR2                 0      0       0       5        0.0%
+BITBANK1            50      0       0       6        0.0%
+BANK1               50      0       0       7        0.0%
+BITBANK2            30      0       0       8        0.0%
+BANK2               30      0       0       9        0.0%
+DATA                 0      0      28      10        0.0%
+
+
+Microchip Technology PIC Macro Assembler V1.30 build 55553 
+Symbol Table                                                                                   Sun Apr 20 01:50:44 2014
+
+                         pc 0002                 __CFG_CP$OFF 0000                          l45 0241  
+                        fsr 0004           ?_inicializa_RS232 002E                         l175 00CE  
+                       l721 0061                         l811 0134                         l815 0142  
+                       l807 0127                         l835 01C2                         l837 01CD  
+                       l829 0213                         l857 01FF                         l797 00EF  
+                       l789 00DF                         l799 00FF                         _GIE 005F  
+                       u200 0089                         u201 008A                         u202 008F  
+                       u203 0090                         u305 0101                         u315 0116  
+                       u325 0128                         u190 0046                         u191 0047  
+                       u192 004C                         u193 004D                __CFG_CPD$OFF 0000  
+                       u285 00F3                         u387 021E                         fsr0 0004  
+        ??_inicializa_RS232 0034                __CFG_FOSC$XT 0000                __CFG_LVP$OFF 0000  
+                      STR_1 01A0                        STR_2 0151                        STR_3 0180  
+                      _PEIE 005E                        _RCIE 0465                        _RCIF 0065  
+                      _TXIE 0464                        _TXIF 0064                        _main 01E3  
+                      btemp 007E                        ltemp 007E                        start 0010  
+                      ttemp 007E                        wtemp 007E               imprime@indice 0027  
+             __CFG_MCLRE$ON 0000             __end_of___aldiv 014B                       ?_main 0070  
+             __CFG_WDTE$OFF 0000                       _RS232 022A                       _RCREG 001A  
+                     _RCSTA 0018                       _SPBRG 0099                       _PORTB 0006  
+                     _TRISB 0086                       _TXREG 0019                       _TXSTA 0098  
+             __CFG_PWRTE$ON 0000             __end_of_escreve 0244             __end_of_imprime 022A  
+            __pbitbssCOMMON 03C0              __CFG_BOREN$OFF 0000                       pclath 000A  
+                     ltemp0 007E                       ltemp1 0082                       ltemp2 0086  
+                     ltemp3 0080                       ttemp0 007E                       ttemp1 0081  
+                     ttemp2 0084                       ttemp3 0087                       ttemp4 007F  
+                     status 0003                       wtemp0 007E                       wtemp1 0080  
+                     wtemp2 0082                       wtemp3 0084                       wtemp4 0086  
+                     wtemp5 0088                       wtemp6 007F        inicializa_RS232@modo 0032  
+           __initialization 0011              imprime@tamanho 0026                __end_of_main 0207  
+                    ??_main 0078                      ?_RS232 0070  inicializa_RS232@velocidade 002E  
+                 ??___aldiv 0075                      _strlen 01BB                   ??_escreve 0075  
+                 ??_imprime 0077                      saved_w 007E                escreve@valor 0075  
+   __end_of__initialization 0013               __end_of_RS232 023B       inicializa_RS232@valor 0038  
+            __pcstackCOMMON 0070        _inicializa_RS232$460 003A                     ??_RS232 0070  
+                __pbssBANK0 003E   __size_of_inicializa_RS232 00A7                  __pmaintext 01E3  
+                __pintentry 0004                     ?_strlen 0075                  __stringtab 014B  
+          _flag_interrupcao 03C0                     ___aldiv 00BC                     __ptext1 0015  
+                   __ptext2 00BC                     __ptext3 0207                     __ptext4 01BB  
+                   __ptext5 023B                     __ptext6 022A             __size_of_strlen 0028  
+                   _escreve 023B                     _imprime 0207            ___aldiv@dividend 0024  
+      end_of_initialization 0013            ___aldiv@quotient 002A                     strlen@s 0024  
+          _inicializa_RS232 0015                imprime@frase 0028              __end_of_strlen 01E3  
+       start_initialization 0011                    ??_strlen 0020                   ___latbits 0000  
+             __pcstackBANK0 0020         __end_of__stringdata 01BB                    ?___aldiv 0020  
+                 __pstrings 014B                    ?_escreve 0070              __size_of_RS232 0011  
+                  ?_imprime 0070             ___aldiv@divisor 0020           interrupt_function 0004  
+           ___aldiv@counter 0028    __end_of_inicializa_RS232 00BC                 __stringbase 0150  
+               __stringdata 0151            __size_of___aldiv 008F          __end_of__stringtab 0151  
+                  _caracter 003E            __size_of_escreve 0009            __size_of_imprime 0023  
+             __size_of_main 0024                    intlevel1 0000                   stringcode 014B  
+                  strlen@cp 0025                    stringdir 014B                    stringtab 014B  
+              ___aldiv@sign 0029  
