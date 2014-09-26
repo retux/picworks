@@ -1,0 +1,11 @@
+___aldiv: CODE, 188 0 143
+__stringtab: STRING, 395 0 6
+_escreve: CODE, 521 0 9
+__stringdata: STRING, 401 0 35
+_strlen: CODE, 436 0 40
+_imprime: CODE, 476 0 28
+_main: CODE, 331 0 64
+__initialization: CODE, 17 0 2
+_RS232: CODE, 504 0 17
+_inicializa_RS232: CODE, 21 0 167
+Total: 511
