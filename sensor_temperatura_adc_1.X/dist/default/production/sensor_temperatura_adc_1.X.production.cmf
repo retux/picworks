@@ -1,0 +1,1396 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$/tmp/cgtRa7NqK.obj
+end_init CODE 0 0 0 4 1
+idloc IDLOC 0 200000 200000 8 1
+config CONFIG 0 300000 300000 E 1
+$dist/default/production/sensor_temperatura_adc_1.X.production.obj
+smallconst SMALLCONST 0 800 800 88 1
+text41 CODE 0 2A2E 2A2E C 1
+text40 CODE 0 2A56 2A56 4 1
+text39 CODE 0 2A1C 2A1C 12 1
+text38 CODE 0 2934 2934 2C 1
+text37 CODE 0 2614 2614 60 1
+text36 CODE 0 29B0 29B0 26 1
+text35 CODE 0 2898 2898 3A 1
+text34 CODE 0 29F2 29F2 18 1
+text33 CODE 0 2A0A 2A0A 12 1
+text32 CODE 0 2A4E 2A4E 8 1
+text31 CODE 0 26D0 26D0 5A 1
+text30 CODE 0 276A 276A 40 1
+text29 CODE 0 22EE 22EE A6 1
+text28 CODE 0 2A44 2A44 A 1
+text27 CODE 0 1FE8 1FE8 DA 1
+text26 CODE 0 2246 2246 A8 1
+text25 CODE 0 2908 2908 2C 1
+text24 CODE 0 272A 272A 40 1
+text23 CODE 0 2674 2674 5C 1
+text22 CODE 0 29D6 29D6 1C 1
+text21 CODE 0 196C 196C 1B8 1
+text20 CODE 0 2822 2822 3C 1
+text19 CODE 0 1EFC 1EFC EC 1
+text18 CODE 0 27E6 27E6 3C 1
+text17 CODE 0 28D2 28D2 36 1
+text16 CODE 0 27AA 27AA 3C 1
+text15 CODE 0 2430 2430 90 1
+text14 CODE 0 298A 298A 26 1
+text13 CODE 0 20C2 20C2 D4 1
+text12 CODE 0 24C0 24C0 86 1
+text11 CODE 0 2546 2546 6A 1
+text10 CODE 0 25B0 25B0 64 1
+text9 CODE 0 1CBE 1CBE 13A 1
+text8 CODE 0 1DF8 1DF8 104 1
+text7 CODE 0 2196 2196 B0 1
+text6 CODE 0 2394 2394 9C 1
+text5 CODE 0 285E 285E 3A 1
+text4 CODE 0 1730 1730 23C 1
+text3 CODE 0 2960 2960 2A 1
+text2 CODE 0 1360 1360 3D0 1
+text1 CODE 0 888 888 AD8 1
+text0 CODE 0 1B24 1B24 19A 1
+cstackCOMRAM COMRAM 1 1 1 52 1
+cstackBANK0 BANK0 1 60 60 35 1
+cinit CODE 0 2A3A 2A3A A 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+BANK0 000095-0000FF 1
+BANK1 000100-0001FF 1
+BANK2 000200-0002FF 1
+BANK3 000300-0003FF 1
+BANK4 000400-0004FF 1
+BANK5 000500-0005FF 1
+BANK6 000600-0006FF 1
+BANK7 000700-0007FF 1
+BIGRAM 000053-00005F 1
+BIGRAM 000095-0007FF 1
+CODE 000004-0007FF 1
+CODE 002A5A-007FFF 1
+COMRAM 000053-00005F 1
+CONST 000004-0007FF 1
+CONST 002A5A-007FFF 1
+EEDATA F00000-F000FF 1
+MEDIUMCONST 002A5A-007FFF 1
+RAM 000095-0007FF 1
+SFR 000F60-000FFF 1
+SMALLCONST 002A5A-007FFF 1
+STACK 000095-0007FF 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <file name>:<line number> <address> <psect name> <class name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production/sensor_temperatura_adc_1.X.production.obj
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":492 888 text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":542 888 text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":545 898 text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":547 89C text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":550 8A8 text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":555 8BA text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":557 8C8 text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":606 8D6 text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":607 8EA text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":609 8F8 text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":610 914 text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":611 948 text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":620 95C text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":621 96E text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":622 974 text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":630 978 text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":631 986 text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":632 988 text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":631 9C4 text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":635 9DA text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":637 9E8 text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":672 9F0 text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":673 9F6 text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":644 9F8 text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":834 A22 text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":836 A2E text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":838 A36 text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":839 A44 text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":840 A6C text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":841 A8A text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":842 AA6 text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":844 AAE text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":845 ABC text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":846 AD0 text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":847 B14 text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":848 B1E text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":849 B3A text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":850 B56 text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":851 B6E text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":855 B78 text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":856 B90 text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":857 BAC text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":858 BCC text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":859 BD8 text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":860 BF8 text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":1121 C00 text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":1122 C18 text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":1125 C3E text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":1129 CAA text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":1130 CCA text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":1132 CD0 text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":1134 CDE text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":1135 CF4 text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":1138 D30 text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":1139 D48 text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":1140 D4A text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":1141 D6A text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":1142 D9A text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":1145 DA8 text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":1146 DC0 text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":1145 DFA text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":1151 E02 text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":1156 E3E text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":1157 E4A text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":1158 E54 text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":1190 E72 text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":1191 E82 text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":1189 E8C text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":1197 EA4 text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":1199 EC0 text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":1210 ECC text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":1211 F1C text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":1212 F50 text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":1205 F66 text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":1217 F76 text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":1218 F86 text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":1216 F90 text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":1220 FA8 text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":1221 FBC text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":1222 FCA text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":1223 FCA text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":1224 FCE text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":1228 FE8 text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":1230 FF2 text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":1236 1002 text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":1237 1054 text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":1238 1056 text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":1239 10A6 text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":1240 10DA text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":1241 10F0 text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":1237 1140 text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":1245 1150 text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":1246 1160 text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":1244 116A text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":1299 1178 text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":1300 1194 text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":1348 119C text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":1349 11C2 text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":1350 11C8 text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":1351 11EE text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":1354 1204 text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":1355 122C text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":1357 1236 text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":1358 123E text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":1359 1262 text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":1361 127C text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":1390 128A text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":1391 12B0 text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":1393 12CC text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":1437 12DA text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":1439 12E6 text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":1440 12F6 text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":1447 130A text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":1448 1326 text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":545 1336 text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":1547 1352 text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":1550 135E text1 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":425 1360 text2 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":428 1364 text2 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":429 1368 text2 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":430 136A text2 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":431 1374 text2 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":432 148A text2 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":433 1494 text2 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":434 152E text2 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":436 153C text2 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":437 1546 text2 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":438 165C text2 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":439 1666 text2 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":440 170C text2 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":441 172E text2 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":409 1730 text4 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":413 1734 text4 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":414 173A text4 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":415 186C text4 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":416 1872 text4 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":417 192C text4 CODE
+"/opt/microchip/xc8/v1.30/sources/common/doprnt.c":418 196A text4 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftadd.c":86 196C text21 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftadd.c":90 196C text21 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftadd.c":91 1980 text21 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftadd.c":92 1994 text21 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftadd.c":93 19B2 text21 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftadd.c":94 19C0 text21 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftadd.c":95 19DE text21 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftadd.c":96 19EC text21 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftadd.c":97 19F4 text21 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftadd.c":98 19F6 text21 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftadd.c":99 19F8 text21 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftadd.c":100 19FA text21 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftadd.c":101 19FC text21 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftadd.c":102 19FE text21 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftadd.c":103 1A0A text21 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftadd.c":104 1A0C text21 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftadd.c":106 1A18 text21 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftadd.c":110 1A20 text21 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftadd.c":111 1A28 text21 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftadd.c":112 1A2A text21 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftadd.c":114 1A42 text21 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftadd.c":115 1A4A text21 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftadd.c":113 1A4C text21 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftadd.c":117 1A54 text21 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftadd.c":121 1A5C text21 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftadd.c":122 1A64 text21 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftadd.c":123 1A66 text21 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftadd.c":125 1A7E text21 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftadd.c":126 1A86 text21 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftadd.c":124 1A88 text21 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftadd.c":129 1A8E text21 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftadd.c":131 1A92 text21 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftadd.c":132 1A9E text21 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftadd.c":133 1AAA text21 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftadd.c":134 1AAA text21 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftadd.c":136 1AAE text21 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftadd.c":137 1ABA text21 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftadd.c":139 1AC6 text21 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftadd.c":140 1ACE text21 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftadd.c":141 1ADA text21 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftadd.c":142 1ADE text21 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftadd.c":143 1AEA text21 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftadd.c":144 1AF6 text21 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftadd.c":146 1AFE text21 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftadd.c":148 1B22 text21 CODE
+"/home/matias/usina/MPLABXProjects/sensor_temperatura_adc_1.X/sensor_temp01_main.c":64 1B24 text0 CODE
+"/home/matias/usina/MPLABXProjects/sensor_temperatura_adc_1.X/sensor_temp01_main.c":65 1B24 text0 CODE
+"/home/matias/usina/MPLABXProjects/sensor_temperatura_adc_1.X/sensor_temp01_main.c":67 1B28 text0 CODE
+"/home/matias/usina/MPLABXProjects/sensor_temperatura_adc_1.X/sensor_temp01_main.c":68 1B36 text0 CODE
+"/home/matias/usina/MPLABXProjects/sensor_temperatura_adc_1.X/sensor_temp01_main.c":70 1B4E text0 CODE
+"/home/matias/usina/MPLABXProjects/sensor_temperatura_adc_1.X/sensor_temp01_main.c":72 1B5C text0 CODE
+"/home/matias/usina/MPLABXProjects/sensor_temperatura_adc_1.X/sensor_temp01_main.c":92 1B68 text0 CODE
+"/home/matias/usina/MPLABXProjects/sensor_temperatura_adc_1.X/sensor_temp01_main.c":94 1B7E text0 CODE
+"/home/matias/usina/MPLABXProjects/sensor_temperatura_adc_1.X/sensor_temp01_main.c":100 1B84 text0 CODE
+"/home/matias/usina/MPLABXProjects/sensor_temperatura_adc_1.X/sensor_temp01_main.c":103 1B8A text0 CODE
+"/home/matias/usina/MPLABXProjects/sensor_temperatura_adc_1.X/sensor_temp01_main.c":105 1B94 text0 CODE
+"/home/matias/usina/MPLABXProjects/sensor_temperatura_adc_1.X/sensor_temp01_main.c":107 1B9A text0 CODE
+"/home/matias/usina/MPLABXProjects/sensor_temperatura_adc_1.X/sensor_temp01_main.c":108 1BA0 text0 CODE
+"/home/matias/usina/MPLABXProjects/sensor_temperatura_adc_1.X/sensor_temp01_main.c":111 1BB0 text0 CODE
+"/home/matias/usina/MPLABXProjects/sensor_temperatura_adc_1.X/sensor_temp01_main.c":112 1BB6 text0 CODE
+"/home/matias/usina/MPLABXProjects/sensor_temperatura_adc_1.X/sensor_temp01_main.c":113 1BBE text0 CODE
+"/home/matias/usina/MPLABXProjects/sensor_temperatura_adc_1.X/sensor_temp01_main.c":114 1BCA text0 CODE
+"/home/matias/usina/MPLABXProjects/sensor_temperatura_adc_1.X/sensor_temp01_main.c":115 1BD2 text0 CODE
+"/home/matias/usina/MPLABXProjects/sensor_temperatura_adc_1.X/sensor_temp01_main.c":116 1BD8 text0 CODE
+"/home/matias/usina/MPLABXProjects/sensor_temperatura_adc_1.X/sensor_temp01_main.c":121 1BE4 text0 CODE
+"/home/matias/usina/MPLABXProjects/sensor_temperatura_adc_1.X/sensor_temp01_main.c":123 1BE8 text0 CODE
+"/home/matias/usina/MPLABXProjects/sensor_temperatura_adc_1.X/sensor_temp01_main.c":126 1BF2 text0 CODE
+"/home/matias/usina/MPLABXProjects/sensor_temperatura_adc_1.X/sensor_temp01_main.c":127 1BFE text0 CODE
+"/home/matias/usina/MPLABXProjects/sensor_temperatura_adc_1.X/sensor_temp01_main.c":129 1C76 text0 CODE
+"/home/matias/usina/MPLABXProjects/sensor_temperatura_adc_1.X/sensor_temp01_main.c":130 1C7C text0 CODE
+"/home/matias/usina/MPLABXProjects/sensor_temperatura_adc_1.X/sensor_temp01_main.c":131 1CA0 text0 CODE
+"/home/matias/usina/MPLABXProjects/sensor_temperatura_adc_1.X/sensor_temp01_main.c":132 1CB0 text0 CODE
+"/opt/microchip/xc8/v1.30/sources/common/fldivl.c":60 1CBE text9 CODE
+"/opt/microchip/xc8/v1.30/sources/common/fldivl.c":66 1CBE text9 CODE
+"/home/matias/usina/MPLABXProjects/sensor_temperatura_adc_1.X/sensor_temp01_main.c":134 1CBE text0 CODE
+"/opt/microchip/xc8/v1.30/sources/common/fldivl.c":68 1CEA text9 CODE
+"/opt/microchip/xc8/v1.30/sources/common/fldivl.c":70 1D16 text9 CODE
+"/opt/microchip/xc8/v1.30/sources/common/fldivl.c":71 1D18 text9 CODE
+"/opt/microchip/xc8/v1.30/sources/common/fldivl.c":72 1D28 text9 CODE
+"/opt/microchip/xc8/v1.30/sources/common/fldivl.c":73 1D2A text9 CODE
+"/opt/microchip/xc8/v1.30/sources/common/fldivl.c":74 1D3A text9 CODE
+"/opt/microchip/xc8/v1.30/sources/common/fldivl.c":75 1D4A text9 CODE
+"/opt/microchip/xc8/v1.30/sources/common/fldivl.c":76 1D4E text9 CODE
+"/opt/microchip/xc8/v1.30/sources/common/fldivl.c":77 1D54 text9 CODE
+"/opt/microchip/xc8/v1.30/sources/common/fldivl.c":78 1D5C text9 CODE
+"/opt/microchip/xc8/v1.30/sources/common/fldivl.c":79 1D5C text9 CODE
+"/opt/microchip/xc8/v1.30/sources/common/fldivl.c":80 1D66 text9 CODE
+"/opt/microchip/xc8/v1.30/sources/common/fldivl.c":81 1D7A text9 CODE
+"/opt/microchip/xc8/v1.30/sources/common/fldivl.c":82 1D8A text9 CODE
+"/opt/microchip/xc8/v1.30/sources/common/fldivl.c":84 1D8C text9 CODE
+"/opt/microchip/xc8/v1.30/sources/common/fldivl.c":85 1D96 text9 CODE
+"/opt/microchip/xc8/v1.30/sources/common/fldivl.c":86 1D9A text9 CODE
+"/opt/microchip/xc8/v1.30/sources/common/fldivl.c":87 1D9E text9 CODE
+"/opt/microchip/xc8/v1.30/sources/common/fldivl.c":90 1DAE text9 CODE
+"/opt/microchip/xc8/v1.30/sources/common/fldivl.c":91 1DB8 text9 CODE
+"/opt/microchip/xc8/v1.30/sources/common/fldivl.c":93 1DBE text9 CODE
+"/opt/microchip/xc8/v1.30/sources/common/fldivl.c":94 1DC4 text9 CODE
+"/opt/microchip/xc8/v1.30/sources/common/fldivl.c":96 1DD6 text9 CODE
+"/opt/microchip/xc8/v1.30/sources/common/fldivl.c":97 1DE0 text9 CODE
+"/opt/microchip/xc8/v1.30/sources/common/fldivl.c":95 1DE2 text9 CODE
+"/opt/microchip/xc8/v1.30/sources/common/fldivl.c":99 1DE6 text9 CODE
+"/opt/microchip/xc8/v1.30/sources/common/fldivl.c":100 1DE6 text9 CODE
+"/opt/microchip/xc8/v1.30/sources/common/fldivl.c":101 1DF6 text9 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftdivl.c":60 1DF8 text8 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftdivl.c":66 1DF8 text8 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftdivl.c":68 1E12 text8 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftdivl.c":70 1E2C text8 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftdivl.c":71 1E2E text8 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftdivl.c":72 1E3A text8 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftdivl.c":73 1E3C text8 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftdivl.c":74 1E48 text8 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftdivl.c":75 1E58 text8 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftdivl.c":76 1E5C text8 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftdivl.c":77 1E62 text8 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftdivl.c":79 1E6A text8 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftdivl.c":80 1E74 text8 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftdivl.c":81 1E84 text8 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftdivl.c":82 1E90 text8 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftdivl.c":83 1E92 text8 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftdivl.c":84 1E92 text8 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftdivl.c":85 1E9A text8 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftdivl.c":86 1E9E text8 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftdivl.c":87 1EA2 text8 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftdivl.c":90 1EB2 text8 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftdivl.c":91 1EBC text8 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftdivl.c":93 1EC2 text8 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftdivl.c":94 1EC8 text8 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftdivl.c":96 1EDA text8 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftdivl.c":97 1EE4 text8 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftdivl.c":95 1EE6 text8 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftdivl.c":99 1EEA text8 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftdivl.c":100 1EEA text8 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftdivl.c":101 1EFA text8 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftmul.c":51 1EFC text19 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftmul.c":56 1EFC text19 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftmul.c":58 1F16 text19 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftmul.c":59 1F2E text19 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftmul.c":60 1F3C text19 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftmul.c":61 1F42 text19 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftmul.c":62 1F46 text19 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftmul.c":63 1F4A text19 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftmul.c":64 1F4E text19 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftmul.c":66 1F50 text19 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftmul.c":67 1F52 text19 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftmul.c":68 1F5E text19 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftmul.c":69 1F6A text19 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftmul.c":71 1F72 text19 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftmul.c":72 1F76 text19 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftmul.c":73 1F82 text19 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftmul.c":74 1F8A text19 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftmul.c":75 1F92 text19 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftmul.c":76 1F96 text19 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftmul.c":78 1F9E text19 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftmul.c":79 1FA2 text19 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftmul.c":80 1FAE text19 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftmul.c":81 1FB6 text19 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftmul.c":82 1FBE text19 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftmul.c":83 1FC2 text19 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftmul.c":84 1FE6 text19 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftdiv.c":49 1FE8 text27 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftdiv.c":55 1FE8 text27 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftdiv.c":57 2002 text27 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftdiv.c":58 201A text27 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftdiv.c":59 2028 text27 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftdiv.c":60 2034 text27 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftdiv.c":61 203A text27 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftdiv.c":62 203E text27 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftdiv.c":63 2042 text27 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftdiv.c":64 2046 text27 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftdiv.c":65 2048 text27 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftdiv.c":66 2054 text27 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftdiv.c":67 2056 text27 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftdiv.c":68 2062 text27 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftdiv.c":69 206A text27 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftdiv.c":70 206A text27 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftdiv.c":71 2072 text27 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftdiv.c":72 2082 text27 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftdiv.c":73 208E text27 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftdiv.c":74 2090 text27 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftdiv.c":75 2090 text27 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftdiv.c":76 2098 text27 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftdiv.c":77 209C text27 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftdiv.c":78 20C0 text27 CODE
+"/opt/microchip/xc8/v1.30/sources/common/fttol.c":44 20C2 text13 CODE
+"/opt/microchip/xc8/v1.30/sources/common/fttol.c":49 20C2 text13 CODE
+"/opt/microchip/xc8/v1.30/sources/common/fttol.c":51 20DC text13 CODE
+"/opt/microchip/xc8/v1.30/sources/common/fttol.c":52 2102 text13 CODE
+"/opt/microchip/xc8/v1.30/sources/common/fttol.c":53 2104 text13 CODE
+"/opt/microchip/xc8/v1.30/sources/common/fttol.c":54 2110 text13 CODE
+"/opt/microchip/xc8/v1.30/sources/common/fttol.c":55 211E text13 CODE
+"/opt/microchip/xc8/v1.30/sources/common/fttol.c":56 2122 text13 CODE
+"/opt/microchip/xc8/v1.30/sources/common/fttol.c":57 2126 text13 CODE
+"/opt/microchip/xc8/v1.30/sources/common/fttol.c":60 2136 text13 CODE
+"/opt/microchip/xc8/v1.30/sources/common/fttol.c":61 2140 text13 CODE
+"/opt/microchip/xc8/v1.30/sources/common/fttol.c":63 2146 text13 CODE
+"/opt/microchip/xc8/v1.30/sources/common/fttol.c":64 214C text13 CODE
+"/opt/microchip/xc8/v1.30/sources/common/fttol.c":66 215E text13 CODE
+"/opt/microchip/xc8/v1.30/sources/common/fttol.c":67 2168 text13 CODE
+"/opt/microchip/xc8/v1.30/sources/common/fttol.c":65 216A text13 CODE
+"/opt/microchip/xc8/v1.30/sources/common/fttol.c":70 216E text13 CODE
+"/opt/microchip/xc8/v1.30/sources/common/fttol.c":71 2174 text13 CODE
+"/opt/microchip/xc8/v1.30/sources/common/fttol.c":72 2184 text13 CODE
+"/opt/microchip/xc8/v1.30/sources/common/fttol.c":73 2194 text13 CODE
+"/opt/microchip/xc8/v1.30/sources/common/awdiv.c":8 2196 text7 CODE
+"/opt/microchip/xc8/v1.30/sources/common/awdiv.c":14 2196 text7 CODE
+"/opt/microchip/xc8/v1.30/sources/common/awdiv.c":15 219E text7 CODE
+"/opt/microchip/xc8/v1.30/sources/common/awdiv.c":16 21B2 text7 CODE
+"/opt/microchip/xc8/v1.30/sources/common/awdiv.c":17 21BA text7 CODE
+"/opt/microchip/xc8/v1.30/sources/common/awdiv.c":19 21C2 text7 CODE
+"/opt/microchip/xc8/v1.30/sources/common/awdiv.c":20 21D6 text7 CODE
+"/opt/microchip/xc8/v1.30/sources/common/awdiv.c":21 21DE text7 CODE
+"/opt/microchip/xc8/v1.30/sources/common/awdiv.c":23 21E2 text7 CODE
+"/opt/microchip/xc8/v1.30/sources/common/awdiv.c":24 21EA text7 CODE
+"/opt/microchip/xc8/v1.30/sources/common/awdiv.c":25 21F2 text7 CODE
+"/opt/microchip/xc8/v1.30/sources/common/awdiv.c":26 21FA text7 CODE
+"/opt/microchip/xc8/v1.30/sources/common/awdiv.c":27 21FC text7 CODE
+"/opt/microchip/xc8/v1.30/sources/common/awdiv.c":28 2202 text7 CODE
+"/opt/microchip/xc8/v1.30/sources/common/awdiv.c":26 2204 text7 CODE
+"/opt/microchip/xc8/v1.30/sources/common/awdiv.c":31 2208 text7 CODE
+"/opt/microchip/xc8/v1.30/sources/common/awdiv.c":32 220E text7 CODE
+"/opt/microchip/xc8/v1.30/sources/common/awdiv.c":33 221A text7 CODE
+"/opt/microchip/xc8/v1.30/sources/common/awdiv.c":34 2222 text7 CODE
+"/opt/microchip/xc8/v1.30/sources/common/awdiv.c":36 2224 text7 CODE
+"/opt/microchip/xc8/v1.30/sources/common/awdiv.c":37 222A text7 CODE
+"/opt/microchip/xc8/v1.30/sources/common/awdiv.c":39 222E text7 CODE
+"/opt/microchip/xc8/v1.30/sources/common/awdiv.c":40 2234 text7 CODE
+"/opt/microchip/xc8/v1.30/sources/common/awdiv.c":41 223C text7 CODE
+"/opt/microchip/xc8/v1.30/sources/common/awdiv.c":42 2244 text7 CODE
+"/opt/microchip/xc8/v1.30/sources/common/float.c":62 2246 text26 CODE
+"/opt/microchip/xc8/v1.30/sources/common/float.c":64 2246 text26 CODE
+"/opt/microchip/xc8/v1.30/sources/common/float.c":65 2256 text26 CODE
+"/opt/microchip/xc8/v1.30/sources/common/float.c":67 2264 text26 CODE
+"/opt/microchip/xc8/v1.30/sources/common/float.c":68 2266 text26 CODE
+"/opt/microchip/xc8/v1.30/sources/common/float.c":66 226E text26 CODE
+"/opt/microchip/xc8/v1.30/sources/common/float.c":71 228C text26 CODE
+"/opt/microchip/xc8/v1.30/sources/common/float.c":72 228E text26 CODE
+"/opt/microchip/xc8/v1.30/sources/common/float.c":73 229A text26 CODE
+"/opt/microchip/xc8/v1.30/sources/common/float.c":70 22A2 text26 CODE
+"/opt/microchip/xc8/v1.30/sources/common/float.c":76 22C0 text26 CODE
+"/opt/microchip/xc8/v1.30/sources/common/float.c":77 22C2 text26 CODE
+"/opt/microchip/xc8/v1.30/sources/common/float.c":75 22CA text26 CODE
+"/opt/microchip/xc8/v1.30/sources/common/float.c":79 22CE text26 CODE
+"/opt/microchip/xc8/v1.30/sources/common/float.c":80 22D0 text26 CODE
+"/opt/microchip/xc8/v1.30/sources/common/float.c":81 22D2 text26 CODE
+"/opt/microchip/xc8/v1.30/sources/common/float.c":82 22D6 text26 CODE
+"/opt/microchip/xc8/v1.30/sources/common/float.c":83 22DA text26 CODE
+"/opt/microchip/xc8/v1.30/sources/common/float.c":84 22DE text26 CODE
+"/opt/microchip/xc8/v1.30/sources/common/float.c":85 22E0 text26 CODE
+"/opt/microchip/xc8/v1.30/sources/common/float.c":86 22EC text26 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/openxlcd.c":19 22EE text29 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/openxlcd.c":31 22F2 text29 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/openxlcd.c":32 22F6 text29 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/openxlcd.c":35 22FA text29 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/openxlcd.c":36 22FC text29 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/openxlcd.c":37 22FE text29 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/openxlcd.c":38 2300 text29 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/openxlcd.c":39 2302 text29 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/openxlcd.c":40 2304 text29 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/openxlcd.c":43 2306 text29 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/openxlcd.c":45 230A text29 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/openxlcd.c":46 2310 text29 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/openxlcd.c":48 2316 text29 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/openxlcd.c":49 231C text29 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/openxlcd.c":52 2322 text29 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/openxlcd.c":53 2328 text29 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/openxlcd.c":58 2332 text29 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/openxlcd.c":59 233C text29 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/openxlcd.c":62 2342 text29 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/openxlcd.c":63 234C text29 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/openxlcd.c":64 2352 text29 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/openxlcd.c":65 235C text29 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/openxlcd.c":68 2362 text29 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/openxlcd.c":69 236C text29 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/openxlcd.c":72 2372 text29 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/openxlcd.c":73 237C text29 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/openxlcd.c":76 2382 text29 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/openxlcd.c":77 238C text29 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/openxlcd.c":80 2392 text29 CODE
+"/opt/microchip/xc8/v1.30/sources/common/awmod.c":8 2394 text6 CODE
+"/opt/microchip/xc8/v1.30/sources/common/awmod.c":13 2394 text6 CODE
+"/opt/microchip/xc8/v1.30/sources/common/awmod.c":14 239C text6 CODE
+"/opt/microchip/xc8/v1.30/sources/common/awmod.c":15 23B0 text6 CODE
+"/opt/microchip/xc8/v1.30/sources/common/awmod.c":16 23B8 text6 CODE
+"/opt/microchip/xc8/v1.30/sources/common/awmod.c":18 23C0 text6 CODE
+"/opt/microchip/xc8/v1.30/sources/common/awmod.c":19 23D4 text6 CODE
+"/opt/microchip/xc8/v1.30/sources/common/awmod.c":20 23DC text6 CODE
+"/opt/microchip/xc8/v1.30/sources/common/awmod.c":21 23E4 text6 CODE
+"/opt/microchip/xc8/v1.30/sources/common/awmod.c":22 23EC text6 CODE
+"/opt/microchip/xc8/v1.30/sources/common/awmod.c":23 23EE text6 CODE
+"/opt/microchip/xc8/v1.30/sources/common/awmod.c":24 23F4 text6 CODE
+"/opt/microchip/xc8/v1.30/sources/common/awmod.c":22 23F6 text6 CODE
+"/opt/microchip/xc8/v1.30/sources/common/awmod.c":27 23FA text6 CODE
+"/opt/microchip/xc8/v1.30/sources/common/awmod.c":28 2406 text6 CODE
+"/opt/microchip/xc8/v1.30/sources/common/awmod.c":29 240E text6 CODE
+"/opt/microchip/xc8/v1.30/sources/common/awmod.c":30 2414 text6 CODE
+"/opt/microchip/xc8/v1.30/sources/common/awmod.c":32 2418 text6 CODE
+"/opt/microchip/xc8/v1.30/sources/common/awmod.c":33 241E text6 CODE
+"/opt/microchip/xc8/v1.30/sources/common/awmod.c":34 2426 text6 CODE
+"/opt/microchip/xc8/v1.30/sources/common/awmod.c":35 242E text6 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftge.c":4 2430 text15 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftge.c":6 2430 text15 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftge.c":7 2434 text15 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftge.c":8 2460 text15 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftge.c":9 2464 text15 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftge.c":10 2490 text15 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftge.c":11 249C text15 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftge.c":12 24A8 text15 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftge.c":13 24BE text15 CODE
+"/opt/microchip/xc8/v1.30/sources/common/lldiv.c":8 24C0 text12 CODE
+"/opt/microchip/xc8/v1.30/sources/common/lldiv.c":14 24C0 text12 CODE
+"/opt/microchip/xc8/v1.30/sources/common/lldiv.c":15 24D0 text12 CODE
+"/opt/microchip/xc8/v1.30/sources/common/lldiv.c":16 24DC text12 CODE
+"/opt/microchip/xc8/v1.30/sources/common/lldiv.c":17 24E4 text12 CODE
+"/opt/microchip/xc8/v1.30/sources/common/lldiv.c":18 24E6 text12 CODE
+"/opt/microchip/xc8/v1.30/sources/common/lldiv.c":19 24F0 text12 CODE
+"/opt/microchip/xc8/v1.30/sources/common/lldiv.c":17 24F2 text12 CODE
+"/opt/microchip/xc8/v1.30/sources/common/lldiv.c":22 24F6 text12 CODE
+"/opt/microchip/xc8/v1.30/sources/common/lldiv.c":23 2500 text12 CODE
+"/opt/microchip/xc8/v1.30/sources/common/lldiv.c":24 2514 text12 CODE
+"/opt/microchip/xc8/v1.30/sources/common/lldiv.c":25 2524 text12 CODE
+"/opt/microchip/xc8/v1.30/sources/common/lldiv.c":27 2526 text12 CODE
+"/opt/microchip/xc8/v1.30/sources/common/lldiv.c":28 2530 text12 CODE
+"/opt/microchip/xc8/v1.30/sources/common/lldiv.c":29 2534 text12 CODE
+"/opt/microchip/xc8/v1.30/sources/common/lldiv.c":30 2534 text12 CODE
+"/opt/microchip/xc8/v1.30/sources/common/lldiv.c":31 2544 text12 CODE
+"/opt/microchip/xc8/v1.30/sources/common/llmod.c":8 2546 text11 CODE
+"/opt/microchip/xc8/v1.30/sources/common/llmod.c":13 2546 text11 CODE
+"/opt/microchip/xc8/v1.30/sources/common/llmod.c":14 2552 text11 CODE
+"/opt/microchip/xc8/v1.30/sources/common/llmod.c":15 255A text11 CODE
+"/opt/microchip/xc8/v1.30/sources/common/llmod.c":16 255C text11 CODE
+"/opt/microchip/xc8/v1.30/sources/common/llmod.c":17 2566 text11 CODE
+"/opt/microchip/xc8/v1.30/sources/common/llmod.c":15 2568 text11 CODE
+"/opt/microchip/xc8/v1.30/sources/common/llmod.c":20 256C text11 CODE
+"/opt/microchip/xc8/v1.30/sources/common/llmod.c":21 2580 text11 CODE
+"/opt/microchip/xc8/v1.30/sources/common/llmod.c":22 2590 text11 CODE
+"/opt/microchip/xc8/v1.30/sources/common/llmod.c":23 259A text11 CODE
+"/opt/microchip/xc8/v1.30/sources/common/llmod.c":24 259E text11 CODE
+"/opt/microchip/xc8/v1.30/sources/common/llmod.c":25 259E text11 CODE
+"/opt/microchip/xc8/v1.30/sources/common/llmod.c":26 25AE text11 CODE
+"/opt/microchip/xc8/v1.30/sources/common/lltoft.c":35 25B0 text10 CODE
+"/opt/microchip/xc8/v1.30/sources/common/lltoft.c":38 25B0 text10 CODE
+"/opt/microchip/xc8/v1.30/sources/common/lltoft.c":41 25B8 text10 CODE
+"/opt/microchip/xc8/v1.30/sources/common/lltoft.c":42 25BA text10 CODE
+"/opt/microchip/xc8/v1.30/sources/common/lltoft.c":43 25C4 text10 CODE
+"/opt/microchip/xc8/v1.30/sources/common/lltoft.c":41 25C6 text10 CODE
+"/opt/microchip/xc8/v1.30/sources/common/lltoft.c":45 25EA text10 CODE
+"/opt/microchip/xc8/v1.30/sources/common/lltoft.c":46 2612 text10 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/ADC/adcopen.c":68 2614 text37 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/ADC/adcopen.c":72 2618 text37 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/ADC/adcopen.c":73 261C text37 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/ADC/adcopen.c":75 2620 text37 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/ADC/adcopen.c":77 2628 text37 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/ADC/adcopen.c":80 263E text37 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/ADC/adcopen.c":82 2666 text37 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/ADC/adcopen.c":84 266A text37 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/ADC/adcopen.c":85 266C text37 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/ADC/adcopen.c":86 266E text37 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/ADC/adcopen.c":87 2670 text37 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/ADC/adcopen.c":88 2670 text37 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/ADC/adcopen.c":89 2672 text37 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/putrxlcd.c":16 2674 text23 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/putrxlcd.c":18 2674 text23 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/putrxlcd.c":20 2676 text23 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/putrxlcd.c":21 2680 text23 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/putrxlcd.c":22 26A4 text23 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/putrxlcd.c":18 26A8 text23 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/putrxlcd.c":25 26CC text23 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/putrxlcd.c":18 26CE text23 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/putrxlcd.c":25 26D0 text23 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/setddram.c":13 26D0 text31 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/setddram.c":32 26D4 text31 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/setddram.c":33 26D8 text31 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/setddram.c":34 26DC text31 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/setddram.c":36 26FE text31 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/setddram.c":37 2700 text31 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/setddram.c":38 2702 text31 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/setddram.c":39 2706 text31 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/setddram.c":40 2708 text31 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/setddram.c":41 270C text31 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/setddram.c":46 270E text31 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/setddram.c":47 2712 text31 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/setddram.c":49 2718 text31 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/setddram.c":50 271C text31 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/setddram.c":51 271E text31 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/setddram.c":52 2722 text31 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/setddram.c":56 2724 text31 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/setddram.c":60 2728 text31 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/writdata.c":16 272A text24 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/writdata.c":35 272E text24 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/writdata.c":36 2732 text24 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/writdata.c":37 2736 text24 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/writdata.c":39 273E text24 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/writdata.c":40 2740 text24 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/writdata.c":41 2742 text24 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/writdata.c":42 2746 text24 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/writdata.c":43 2748 text24 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/writdata.c":44 274C text24 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/writdata.c":49 274E text24 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/writdata.c":50 2752 text24 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/writdata.c":52 2758 text24 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/writdata.c":53 275C text24 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/writdata.c":54 275E text24 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/writdata.c":55 2762 text24 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/writdata.c":59 2764 text24 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/writdata.c":63 2768 text24 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/wcmdxlcd.c":13 276A text30 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/wcmdxlcd.c":32 276E text30 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/wcmdxlcd.c":33 2772 text30 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/wcmdxlcd.c":34 2776 text30 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/wcmdxlcd.c":36 277E text30 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/wcmdxlcd.c":37 2780 text30 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/wcmdxlcd.c":38 2782 text30 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/wcmdxlcd.c":39 2786 text30 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/wcmdxlcd.c":40 2788 text30 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/wcmdxlcd.c":41 278C text30 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/wcmdxlcd.c":46 278E text30 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/wcmdxlcd.c":47 2792 text30 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/wcmdxlcd.c":49 2798 text30 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/wcmdxlcd.c":50 279C text30 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/wcmdxlcd.c":51 279E text30 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/wcmdxlcd.c":52 27A2 text30 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/wcmdxlcd.c":56 27A4 text30 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/wcmdxlcd.c":60 27A8 text30 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/asftsub.c":4 27AA text16 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/asftsub.c":6 27AA text16 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/asftsub.c":7 27E4 text16 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/asftmul.c":4 27E6 text18 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/asftmul.c":6 27E6 text18 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/asftmul.c":7 2820 text18 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/asftadd.c":4 2822 text20 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/asftadd.c":6 2822 text20 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/asftadd.c":7 285C text20 CODE
+"/opt/microchip/xc8/v1.30/sources/common/wmul.c":4 285E text5 CODE
+"/opt/microchip/xc8/v1.30/sources/common/wmul.c":14 285E text5 CODE
+"/opt/microchip/xc8/v1.30/sources/common/wmul.c":15 286A text5 CODE
+"/opt/microchip/xc8/v1.30/sources/common/wmul.c":16 287C text5 CODE
+"/opt/microchip/xc8/v1.30/sources/common/wmul.c":30 288E text5 CODE
+"/opt/microchip/xc8/v1.30/sources/common/wmul.c":31 2896 text5 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/busyxlcd.c":11 2898 text35 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/busyxlcd.c":13 2898 text35 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/busyxlcd.c":14 289A text35 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/busyxlcd.c":15 289C text35 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/busyxlcd.c":16 28A0 text35 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/busyxlcd.c":17 28A2 text35 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/busyxlcd.c":35 28A6 text35 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/busyxlcd.c":38 28AA text35 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/busyxlcd.c":39 28AC text35 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/busyxlcd.c":40 28B0 text35 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/busyxlcd.c":41 28B2 text35 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/busyxlcd.c":42 28B6 text35 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/busyxlcd.c":43 28B8 text35 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/busyxlcd.c":44 28BA text35 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/busyxlcd.c":46 28BE text35 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/busyxlcd.c":48 28BE text35 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/busyxlcd.c":49 28C0 text35 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/busyxlcd.c":50 28C4 text35 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/busyxlcd.c":51 28C6 text35 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/busyxlcd.c":52 28CA text35 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/busyxlcd.c":53 28CC text35 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/busyxlcd.c":54 28CE text35 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/busyxlcd.c":57 28D0 text35 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftsub.c":20 28D2 text17 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftsub.c":23 28D2 text17 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftsub.c":24 28DE text17 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftsub.c":25 2906 text17 CODE
+"/opt/microchip/xc8/v1.30/sources/common/lwtoft.c":28 2908 text25 CODE
+"/opt/microchip/xc8/v1.30/sources/common/lwtoft.c":30 2908 text25 CODE
+"/opt/microchip/xc8/v1.30/sources/common/lwtoft.c":31 2932 text25 CODE
+"/home/matias/usina/MPLABXProjects/sensor_temperatura_adc_1.X/sensor_temp01_main.c":180 2934 text38 CODE
+"/home/matias/usina/MPLABXProjects/sensor_temperatura_adc_1.X/sensor_temp01_main.c":182 2934 text38 CODE
+"/home/matias/usina/MPLABXProjects/sensor_temperatura_adc_1.X/sensor_temp01_main.c":183 293E text38 CODE
+"/home/matias/usina/MPLABXProjects/sensor_temperatura_adc_1.X/sensor_temp01_main.c":182 294E text38 CODE
+"/home/matias/usina/MPLABXProjects/sensor_temperatura_adc_1.X/sensor_temp01_main.c":184 295C text38 CODE
+"/home/matias/usina/MPLABXProjects/sensor_temperatura_adc_1.X/sensor_temp01_main.c":182 295E text38 CODE
+"/opt/microchip/xc8/v1.30/sources/common/isdigit.c":8 2960 text3 CODE
+"/home/matias/usina/MPLABXProjects/sensor_temperatura_adc_1.X/sensor_temp01_main.c":184 2960 text38 CODE
+"/opt/microchip/xc8/v1.30/sources/common/isdigit.c":14 2964 text3 CODE
+"/opt/microchip/xc8/v1.30/sources/common/isdigit.c":15 2988 text3 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftneg.c":15 298A text14 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftneg.c":17 298A text14 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftneg.c":18 2996 text14 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftneg.c":19 29A2 text14 CODE
+"/opt/microchip/xc8/v1.30/sources/common/ftneg.c":20 29AE text14 CODE
+"/home/matias/usina/MPLABXProjects/sensor_temperatura_adc_1.X/sensor_temp01_main.c":136 29B0 text36 CODE
+"/home/matias/usina/MPLABXProjects/sensor_temperatura_adc_1.X/sensor_temp01_main.c":138 29B0 text36 CODE
+"/home/matias/usina/MPLABXProjects/sensor_temperatura_adc_1.X/sensor_temp01_main.c":139 29B2 text36 CODE
+"/home/matias/usina/MPLABXProjects/sensor_temperatura_adc_1.X/sensor_temp01_main.c":140 29B4 text36 CODE
+"/home/matias/usina/MPLABXProjects/sensor_temperatura_adc_1.X/sensor_temp01_main.c":141 29B6 text36 CODE
+"/home/matias/usina/MPLABXProjects/sensor_temperatura_adc_1.X/sensor_temp01_main.c":142 29B8 text36 CODE
+"/home/matias/usina/MPLABXProjects/sensor_temperatura_adc_1.X/sensor_temp01_main.c":143 29BA text36 CODE
+"/home/matias/usina/MPLABXProjects/sensor_temperatura_adc_1.X/sensor_temp01_main.c":144 29BC text36 CODE
+"/home/matias/usina/MPLABXProjects/sensor_temperatura_adc_1.X/sensor_temp01_main.c":145 29BE text36 CODE
+"/home/matias/usina/MPLABXProjects/sensor_temperatura_adc_1.X/sensor_temp01_main.c":146 29C0 text36 CODE
+"/home/matias/usina/MPLABXProjects/sensor_temperatura_adc_1.X/sensor_temp01_main.c":147 29C2 text36 CODE
+"/home/matias/usina/MPLABXProjects/sensor_temperatura_adc_1.X/sensor_temp01_main.c":148 29C4 text36 CODE
+"/home/matias/usina/MPLABXProjects/sensor_temperatura_adc_1.X/sensor_temp01_main.c":149 29C6 text36 CODE
+"/home/matias/usina/MPLABXProjects/sensor_temperatura_adc_1.X/sensor_temp01_main.c":150 29C8 text36 CODE
+"/home/matias/usina/MPLABXProjects/sensor_temperatura_adc_1.X/sensor_temp01_main.c":151 29CA text36 CODE
+"/home/matias/usina/MPLABXProjects/sensor_temperatura_adc_1.X/sensor_temp01_main.c":152 29CC text36 CODE
+"/home/matias/usina/MPLABXProjects/sensor_temperatura_adc_1.X/sensor_temp01_main.c":153 29CE text36 CODE
+"/home/matias/usina/MPLABXProjects/sensor_temperatura_adc_1.X/sensor_temp01_main.c":154 29D0 text36 CODE
+"/home/matias/usina/MPLABXProjects/sensor_temperatura_adc_1.X/sensor_temp01_main.c":155 29D2 text36 CODE
+"/home/matias/usina/MPLABXProjects/sensor_temperatura_adc_1.X/sensor_temp01_main.c":156 29D4 text36 CODE
+"/home/matias/usina/MPLABXProjects/sensor_temperatura_adc_1.X/sensor_temp01_main.c":45 29D6 text22 CODE
+"/home/matias/usina/MPLABXProjects/sensor_temperatura_adc_1.X/sensor_temp01_main.c":48 29D6 text22 CODE
+"/home/matias/usina/MPLABXProjects/sensor_temperatura_adc_1.X/sensor_temp01_main.c":49 29D8 text22 CODE
+"/home/matias/usina/MPLABXProjects/sensor_temperatura_adc_1.X/sensor_temp01_main.c":50 29DA text22 CODE
+"/home/matias/usina/MPLABXProjects/sensor_temperatura_adc_1.X/sensor_temp01_main.c":51 29DC text22 CODE
+"/home/matias/usina/MPLABXProjects/sensor_temperatura_adc_1.X/sensor_temp01_main.c":52 29E0 text22 CODE
+"/home/matias/usina/MPLABXProjects/sensor_temperatura_adc_1.X/sensor_temp01_main.c":53 29E2 text22 CODE
+"/home/matias/usina/MPLABXProjects/sensor_temperatura_adc_1.X/sensor_temp01_main.c":54 29E4 text22 CODE
+"/home/matias/usina/MPLABXProjects/sensor_temperatura_adc_1.X/sensor_temp01_main.c":57 29E6 text22 CODE
+"/home/matias/usina/MPLABXProjects/sensor_temperatura_adc_1.X/sensor_temp01_main.c":58 29EA text22 CODE
+"/home/matias/usina/MPLABXProjects/sensor_temperatura_adc_1.X/sensor_temp01_main.c":60 29EC text22 CODE
+"/home/matias/usina/MPLABXProjects/sensor_temperatura_adc_1.X/sensor_temp01_main.c":62 29F0 text22 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/d10ktcyx.c":8 29F2 text34 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/d10ktcyx.c":10 29F6 text34 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/d10ktcyx.c":11 29F6 text34 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/d10ktcyx.c":12 2A04 text34 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/d10ktcyx.c":13 2A08 text34 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/d1ktcyx.c":8 2A0A text33 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/d1ktcyx.c":10 2A0E text33 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/d1ktcyx.c":11 2A0E text33 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/d1ktcyx.c":12 2A16 text33 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/d1ktcyx.c":13 2A1A text33 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/d10tcyx.c":8 2A1C text39 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/d10tcyx.c":10 2A20 text39 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/d10tcyx.c":11 2A20 text39 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/d10tcyx.c":12 2A28 text39 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/d10tcyx.c":13 2A2C text39 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/ADC/adcbusy.c":26 2A2E text41 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/ADC/adcbusy.c":28 2A2E text41 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/ADC/adcbusy.c":29 2A38 text41 CODE
+"/tmp/cgt1zeEpO":745 2A3A cinit CODE
+"/tmp/cgt1zeEpO":747 2A3A cinit CODE
+"/tmp/cgt1zeEpO":750 2A3A cinit CODE
+"/tmp/cgt1zeEpO":756 2A3A cinit CODE
+"/tmp/cgt1zeEpO":757 2A3A cinit CODE
+"/tmp/cgt1zeEpO":758 2A3A cinit CODE
+"/tmp/cgt1zeEpO":759 2A3C cinit CODE
+"/tmp/cgt1zeEpO":760 2A3E cinit CODE
+"/tmp/cgt1zeEpO":761 2A40 cinit CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/ADC/adcread.c":24 2A44 text28 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/ADC/adcread.c":26 2A44 text28 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/ADC/adcread.c":27 2A4C text28 CODE
+"/home/matias/usina/MPLABXProjects/sensor_temperatura_adc_1.X/sensor_temp01_main.c":158 2A4E text32 CODE
+"/home/matias/usina/MPLABXProjects/sensor_temperatura_adc_1.X/sensor_temp01_main.c":164 2A4E text32 CODE
+"/home/matias/usina/MPLABXProjects/sensor_temperatura_adc_1.X/sensor_temp01_main.c":167 2A54 text32 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/ADC/adcconv.c":22 2A56 text40 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/ADC/adcconv.c":24 2A56 text40 CODE
+"/opt/microchip/xc8/v1.30/sources/pic18/plib/ADC/adcconv.c":25 2A58 text40 CODE
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__CFG_XINST$OFF 0 0 ABS 0 - dist/default/production/sensor_temperatura_adc_1.X.production.obj
+___lldiv@counter E 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+sprintf@fval 7F 0 BANK0 1 cstackBANK0 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+___awdiv@counter D 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+sprintf@f 46 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+WriteCmdXLCD@cmd 1 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+___lltoft@c 9 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+_SetDDRamAddr 26D0 0 CODE 0 text31 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+___lwtoft@c 9 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__end_of___ftneg 29B0 0 CODE 0 text14 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__end_of_BusyXLCD 28D2 0 CODE 0 text35 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__S0 30000E 0 ABS 0 - dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__S1 95 0 ABS 0 - dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__S2 0 0 ABS 0 - dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Hintentry 0 0 ABS 0 intentry dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__CFG_PWRT$OFF 0 0 ABS 0 - dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Lintentry 0 0 ABS 0 intentry dist/default/production/sensor_temperatura_adc_1.X.production.obj
+___ftadd@f1 9 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__end_of___awdiv 2246 0 CODE 0 text7 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__size_of___ftsub 0 0 ABS 0 - dist/default/production/sensor_temperatura_adc_1.X.production.obj
+___ftneg@f1 1 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+___ftadd@f2 C 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+___ftsub@f1 15 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+Delay_ms@i 4 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+_main 1B24 0 CODE 0 text0 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+___sp 0 0 STACK 2 stack /tmp/cgtRa7NqK.obj
+start 0 0 CODE 0 init /tmp/cgtRa7NqK.obj
+?___ftadd 9 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+___fttol@f1 17 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+___ftsub@f2 18 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+___ftmul@f1 26 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+___fttol@lval 21 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+___ftdiv@f1 35 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+putrsXLCD@buffer 2 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+_TRISB F93 0 ABS 0 - dist/default/production/sensor_temperatura_adc_1.X.production.obj
+_PORTB F81 0 ABS 0 - dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Hirdata 0 0 CODE 0 irdata dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Lirdata 0 0 CODE 0 irdata dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__HRAM 0 0 ABS 0 - dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__LRAM 1 0 ABS 0 - dist/default/production/sensor_temperatura_adc_1.X.production.obj
+___ftmul@f2 29 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+scale@scl 3B 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+___ftdiv@f2 38 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__CFG_WDTPS$32768 0 0 ABS 0 - dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Hconfig 30000E 0 CONFIG 0 config dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Lconfig 300000 0 CONFIG 0 config dist/default/production/sensor_temperatura_adc_1.X.production.obj
+?___ftneg 1 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__powers_ 850 0 SMALLCONST 0 smallconst dist/default/production/sensor_temperatura_adc_1.X.production.obj
+___ftpack 2246 0 CODE 0 text26 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+?___llmod 1 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+OpenXLCD@lcdtype 5 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+_main$1604 8D 0 BANK0 1 cstackBANK0 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+?___awmod 1 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+_ConvertADC 2A56 0 CODE 0 text40 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+___ftdiv@f3 3F 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Hbigram 0 0 ABS 0 bigram dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Lbigram 0 0 ABS 0 bigram dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Hrparam 0 0 ABS 0 rparam dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Lrparam 0 0 ABS 0 rparam dist/default/production/sensor_temperatura_adc_1.X.production.obj
+_scale 1360 0 CODE 0 text2 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Hram 0 0 ABS 0 ram dist/default/production/sensor_temperatura_adc_1.X.production.obj
+?___ftsub 15 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Lram 0 0 ABS 0 ram dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Hcomram 0 0 ABS 0 comram dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Lcomram 0 0 ABS 0 comram dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Hsfr 0 0 ABS 0 sfr dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Lsfr 0 0 ABS 0 sfr dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__end_of__stringdata 886 0 SMALLCONST 0 smallconst dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Hbss 0 0 RAM 1 bss dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__CFG_STVREN$ON 0 0 ABS 0 - dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Lbss 0 0 RAM 1 bss dist/default/production/sensor_temperatura_adc_1.X.production.obj
+___ftge@ff1 1 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Hnvrram 0 0 COMRAM 1 nvrram dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Lnvrram 0 0 COMRAM 1 nvrram dist/default/production/sensor_temperatura_adc_1.X.production.obj
+?_sprintf 44 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+___ftmul@cntr 33 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__size_of___ftadd 0 0 ABS 0 - dist/default/production/sensor_temperatura_adc_1.X.production.obj
+___ftdiv@cntr 3E 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+main@temp 90 0 BANK0 1 cstackBANK0 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+_ADCON0 FC2 0 ABS 0 - dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__tdiv_to_l_@quot A 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+___asftadd 2822 0 CODE 0 text20 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+_ADCON1 FC1 0 ABS 0 - dist/default/production/sensor_temperatura_adc_1.X.production.obj
+___ftge@ff2 4 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+sprintf@vd 69 0 BANK0 1 cstackBANK0 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+_ADCON2 FC0 0 ABS 0 - dist/default/production/sensor_temperatura_adc_1.X.production.obj
+?___fttol 17 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+_PIE1bits F9D 0 ABS 0 - dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production/sensor_temperatura_adc_1.X.production.obj
+_PIR1bits F9E 0 ABS 0 - dist/default/production/sensor_temperatura_adc_1.X.production.obj
+?___ftmul 26 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+sprintf@ap 67 0 BANK0 1 cstackBANK0 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+_LATBbits F8A 0 ABS 0 - dist/default/production/sensor_temperatura_adc_1.X.production.obj
+_Delay_ms 2934 0 CODE 0 text38 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production/sensor_temperatura_adc_1.X.production.obj
+?___lldiv 1 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Lbigbss 0 0 BIGRAM 1 bigbss dist/default/production/sensor_temperatura_adc_1.X.production.obj
+?___ftdiv 35 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+?___awdiv 8 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Hintret 0 0 ABS 0 intret dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Lintret 0 0 ABS 0 intret dist/default/production/sensor_temperatura_adc_1.X.production.obj
+___lltoft 25B0 0 CODE 0 text10 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Hramtop 800 0 RAM 0 ramtop dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Lramtop 800 0 RAM 0 ramtop dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Hstruct 0 0 COMRAM 1 struct dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Lstruct 0 0 COMRAM 1 struct dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Lbigdata 0 0 BIGRAM 1 bigdata dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production/sensor_temperatura_adc_1.X.production.obj
+___lwtoft 2908 0 CODE 0 text25 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Hfarbss 0 0 FARRAM 0 farbss dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Lfarbss 0 0 FARRAM 0 farbss dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Hintcode 0 0 CODE 0 intcode dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Lintcode 0 0 CODE 0 intcode dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Hfardata 0 0 FARRAM 0 fardata dist/default/production/sensor_temperatura_adc_1.X.production.obj
+_ADRESH FC4 0 ABS 0 - dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Lfardata 0 0 FARRAM 0 fardata dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Habs1 0 0 ABS 0 abs1 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Labs1 0 0 ABS 0 abs1 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+_ADRESL FC3 0 ABS 0 - dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__end_of__powers_ 877 0 SMALLCONST 0 smallconst dist/default/production/sensor_temperatura_adc_1.X.production.obj
+___ftmul@f3_as_product 30 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+_DelayPORXLCD 2A4E 0 CODE 0 text32 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+OpenADC@portconfig 2 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+?__tdiv_to_l_ 1 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+___asftadd@f2 41 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__npowers_ 829 0 SMALLCONST 0 smallconst dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__end_of___ftpack 22EE 0 CODE 0 text26 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+_Delay10KTCYx 29F2 0 CODE 0 text34 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+?___ftpack 1 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__CFG_PBADEN$OFF 0 0 ABS 0 - dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__end_of_Delay1KTCYx 2A1C 0 CODE 0 text33 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__div_to_l_@f1 1 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__size_of___ftpack 0 0 ABS 0 - dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__end_of_dpowers 829 0 SMALLCONST 0 smallconst dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__end_of_scale 1730 0 CODE 0 text2 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__size_of___fttol 0 0 ABS 0 - dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__end_of___awmod 2430 0 CODE 0 text6 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+___ftadd@sign 12 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Hdata 0 0 ABS 0 data dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Ldata 0 0 ABS 0 data dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__size_of_putrsXLCD 0 0 ABS 0 - dist/default/production/sensor_temperatura_adc_1.X.production.obj
+?_scale 35 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+___ftge 2430 0 CODE 0 text15 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+stackhi 7FF 0 ABS 0 - /tmp/cgtRa7NqK.obj
+sprintf@sp 44 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+_fround 1730 0 CODE 0 text4 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+___asftsub 27AA 0 CODE 0 text16 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__CFG_CPUDIV$OSC1_PLL2 0 0 ABS 0 - dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__pcstackBANK0 60 0 BANK0 1 cstackBANK0 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+___awmod@sign 7 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Htemp 0 0 COMRAM 1 temp dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Ltemp 0 0 COMRAM 1 temp dist/default/production/sensor_temperatura_adc_1.X.production.obj
+stacklo 95 0 ABS 0 - /tmp/cgtRa7NqK.obj
+__Hrbit 0 0 COMRAM 1 rbit dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Lrbit 0 0 COMRAM 1 rbit dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Hinit 0 0 CODE 0 init dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Linit 0 0 CODE 0 init dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Hintcodelo 0 0 CODE 0 intcodelo dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__size_of___asftadd 0 0 ABS 0 - dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Lintcodelo 0 0 CODE 0 intcodelo dist/default/production/sensor_temperatura_adc_1.X.production.obj
+___wmul 285E 0 CODE 0 text5 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__size_of___asftsub 0 0 ABS 0 - dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__size_of___asftmul 0 0 ABS 0 - dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Hrbss 0 0 COMRAM 1 rbss dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__end_of_main 1CBE 0 CODE 0 text0 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Lrbss 0 0 COMRAM 1 rbss dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__size_of___lwtoft 0 0 ABS 0 - dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__size_of_ConvertADC 0 0 ABS 0 - dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Htext 0 0 ABS 0 text dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Ltext 0 0 ABS 0 text dist/default/production/sensor_temperatura_adc_1.X.production.obj
+sprintf@vd_341 6D 0 BANK0 1 cstackBANK0 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__div_to_l_ 1CBE 0 CODE 0 text9 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+_scale$1607 38 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__end_of_BusyADC 2A3A 0 CODE 0 text41 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+sprintf@width 7B 0 BANK0 1 cstackBANK0 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+___wmul@multiplier 11 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__size_of_Delay10TCYx 0 0 ABS 0 - dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__size_of_Delay1KTCYx 0 0 ABS 0 - dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__end_of_DelayFor18TCY 29D6 0 CODE 0 text36 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__size_of___ftneg 0 0 ABS 0 - dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__end_of___lwtoft 2934 0 CODE 0 text25 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+___ftmul@sign 34 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+end_of_initialization 2A3A 0 CODE 0 cinit dist/default/production/sensor_temperatura_adc_1.X.production.obj
+___ftdiv@sign 43 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+___awdiv@sign E 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__size_of__div_to_l_ 0 0 ABS 0 - dist/default/production/sensor_temperatura_adc_1.X.production.obj
+Delay10KTCYx@unit 2 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__CFG_USBDIV$1 0 0 ABS 0 - dist/default/production/sensor_temperatura_adc_1.X.production.obj
+___wmul@multiplicand 13 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+_sprintf$1608 60 0 BANK0 1 cstackBANK0 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__CFG_VREGEN$OFF 0 0 ABS 0 - dist/default/production/sensor_temperatura_adc_1.X.production.obj
+SetDDRamAddr@DDaddr 4 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+___asftsub@f2 1D 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__CFG_PLLDIV$1 0 0 ABS 0 - dist/default/production/sensor_temperatura_adc_1.X.production.obj
+fround@prec 3E 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+_WriteCmdXLCD 276A 0 CODE 0 text30 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__end_of_setupMCU 29F2 0 CODE 0 text22 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+_TRISAbits F92 0 ABS 0 - dist/default/production/sensor_temperatura_adc_1.X.production.obj
+_TRISBbits F93 0 ABS 0 - dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__end_of___ftadd 1B24 0 CODE 0 text21 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__end_of___lltoft 2614 0 CODE 0 text10 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+_CMCONbits FB4 0 ABS 0 - dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__end_of___asftadd 285E 0 CODE 0 text20 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+___asftmul 27E6 0 CODE 0 text18 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+_ReadADC 2A44 0 CODE 0 text28 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__size_of_Delay10KTCYx 0 0 ABS 0 - dist/default/production/sensor_temperatura_adc_1.X.production.obj
+_OpenADC 2614 0 CODE 0 text37 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+?___lltoft 9 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+_BusyADC 2A2E 0 CODE 0 text41 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Hibigdata 0 0 CODE 0 ibigdata dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Libigdata 0 0 CODE 0 ibigdata dist/default/production/sensor_temperatura_adc_1.X.production.obj
+?___lwtoft 9 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__end_of_WriteCmdXLCD 27AA 0 CODE 0 text30 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__size_of_OpenADC 0 0 ABS 0 - dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__size_of___lltoft 0 0 ABS 0 - dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Hifardata 0 0 CODE 0 ifardata dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Lifardata 0 0 CODE 0 ifardata dist/default/production/sensor_temperatura_adc_1.X.production.obj
+___asftadd@f1p 3F 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Hbank0 0 0 ABS 0 bank0 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Lbank0 0 0 ABS 0 bank0 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Hbank1 0 0 ABS 0 bank1 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Lbank1 0 0 ABS 0 bank1 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Hbank2 0 0 ABS 0 bank2 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Lbank2 0 0 ABS 0 bank2 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Hbank3 0 0 ABS 0 bank3 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Lbank3 0 0 ABS 0 bank3 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+___ftmul@exp 2F 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Hbank4 0 0 ABS 0 bank4 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Lbank4 0 0 ABS 0 bank4 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+___ftdiv@exp 42 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Hbank5 0 0 ABS 0 bank5 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Lbank5 0 0 ABS 0 bank5 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Hpowerup 0 0 CODE 0 powerup dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Lpowerup 0 0 CODE 0 powerup dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Hbank6 0 0 ABS 0 bank6 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Lbank6 0 0 ABS 0 bank6 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Hbank7 0 0 ABS 0 bank7 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Lbank7 0 0 ABS 0 bank7 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__div_to_l_@f2 4 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Htext0 0 0 ABS 0 text0 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Ltext0 0 0 ABS 0 text0 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__size_of_BusyADC 0 0 ABS 0 - dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Htext1 0 0 ABS 0 text1 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Ltext1 0 0 ABS 0 text1 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__ptext0 1B24 0 CODE 0 text0 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__end_of_Delay_ms 2960 0 CODE 0 text38 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Htext2 0 0 ABS 0 text2 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Ltext2 0 0 ABS 0 text2 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__ptext1 888 0 CODE 0 text1 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+_isdigit$1286 2 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+___asftmul@f2 37 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Htext3 0 0 ABS 0 text3 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Ltext3 0 0 ABS 0 text3 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__ptext2 1360 0 CODE 0 text2 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Htext4 0 0 ABS 0 text4 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Ltext4 0 0 ABS 0 text4 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__ptext3 2960 0 CODE 0 text3 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Htext5 0 0 ABS 0 text5 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Ltext5 0 0 ABS 0 text5 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__ptext4 1730 0 CODE 0 text4 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Htext6 0 0 ABS 0 text6 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Ltext6 0 0 ABS 0 text6 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__ptext5 285E 0 CODE 0 text5 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Htext7 0 0 ABS 0 text7 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Ltext7 0 0 ABS 0 text7 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__ptext6 2394 0 CODE 0 text6 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__end_of_ConvertADC 2A5A 0 CODE 0 text40 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Htext8 0 0 ABS 0 text8 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Ltext8 0 0 ABS 0 text8 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__ptext7 2196 0 CODE 0 text7 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Htext9 0 0 ABS 0 text9 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Ltext9 0 0 ABS 0 text9 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__ptext8 1DF8 0 CODE 0 text8 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__ptext9 1CBE 0 CODE 0 text9 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__end_of__npowers_ 850 0 SMALLCONST 0 smallconst dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Hclrtext 0 0 ABS 0 clrtext dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Lclrtext 0 0 ABS 0 clrtext dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__end_of__initialization 2A3A 0 CODE 0 cinit dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__end_of_OpenXLCD 2394 0 CODE 0 text29 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__tdiv_to_l_@f1 1 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__end_of__div_to_l_ 1DF8 0 CODE 0 text9 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+___asftsub@f1p 1B 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__size_of_scale 0 0 ABS 0 - dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__end_of_WriteDataXLCD 276A 0 CODE 0 text24 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+_fround$1605 3B 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+WriteDataXLCD@data 1 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+___ftadd 196C 0 CODE 0 text21 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__size_of_fround 0 0 ABS 0 - dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Hidata 0 0 CODE 0 idata dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Lidata 0 0 CODE 0 idata dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Hrdata 0 0 COMRAM 1 rdata dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Lrdata 0 0 COMRAM 1 rdata dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Hidloc 200008 0 IDLOC 0 idloc dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Lidloc 200000 0 IDLOC 0 idloc dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__end_of_ReadADC 2A4E 0 CODE 0 text28 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Hstack 0 0 STACK 2 stack dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Lstack 0 0 STACK 2 stack dist/default/production/sensor_temperatura_adc_1.X.production.obj
+___ftneg 298A 0 CODE 0 text14 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__size_of_setupMCU 0 0 ABS 0 - dist/default/production/sensor_temperatura_adc_1.X.production.obj
+___llmod 2546 0 CODE 0 text11 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__end_of___lldiv 2546 0 CODE 0 text12 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+___awmod 2394 0 CODE 0 text6 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+_DelayFor18TCY 29B0 0 CODE 0 text36 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Hparam 0 0 ABS 0 rparam dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Lparam 0 0 ABS 0 rparam dist/default/production/sensor_temperatura_adc_1.X.production.obj
+_putrsXLCD 2674 0 CODE 0 text23 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+?_fround 35 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+___ftsub 28D2 0 CODE 0 text17 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__pcstackCOMRAM 1 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+___ftpack@sign 5 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+_sprintf 888 0 CODE 0 text1 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+_fround$1606 38 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+___ftadd@exp1 14 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+Delay_ms@ms 1 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Hsmallconst 888 0 SMALLCONST 0 smallconst dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Lsmallconst 800 0 SMALLCONST 0 smallconst dist/default/production/sensor_temperatura_adc_1.X.production.obj
+main@max 85 0 BANK0 1 cstackBANK0 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__psmallconst 800 0 SMALLCONST 0 smallconst dist/default/production/sensor_temperatura_adc_1.X.production.obj
+OpenADC@config 5 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+_Delay10TCYx 2A1C 0 CODE 0 text39 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+___fttol 20C2 0 CODE 0 text13 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Hnvbit 0 0 COMRAM 1 nvbit dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Lnvbit 0 0 COMRAM 1 nvbit dist/default/production/sensor_temperatura_adc_1.X.production.obj
+?___wmul 11 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+_isdigit 2960 0 CODE 0 text3 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Hcinit 0 0 ABS 0 cinit dist/default/production/sensor_temperatura_adc_1.X.production.obj
+___ftmul 1EFC 0 CODE 0 text19 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Lcinit 0 0 ABS 0 cinit dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__CFG_FOSC$HS 0 0 ABS 0 - dist/default/production/sensor_temperatura_adc_1.X.production.obj
+___lldiv 24C0 0 CODE 0 text12 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__pcinit 2A3A 0 CODE 0 cinit dist/default/production/sensor_temperatura_adc_1.X.production.obj
+___ftdiv 1FE8 0 CODE 0 text27 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+___awdiv 2196 0 CODE 0 text7 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__ramtop 800 0 RAM 0 ramtop /tmp/cgtRa7NqK.obj
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst /tmp/cgtRa7NqK.obj
+__size_of_main 0 0 ABS 0 - dist/default/production/sensor_temperatura_adc_1.X.production.obj
+_dpowers 801 0 SMALLCONST 0 smallconst dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Hconst 0 0 CODE 0 const dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Lconst 0 0 CODE 0 const dist/default/production/sensor_temperatura_adc_1.X.production.obj
+?__div_to_l_ 1 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__size_of_WriteDataXLCD 0 0 ABS 0 - dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__tdiv_to_l_ 1DF8 0 CODE 0 text8 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+___asftmul@f1p 35 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__div_to_l_@exp1 10 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+___fttol@exp1 25 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__size_of___ftdiv 0 0 ABS 0 - dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__end_of___asftmul 2822 0 CODE 0 text18 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__end_of_isdigit 298A 0 CODE 0 text3 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__end_of_sprintf 1360 0 CODE 0 text1 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+main@buffer 87 0 BANK0 1 cstackBANK0 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+___ftpack@arg 1 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+_Delay1KTCYx 2A0A 0 CODE 0 text33 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+___ftadd@exp2 13 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__size_of_DelayPORXLCD 0 0 ABS 0 - dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__end_of_SetDDRamAddr 272A 0 CODE 0 text31 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__size_of_isdigit 0 0 ABS 0 - dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__end_of_Delay10TCYx 2A2E 0 CODE 0 text39 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__CFG_FCMEN$OFF 0 0 ABS 0 - dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__end_of_DelayPORXLCD 2A56 0 CODE 0 text32 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+sprintf@flag 79 0 BANK0 1 cstackBANK0 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Htext10 0 0 ABS 0 text10 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Ltext10 0 0 ABS 0 text10 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Htext20 0 0 ABS 0 text20 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Ltext20 0 0 ABS 0 text20 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__ptext10 25B0 0 CODE 0 text10 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Htext30 0 0 ABS 0 text30 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Htext11 0 0 ABS 0 text11 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Ltext30 0 0 ABS 0 text30 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Ltext11 0 0 ABS 0 text11 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__ptext20 2822 0 CODE 0 text20 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+sprintf@exp 7D 0 BANK0 1 cstackBANK0 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Htext40 0 0 ABS 0 text40 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Htext21 0 0 ABS 0 text21 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Ltext40 0 0 ABS 0 text40 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Ltext21 0 0 ABS 0 text21 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__ptext11 2546 0 CODE 0 text11 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__ptext30 276A 0 CODE 0 text30 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Htext31 0 0 ABS 0 text31 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Htext12 0 0 ABS 0 text12 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Ltext31 0 0 ABS 0 text31 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Ltext12 0 0 ABS 0 text12 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__ptext21 196C 0 CODE 0 text21 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__ptext40 2A56 0 CODE 0 text40 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Htext41 0 0 ABS 0 text41 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Htext22 0 0 ABS 0 text22 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Ltext41 0 0 ABS 0 text41 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Ltext22 0 0 ABS 0 text22 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__ptext12 24C0 0 CODE 0 text12 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__ptext31 26D0 0 CODE 0 text31 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Htext32 0 0 ABS 0 text32 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Htext13 0 0 ABS 0 text13 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Ltext32 0 0 ABS 0 text32 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Ltext13 0 0 ABS 0 text13 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__ptext22 29D6 0 CODE 0 text22 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__ptext41 2A2E 0 CODE 0 text41 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__end_of_Delay10KTCYx 2A0A 0 CODE 0 text34 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Htext23 0 0 ABS 0 text23 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Ltext23 0 0 ABS 0 text23 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__ptext13 20C2 0 CODE 0 text13 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__ptext32 2A4E 0 CODE 0 text32 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+_ADCON0bits FC2 0 ABS 0 - dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Htext33 0 0 ABS 0 text33 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Htext14 0 0 ABS 0 text14 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Ltext33 0 0 ABS 0 text33 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Ltext14 0 0 ABS 0 text14 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__ptext23 2674 0 CODE 0 text23 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+sprintf@prec 82 0 BANK0 1 cstackBANK0 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__size_of___awdiv 0 0 ABS 0 - dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Htext24 0 0 ABS 0 text24 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Ltext24 0 0 ABS 0 text24 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__ptext14 298A 0 CODE 0 text14 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__ptext33 2A0A 0 CODE 0 text33 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Htext34 0 0 ABS 0 text34 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Htext15 0 0 ABS 0 text15 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Ltext34 0 0 ABS 0 text34 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Ltext15 0 0 ABS 0 text15 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__ptext24 272A 0 CODE 0 text24 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Htext25 0 0 ABS 0 text25 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__end_of__tdiv_to_l_ 1EFC 0 CODE 0 text8 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Ltext25 0 0 ABS 0 text25 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__ptext15 2430 0 CODE 0 text15 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__ptext34 29F2 0 CODE 0 text34 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+___inthi_sp 0 0 STACK 2 stack /tmp/cgtRa7NqK.obj
+__Htext35 0 0 ABS 0 text35 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Htext16 0 0 ABS 0 text16 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Ltext35 0 0 ABS 0 text35 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Ltext16 0 0 ABS 0 text16 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__ptext25 2908 0 CODE 0 text25 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Htext26 0 0 ABS 0 text26 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Ltext26 0 0 ABS 0 text26 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__ptext16 27AA 0 CODE 0 text16 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__ptext35 2898 0 CODE 0 text35 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Htext36 0 0 ABS 0 text36 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Htext17 0 0 ABS 0 text17 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Ltext36 0 0 ABS 0 text36 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Ltext17 0 0 ABS 0 text17 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__ptext26 2246 0 CODE 0 text26 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Htext27 0 0 ABS 0 text27 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Ltext27 0 0 ABS 0 text27 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+___llmod@divisor 5 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__ptext17 28D2 0 CODE 0 text17 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__ptext36 29B0 0 CODE 0 text36 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+___awmod@divisor 3 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Htext37 0 0 ABS 0 text37 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Htext18 0 0 ABS 0 text18 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Ltext37 0 0 ABS 0 text37 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Ltext18 0 0 ABS 0 text18 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__ptext27 1FE8 0 CODE 0 text27 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Htext28 0 0 ABS 0 text28 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Ltext28 0 0 ABS 0 text28 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__ptext18 27E6 0 CODE 0 text18 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__ptext37 2614 0 CODE 0 text37 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Htext38 0 0 ABS 0 text38 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Htext19 0 0 ABS 0 text19 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Ltext38 0 0 ABS 0 text38 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Ltext19 0 0 ABS 0 text19 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__ptext28 2A44 0 CODE 0 text28 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+___fttol@sign1 20 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Htext29 0 0 ABS 0 text29 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Ltext29 0 0 ABS 0 text29 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__ptext19 1EFC 0 CODE 0 text19 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__ptext38 2934 0 CODE 0 text38 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+___intlo_sp 0 0 STACK 2 stack /tmp/cgtRa7NqK.obj
+__Htext39 0 0 ABS 0 text39 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Ltext39 0 0 ABS 0 text39 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__ptext29 22EE 0 CODE 0 text29 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__ptext39 2A1C 0 CODE 0 text39 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+_INTCONbits FF2 0 ABS 0 - dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Hend_init 4 0 CODE 0 end_init dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Lend_init 0 0 CODE 0 end_init dist/default/production/sensor_temperatura_adc_1.X.production.obj
+?_ReadADC 1 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__end_of___asftsub 27E6 0 CODE 0 text16 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__end_of_fround 196C 0 CODE 0 text4 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+___lldiv@divisor 5 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+___ftpack@exp 4 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__size_of___lldiv 0 0 ABS 0 - dist/default/production/sensor_temperatura_adc_1.X.production.obj
+___awdiv@divisor A 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+_WriteDataXLCD 272A 0 CODE 0 text24 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+_OpenXLCD 22EE 0 CODE 0 text29 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+_BusyXLCD 2898 0 CODE 0 text35 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+OpenADC@config2 1 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__end_of___ftmul 1FE8 0 CODE 0 text19 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__end_of___llmod 25B0 0 CODE 0 text11 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__smallconst 800 0 SMALLCONST 0 smallconst /tmp/cgtRa7NqK.obj
+__end_of_OpenADC 2674 0 CODE 0 text37 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__tdiv_to_l_@cntr E 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__size_of___wmul 0 0 ABS 0 - dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Hreset_vec 0 0 CODE 0 reset_vec dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Lreset_vec 0 0 CODE 0 reset_vec dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__stringdata 877 0 SMALLCONST 0 smallconst dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__size_of_OpenXLCD 0 0 ABS 0 - dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__accesstop 60 0 ABS 0 - /tmp/cgtRa7NqK.obj
+__tdiv_to_l_@exp1 F 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__div_to_l_@cntr F 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Hintcode_body 0 0 ABS 0 intcode_body dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__size_of_WriteCmdXLCD 0 0 ABS 0 - dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__Lintcode_body 0 0 ABS 0 intcode_body dist/default/production/sensor_temperatura_adc_1.X.production.obj
+intlevel0 0 0 CODE 0 text /tmp/cgtRa7NqK.obj
+intlevel1 0 0 CODE 0 text /tmp/cgtRa7NqK.obj
+__size_of__tdiv_to_l_ 0 0 ABS 0 - dist/default/production/sensor_temperatura_adc_1.X.production.obj
+intlevel2 0 0 CODE 0 text /tmp/cgtRa7NqK.obj
+___lltoft@exp 11 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+intlevel3 0 0 CODE 0 text /tmp/cgtRa7NqK.obj
+__size_of_BusyXLCD 0 0 ABS 0 - dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__tdiv_to_l_@f2 4 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+main@result 93 0 BANK0 1 cstackBANK0 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+_sprintf$339 63 0 BANK0 1 cstackBANK0 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__size_of_SetDDRamAddr 0 0 ABS 0 - dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__div_to_l_@quot B 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+_setupMCU 29D6 0 CODE 0 text22 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__end_of___wmul 2898 0 CODE 0 text5 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+start_initialization 2A3A 0 CODE 0 cinit dist/default/production/sensor_temperatura_adc_1.X.production.obj
+sprintf@integ 76 0 BANK0 1 cstackBANK0 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+___lldiv@quotient A 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+___awdiv@quotient F 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__size_of_Delay_ms 0 0 ABS 0 - dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__size_of___ftge 0 0 ABS 0 - dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__size_of_DelayFor18TCY 0 0 ABS 0 - dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__end_of_putrsXLCD 26D0 0 CODE 0 text23 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__CFG_IESO$OFF 0 0 ABS 0 - dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__CFG_MCLRE$ON 0 0 ABS 0 - dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__end_of___fttol 2196 0 CODE 0 text13 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__size_of_ReadADC 0 0 ABS 0 - dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__size_of_sprintf 0 0 ABS 0 - dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__size_of___awmod 0 0 ABS 0 - dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__end_of___ftsub 2908 0 CODE 0 text17 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__initialization 2A3A 0 CODE 0 cinit dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__end_of___ftge 24C0 0 CODE 0 text15 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+Delay10TCYx@unit 1 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+___llmod@dividend 1 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__CFG_LPT1OSC$OFF 0 0 ABS 0 - dist/default/production/sensor_temperatura_adc_1.X.production.obj
+___awmod@dividend 1 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+sprintf@_val 71 0 BANK0 1 cstackBANK0 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__CFG_BOR$OFF 0 0 ABS 0 - dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__activetblptr 2 0 ABS 0 - dist/default/production/sensor_temperatura_adc_1.X.production.obj
+___llmod@counter A 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+___awmod@counter 6 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+___wmul@product 15 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__CFG_WDT$OFF 0 0 ABS 0 - dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__size_of___ftmul 0 0 ABS 0 - dist/default/production/sensor_temperatura_adc_1.X.production.obj
+Delay1KTCYx@unit 1 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__CFG_LVP$OFF 0 0 ABS 0 - dist/default/production/sensor_temperatura_adc_1.X.production.obj
+sprintf@c 84 0 BANK0 1 cstackBANK0 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__end_of___ftdiv 20C2 0 CODE 0 text27 dist/default/production/sensor_temperatura_adc_1.X.production.obj
+__size_of___llmod 0 0 ABS 0 - dist/default/production/sensor_temperatura_adc_1.X.production.obj
+___lldiv@dividend 1 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+isdigit@c 3 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+___awdiv@dividend 8 0 COMRAM 1 cstackCOMRAM dist/default/production/sensor_temperatura_adc_1.X.production.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect in on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+reset_vec 0 0 0 4 1
+smallconst 0 800 800 88 1
+config 0 300000 300000 E 1
+idloc 0 200000 200000 8 1
+cstackCOMRAM 1 1 1 52 1
+cstackBANK0 1 60 60 35 1
+text1 0 888 888 21D2 1
