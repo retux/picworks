@@ -1,0 +1,353 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$/tmp/cgtpymgZB.obj
+end_init CODE 0 0 0 1 2
+config CONFIG 0 2007 2007 1 2
+$dist/default/production/lcd_first_steps.X.production.obj
+cinit CODE 0 7FE 7FE 2 2
+text5 CODE 0 657 657 13 2
+text4 CODE 0 76D 76D 91 2
+text3 CODE 0 66A 66A 31 2
+text2 CODE 0 6E5 6E5 88 2
+text1 CODE 0 647 647 10 2
+maintext CODE 0 69B 69B 4A 2
+cstackBANK0 BANK0 1 20 20 1 1
+cstackCOMMON COMMON 1 70 70 E 1
+strings STRING 0 1 1 2A 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+BANK0 0021-006F 1
+BANK1 00A0-00EF 1
+BANK2 0120-014F 1
+CODE 002B-0646 2
+CONST 002B-0646 2
+EEDATA 2100-217F 2
+ENTRY 002B-0646 2
+IDLOC 2000-2003 2
+RAM 0021-006F 1
+RAM 00A0-00EF 1
+RAM 0120-014F 1
+SFR0 0000-001F 1
+SFR1 0080-009F 1
+SFR2 0100-011F 1
+SFR3 0180-01EF 1
+STACK 00A0-00EF 1
+STRCODE 002B-0646 2
+STRING 002B-0646 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <file name>:<line number> <address> <psect name> <class name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production/lcd_first_steps.X.production.obj
+"/home/matias/usina/MPLABXProjects/lcd_first_steps.X/lcd_first_step_main.c":102 647 text1 CODE
+"/home/matias/usina/MPLABXProjects/lcd_first_steps.X/lcd_first_step_main.c":105 648 text1 CODE
+"/home/matias/usina/MPLABXProjects/lcd_first_steps.X/lcd_first_step_main.c":107 64E text1 CODE
+"/home/matias/usina/MPLABXProjects/lcd_first_steps.X/lcd_first_step_main.c":105 656 text1 CODE
+"/home/matias/usina/MPLABXProjects/lcd_first_steps.X/lcd_first_step_main.c":53 657 text5 CODE
+"/home/matias/usina/MPLABXProjects/lcd_first_steps.X/lcd_first_step_main.c":55 657 text5 CODE
+"/home/matias/usina/MPLABXProjects/lcd_first_steps.X/lcd_first_step_main.c":109 657 text1 CODE
+"/home/matias/usina/MPLABXProjects/lcd_first_steps.X/lcd_first_step_main.c":56 65A text5 CODE
+"/home/matias/usina/MPLABXProjects/lcd_first_steps.X/lcd_first_step_main.c":57 65C text5 CODE
+"/home/matias/usina/MPLABXProjects/lcd_first_steps.X/lcd_first_step_main.c":58 65F text5 CODE
+"/home/matias/usina/MPLABXProjects/lcd_first_steps.X/lcd_first_step_main.c":59 661 text5 CODE
+"/home/matias/usina/MPLABXProjects/lcd_first_steps.X/lcd_first_step_main.c":60 664 text5 CODE
+"/home/matias/usina/MPLABXProjects/lcd_first_steps.X/lcd_first_step_main.c":61 669 text5 CODE
+"/home/matias/usina/MPLABXProjects/lcd_first_steps.X/lcd_first_step_main.c":31 66A text3 CODE
+"/home/matias/usina/MPLABXProjects/lcd_first_steps.X/lcd_first_step_main.c":33 66A text3 CODE
+"/home/matias/usina/MPLABXProjects/lcd_first_steps.X/lcd_first_step_main.c":34 672 text3 CODE
+"/home/matias/usina/MPLABXProjects/lcd_first_steps.X/lcd_first_step_main.c":35 674 text3 CODE
+"/home/matias/usina/MPLABXProjects/lcd_first_steps.X/lcd_first_step_main.c":36 67D text3 CODE
+"/home/matias/usina/MPLABXProjects/lcd_first_steps.X/lcd_first_step_main.c":37 67F text3 CODE
+"/home/matias/usina/MPLABXProjects/lcd_first_steps.X/lcd_first_step_main.c":38 687 text3 CODE
+"/home/matias/usina/MPLABXProjects/lcd_first_steps.X/lcd_first_step_main.c":39 689 text3 CODE
+"/home/matias/usina/MPLABXProjects/lcd_first_steps.X/lcd_first_step_main.c":40 68E text3 CODE
+"/home/matias/usina/MPLABXProjects/lcd_first_steps.X/lcd_first_step_main.c":41 690 text3 CODE
+"/home/matias/usina/MPLABXProjects/lcd_first_steps.X/lcd_first_step_main.c":42 692 text3 CODE
+"/home/matias/usina/MPLABXProjects/lcd_first_steps.X/lcd_first_step_main.c":43 694 text3 CODE
+"/home/matias/usina/MPLABXProjects/lcd_first_steps.X/lcd_first_step_main.c":44 696 text3 CODE
+"/home/matias/usina/MPLABXProjects/lcd_first_steps.X/lcd_first_step_main.c":47 698 text3 CODE
+"/home/matias/usina/MPLABXProjects/lcd_first_steps.X/lcd_first_step_main.c":51 69A text3 CODE
+"/home/matias/usina/MPLABXProjects/lcd_first_steps.X/lcd_first_step_main.c":111 69B maintext CODE
+"/home/matias/usina/MPLABXProjects/lcd_first_steps.X/lcd_first_step_main.c":113 69B maintext CODE
+"/home/matias/usina/MPLABXProjects/lcd_first_steps.X/lcd_first_step_main.c":114 69E maintext CODE
+"/home/matias/usina/MPLABXProjects/lcd_first_steps.X/lcd_first_step_main.c":116 6A1 maintext CODE
+"/home/matias/usina/MPLABXProjects/lcd_first_steps.X/lcd_first_step_main.c":117 6A4 maintext CODE
+"/home/matias/usina/MPLABXProjects/lcd_first_steps.X/lcd_first_step_main.c":118 6A7 maintext CODE
+"/home/matias/usina/MPLABXProjects/lcd_first_steps.X/lcd_first_step_main.c":119 6A8 maintext CODE
+"/home/matias/usina/MPLABXProjects/lcd_first_steps.X/lcd_first_step_main.c":120 6AA maintext CODE
+"/home/matias/usina/MPLABXProjects/lcd_first_steps.X/lcd_first_step_main.c":122 6AD maintext CODE
+"/home/matias/usina/MPLABXProjects/lcd_first_steps.X/lcd_first_step_main.c":126 6AE maintext CODE
+"/home/matias/usina/MPLABXProjects/lcd_first_steps.X/lcd_first_step_main.c":127 6B0 maintext CODE
+"/home/matias/usina/MPLABXProjects/lcd_first_steps.X/lcd_first_step_main.c":128 6B2 maintext CODE
+"/home/matias/usina/MPLABXProjects/lcd_first_steps.X/lcd_first_step_main.c":132 6B4 maintext CODE
+"/home/matias/usina/MPLABXProjects/lcd_first_steps.X/lcd_first_step_main.c":133 6B6 maintext CODE
+"/home/matias/usina/MPLABXProjects/lcd_first_steps.X/lcd_first_step_main.c":136 6B8 maintext CODE
+"/home/matias/usina/MPLABXProjects/lcd_first_steps.X/lcd_first_step_main.c":138 6BF maintext CODE
+"/home/matias/usina/MPLABXProjects/lcd_first_steps.X/lcd_first_step_main.c":139 6C1 maintext CODE
+"/home/matias/usina/MPLABXProjects/lcd_first_steps.X/lcd_first_step_main.c":136 6CD maintext CODE
+"/home/matias/usina/MPLABXProjects/lcd_first_steps.X/lcd_first_step_main.c":142 6D7 maintext CODE
+"/home/matias/usina/MPLABXProjects/lcd_first_steps.X/lcd_first_step_main.c":124 6E4 maintext CODE
+"/home/matias/usina/MPLABXProjects/lcd_first_steps.X/lcd_first_step_main.c":63 6E5 text2 CODE
+"/home/matias/usina/MPLABXProjects/lcd_first_steps.X/lcd_first_step_main.c":149 6E5 maintext CODE
+"/home/matias/usina/MPLABXProjects/lcd_first_steps.X/lcd_first_step_main.c":65 6E6 text2 CODE
+"/home/matias/usina/MPLABXProjects/lcd_first_steps.X/lcd_first_step_main.c":66 6E9 text2 CODE
+"/home/matias/usina/MPLABXProjects/lcd_first_steps.X/lcd_first_step_main.c":67 6EA text2 CODE
+"/home/matias/usina/MPLABXProjects/lcd_first_steps.X/lcd_first_step_main.c":68 6F6 text2 CODE
+"/home/matias/usina/MPLABXProjects/lcd_first_steps.X/lcd_first_step_main.c":69 6FE text2 CODE
+"/home/matias/usina/MPLABXProjects/lcd_first_steps.X/lcd_first_step_main.c":70 70A text2 CODE
+"/home/matias/usina/MPLABXProjects/lcd_first_steps.X/lcd_first_step_main.c":71 71C text2 CODE
+"/home/matias/usina/MPLABXProjects/lcd_first_steps.X/lcd_first_step_main.c":72 72F text2 CODE
+"/home/matias/usina/MPLABXProjects/lcd_first_steps.X/lcd_first_step_main.c":74 730 text2 CODE
+"/home/matias/usina/MPLABXProjects/lcd_first_steps.X/lcd_first_step_main.c":75 73A text2 CODE
+"/home/matias/usina/MPLABXProjects/lcd_first_steps.X/lcd_first_step_main.c":76 746 text2 CODE
+"/home/matias/usina/MPLABXProjects/lcd_first_steps.X/lcd_first_step_main.c":77 758 text2 CODE
+"/home/matias/usina/MPLABXProjects/lcd_first_steps.X/lcd_first_step_main.c":78 76B text2 CODE
+"/home/matias/usina/MPLABXProjects/lcd_first_steps.X/lcd_first_step_main.c":79 76C text2 CODE
+"/home/matias/usina/MPLABXProjects/lcd_first_steps.X/lcd_first_step_main.c":81 76D text4 CODE
+"/home/matias/usina/MPLABXProjects/lcd_first_steps.X/lcd_first_step_main.c":83 76E text4 CODE
+"/home/matias/usina/MPLABXProjects/lcd_first_steps.X/lcd_first_step_main.c":84 771 text4 CODE
+"/home/matias/usina/MPLABXProjects/lcd_first_steps.X/lcd_first_step_main.c":85 772 text4 CODE
+"/home/matias/usina/MPLABXProjects/lcd_first_steps.X/lcd_first_step_main.c":87 77E text4 CODE
+"/home/matias/usina/MPLABXProjects/lcd_first_steps.X/lcd_first_step_main.c":88 786 text4 CODE
+"/home/matias/usina/MPLABXProjects/lcd_first_steps.X/lcd_first_step_main.c":89 792 text4 CODE
+"/home/matias/usina/MPLABXProjects/lcd_first_steps.X/lcd_first_step_main.c":90 7A4 text4 CODE
+"/home/matias/usina/MPLABXProjects/lcd_first_steps.X/lcd_first_step_main.c":91 7B7 text4 CODE
+"/home/matias/usina/MPLABXProjects/lcd_first_steps.X/lcd_first_step_main.c":93 7B8 text4 CODE
+"/home/matias/usina/MPLABXProjects/lcd_first_steps.X/lcd_first_step_main.c":94 7C2 text4 CODE
+"/home/matias/usina/MPLABXProjects/lcd_first_steps.X/lcd_first_step_main.c":95 7CE text4 CODE
+"/home/matias/usina/MPLABXProjects/lcd_first_steps.X/lcd_first_step_main.c":96 7E0 text4 CODE
+"/home/matias/usina/MPLABXProjects/lcd_first_steps.X/lcd_first_step_main.c":98 7F3 text4 CODE
+"/home/matias/usina/MPLABXProjects/lcd_first_steps.X/lcd_first_step_main.c":99 7F4 text4 CODE
+"/home/matias/usina/MPLABXProjects/lcd_first_steps.X/lcd_first_step_main.c":100 7FD text4 CODE
+"/tmp/cgt0Th92W":228 7FE cinit CODE
+"/tmp/cgt0Th92W":231 7FE cinit CODE
+"/tmp/cgt0Th92W":237 7FE cinit CODE
+"/tmp/cgt0Th92W":238 7FE cinit CODE
+"/tmp/cgt0Th92W":239 7FF cinit CODE
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__S0 2008 0 ABS 0 - -
+__S1 7E 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__Hintentry 0 0 CODE 0 intentry -
+__Lintentry 0 0 CODE 0 intentry -
+__CFG_BOREN$ON 0 0 ABS 0 - dist/default/production/lcd_first_steps.X.production.obj
+_PIE1 8C 0 ABS 0 - dist/default/production/lcd_first_steps.X.production.obj
+__end_of_writeString CAE 0 CODE 0 text1 dist/default/production/lcd_first_steps.X.production.obj
+_main D36 0 CODE 0 maintext dist/default/production/lcd_first_steps.X.production.obj
+___sp 0 0 STACK 2 stack /tmp/cgtpymgZB.obj
+btemp 7E 0 ABS 0 - dist/default/production/lcd_first_steps.X.production.obj
+ltemp 7E 0 ABS 0 - dist/default/production/lcd_first_steps.X.production.obj
+ttemp 7E 0 ABS 0 - dist/default/production/lcd_first_steps.X.production.obj
+wtemp 7E 0 ABS 0 - dist/default/production/lcd_first_steps.X.production.obj
+start 0 0 CODE 0 init /tmp/cgtpymgZB.obj
+__end_of_lcd_send_cmd FFC 0 CODE 0 text4 dist/default/production/lcd_first_steps.X.production.obj
+__end_of_lcd_send_dat EDA 0 CODE 0 text2 dist/default/production/lcd_first_steps.X.production.obj
+_TRISA 85 0 ABS 0 - dist/default/production/lcd_first_steps.X.production.obj
+_TRISB 86 0 ABS 0 - dist/default/production/lcd_first_steps.X.production.obj
+_PORTA 5 0 ABS 0 - dist/default/production/lcd_first_steps.X.production.obj
+reset_vec 0 0 CODE 0 reset_vec /tmp/cgtpymgZB.obj
+_PORTB 6 0 ABS 0 - dist/default/production/lcd_first_steps.X.production.obj
+_writeString C8E 0 CODE 0 text1 dist/default/production/lcd_first_steps.X.production.obj
+_CMCON 1F 0 ABS 0 - dist/default/production/lcd_first_steps.X.production.obj
+ltemp0 7E 0 ABS 0 - dist/default/production/lcd_first_steps.X.production.obj
+ttemp0 7E 0 ABS 0 - dist/default/production/lcd_first_steps.X.production.obj
+wtemp0 7E 0 ABS 0 - dist/default/production/lcd_first_steps.X.production.obj
+ltemp1 82 0 ABS 0 - dist/default/production/lcd_first_steps.X.production.obj
+ttemp1 81 0 ABS 0 - dist/default/production/lcd_first_steps.X.production.obj
+wtemp1 80 0 ABS 0 - dist/default/production/lcd_first_steps.X.production.obj
+ltemp2 86 0 ABS 0 - dist/default/production/lcd_first_steps.X.production.obj
+ttemp2 84 0 ABS 0 - dist/default/production/lcd_first_steps.X.production.obj
+wtemp2 82 0 ABS 0 - dist/default/production/lcd_first_steps.X.production.obj
+ltemp3 80 0 ABS 0 - dist/default/production/lcd_first_steps.X.production.obj
+ttemp3 87 0 ABS 0 - dist/default/production/lcd_first_steps.X.production.obj
+wtemp3 84 0 ABS 0 - dist/default/production/lcd_first_steps.X.production.obj
+ttemp4 7F 0 ABS 0 - dist/default/production/lcd_first_steps.X.production.obj
+wtemp4 86 0 ABS 0 - dist/default/production/lcd_first_steps.X.production.obj
+wtemp5 88 0 ABS 0 - dist/default/production/lcd_first_steps.X.production.obj
+wtemp6 7F 0 ABS 0 - dist/default/production/lcd_first_steps.X.production.obj
+__Hconfig 4010 0 CONFIG 0 config -
+__Lconfig 400E 0 CONFIG 0 config -
+__end_of__stringtab E 0 STRING 0 strings dist/default/production/lcd_first_steps.X.production.obj
+main@i 20 0 BANK0 1 cstackBANK0 dist/default/production/lcd_first_steps.X.production.obj
+__end_of_pulseEnable CD4 0 CODE 0 text5 dist/default/production/lcd_first_steps.X.production.obj
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+__end_of__stringdata 56 0 STRING 0 strings dist/default/production/lcd_first_steps.X.production.obj
+__Hfunctab 0 0 CODE 0 functab -
+__Lfunctab 0 0 CODE 0 functab -
+__Hcommon 0 0 ABS 0 common -
+__Lcommon 0 0 ABS 0 common -
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+___int_sp 0 0 STACK 2 stack /tmp/cgtpymgZB.obj
+_lcd_init CD4 0 CODE 0 text3 dist/default/production/lcd_first_steps.X.production.obj
+__Habs1 0 0 ABS 0 abs1 -
+__Labs1 0 0 ABS 0 abs1 -
+_INTCON B 0 ABS 0 - dist/default/production/lcd_first_steps.X.production.obj
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+lcd_send_cmd@value 74 0 COMMON 1 cstackCOMMON dist/default/production/lcd_first_steps.X.production.obj
+lcd_send_cmd@value2 73 0 COMMON 1 cstackCOMMON dist/default/production/lcd_first_steps.X.production.obj
+__Hcode 0 0 ABS 0 code -
+__Lcode 0 0 ABS 0 code -
+stackhi 0 0 ABS 0 - /tmp/cgtpymgZB.obj
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production/lcd_first_steps.X.production.obj
+stacklo 0 0 ABS 0 - /tmp/cgtpymgZB.obj
+__Hinit 0 0 CODE 0 init -
+__Linit 0 0 CODE 0 init -
+__end_of_main DCA 0 CODE 0 maintext dist/default/production/lcd_first_steps.X.production.obj
+__Htext 0 0 ABS 0 text -
+__Ltext 0 0 ABS 0 text -
+__CFG_LVP$ON 0 0 ABS 0 - dist/default/production/lcd_first_steps.X.production.obj
+end_of_initialization FFC 0 CODE 0 cinit dist/default/production/lcd_first_steps.X.production.obj
+__stringtab 2 0 STRING 0 strings dist/default/production/lcd_first_steps.X.production.obj
+__CFG_FOSC$XT 0 0 ABS 0 - dist/default/production/lcd_first_steps.X.production.obj
+_PORTAbits 5 0 ABS 0 - dist/default/production/lcd_first_steps.X.production.obj
+_PORTBbits 6 0 ABS 0 - dist/default/production/lcd_first_steps.X.production.obj
+__Hstrings 0 0 ABS 0 strings -
+__Lstrings 0 0 ABS 0 strings -
+__pstrings 2 0 STRING 0 strings dist/default/production/lcd_first_steps.X.production.obj
+__Hbank0 0 0 ABS 0 bank0 -
+__Lbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 BANK3 1 bank3 -
+__Lbank3 0 0 BANK3 1 bank3 -
+___latbits 0 0 ABS 0 - dist/default/production/lcd_first_steps.X.production.obj
+__Hpowerup 0 0 CODE 0 powerup -
+__Lpowerup 0 0 CODE 0 powerup -
+_lcd_send_dat DCA 0 CODE 0 text2 dist/default/production/lcd_first_steps.X.production.obj
+__ptext1 C8E 0 CODE 0 text1 dist/default/production/lcd_first_steps.X.production.obj
+__ptext2 DCA 0 CODE 0 text2 dist/default/production/lcd_first_steps.X.production.obj
+__ptext3 CD4 0 CODE 0 text3 dist/default/production/lcd_first_steps.X.production.obj
+__ptext4 EDA 0 CODE 0 text4 dist/default/production/lcd_first_steps.X.production.obj
+__ptext5 CAE 0 CODE 0 text5 dist/default/production/lcd_first_steps.X.production.obj
+__size_of_lcd_init 0 0 ABS 0 - dist/default/production/lcd_first_steps.X.production.obj
+__Hclrtext 0 0 ABS 0 clrtext -
+__Lclrtext 0 0 ABS 0 clrtext -
+__CFG_WDTE$ON 0 0 ABS 0 - dist/default/production/lcd_first_steps.X.production.obj
+__size_of_writeString 0 0 ABS 0 - dist/default/production/lcd_first_steps.X.production.obj
+__end_of__initialization FFC 0 CODE 0 cinit dist/default/production/lcd_first_steps.X.production.obj
+_lcd_send_cmd EDA 0 CODE 0 text4 dist/default/production/lcd_first_steps.X.production.obj
+__Hidloc 0 0 IDLOC 0 idloc -
+__Lidloc 0 0 IDLOC 0 idloc -
+__Hstack 0 0 STACK 2 stack -
+__Lstack 0 0 STACK 2 stack -
+__Hcinit 1000 0 CODE 0 cinit -
+__Lcinit FFC 0 CODE 0 cinit -
+__size_of_main 0 0 ABS 0 - dist/default/production/lcd_first_steps.X.production.obj
+lcd_send_dat@value 74 0 COMMON 1 cstackCOMMON dist/default/production/lcd_first_steps.X.production.obj
+lcd_send_dat@value2 73 0 COMMON 1 cstackCOMMON dist/default/production/lcd_first_steps.X.production.obj
+__CFG_PWRTE$OFF 0 0 ABS 0 - dist/default/production/lcd_first_steps.X.production.obj
+__Hend_init 2 0 CODE 0 end_init -
+__Lend_init 0 0 CODE 0 end_init -
+_pulseEnable CAE 0 CODE 0 text5 dist/default/production/lcd_first_steps.X.production.obj
+__Hreset_vec 0 0 CODE 0 reset_vec -
+__Lreset_vec 0 0 CODE 0 reset_vec -
+__stringdata E 0 STRING 0 strings dist/default/production/lcd_first_steps.X.production.obj
+intlevel0 0 0 CODE 0 functab /tmp/cgtpymgZB.obj
+__size_of_lcd_send_cmd 0 0 ABS 0 - dist/default/production/lcd_first_steps.X.production.obj
+intlevel1 0 0 CODE 0 functab /tmp/cgtpymgZB.obj
+intlevel2 0 0 CODE 0 functab /tmp/cgtpymgZB.obj
+__size_of_lcd_send_dat 0 0 ABS 0 - dist/default/production/lcd_first_steps.X.production.obj
+intlevel3 0 0 CODE 0 functab /tmp/cgtpymgZB.obj
+intlevel4 0 0 CODE 0 functab /tmp/cgtpymgZB.obj
+intlevel5 0 0 CODE 0 functab /tmp/cgtpymgZB.obj
+writeString@msg 76 0 COMMON 1 cstackCOMMON dist/default/production/lcd_first_steps.X.production.obj
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production/lcd_first_steps.X.production.obj
+__CFG_CPD$OFF 0 0 ABS 0 - dist/default/production/lcd_first_steps.X.production.obj
+start_initialization FFC 0 CODE 0 cinit dist/default/production/lcd_first_steps.X.production.obj
+__Hmaintext 0 0 ABS 0 maintext -
+__Lmaintext 0 0 ABS 0 maintext -
+__pmaintext D36 0 CODE 0 maintext dist/default/production/lcd_first_steps.X.production.obj
+__size_of_pulseEnable 0 0 ABS 0 - dist/default/production/lcd_first_steps.X.production.obj
+__CFG_MCLRE$ON 0 0 ABS 0 - dist/default/production/lcd_first_steps.X.production.obj
+__initialization FFC 0 CODE 0 cinit dist/default/production/lcd_first_steps.X.production.obj
+__stringbase C 0 STRING 0 strings dist/default/production/lcd_first_steps.X.production.obj
+__end_of_lcd_init D36 0 CODE 0 text3 dist/default/production/lcd_first_steps.X.production.obj
+__CFG_CP$OFF 0 0 ABS 0 - dist/default/production/lcd_first_steps.X.production.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect in on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+reset_vec 0 0 0 1 2
+cinit 0 7FE FFC 2 2
+config 0 2007 400E 1 2
+cstackCOMMON 1 70 70 E 1
+cstackBANK0 1 20 20 1 1
+text4 0 76D EDA 91 2
+text2 0 6E5 DCA 88 2
+maintext 0 69B D36 4A 2
+text3 0 66A CD4 31 2
+strings 0 1 2 2A 2
+text5 0 657 CAE 13 2
+text1 0 647 C8E 10 2
