@@ -1,0 +1,356 @@
+
+
+Microchip Technology PIC18 LITE Macro Assembler V1.30 build 55553 
+                                                                                               Thu Sep  4 01:23:08 2014
+
+Microchip Technology Omniscient Code Generator (Lite mode) build 55553
+     1                           	processor	18F2550
+     2                           	fnconf	rparam,??,?,0
+     3                           	opt	pw 120
+     4                           	opt	lm
+     5                           	psect	text0,global,reloc=2,class=CODE,delta=1
+     6                           	psect	cinit,global,reloc=2,class=CODE,delta=1
+     7                           	psect	cstackCOMRAM,global,class=COMRAM,space=1,delta=1
+     8                           	psect	text1,global,reloc=2,class=CODE,delta=1
+     9                           	psect	intsave_regs,global,class=BIGRAM,space=1,delta=1
+    10                           	psect	rparam,global,class=COMRAM,space=1,delta=1
+    11  0000                     _ADCON1bits	set	4033
+    12  0000                     _CMCONbits	set	4020
+    13  0000                     _LATBbits	set	3978
+    14  0000                     _TRISBbits	set	3987
+    15                           
+    16                           ; 0 bytes @ 0x8
+    17 ;;
+    18 ;;Main: autosize = 0, tempsize = 0, incstack = 0, save=0
+    19 ;;
+    20 ;; *************** function _main *****************
+    21 ;; Defined at:
+    22 ;;		line 100 in file "hello_world.c"
+    23 ;; Parameters:    Size  Location     Type
+    24 ;;  argc            2    3[COMRAM] int 
+    25 ;;  argv            3    5[COMRAM] PTR PTR unsigned char 
+    26 ;; Auto vars:     Size  Location     Type
+    27 ;;		None
+    28 ;; Return value:  Size  Location     Type
+    29 ;;		None               void
+    30 ;; Registers used:
+    31 ;;		wreg, status,2, status,0, cstack
+    32 ;; Tracked objects:
+    33 ;;		On entry : 0/0
+    34 ;;		On exit  : 0/0
+    35 ;;		Unchanged: 0/0
+    36 ;; Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+    37 ;;      Params:         5       0       0       0       0       0       0       0       0
+    38 ;;      Locals:         0       0       0       0       0       0       0       0       0
+    39 ;;      Temps:          0       0       0       0       0       0       0       0       0
+    40 ;;      Totals:         5       0       0       0       0       0       0       0       0
+    41 ;;Total ram usage:        5 bytes
+    42 ;; Hardware stack levels required when called:    1
+    43 ;; This function calls:
+    44 ;;		_esperaSegundo
+    45 ;; This function is called by:
+    46 ;;		Startup code after reset
+    47 ;; This function uses a non-reentrant model
+    48 ;;
+    49                           
+    50                           	psect	text0
+    51  007FB4                     __ptext0:
+    52                           	opt stack 0
+    53  007FB4                     _main:
+    54                           	opt stack 30
+    55                           
+    56                           ;hello_world.c: 105: ADCON1bits.PCFG0 = 1;
+    57                           
+    58                           ;incstack = 0
+    59  007FB4  80C1               	bsf	4033,0,c	;volatile
+    60                           
+    61                           ;hello_world.c: 106: ADCON1bits.PCFG1 = 1;
+    62  007FB6  82C1               	bsf	4033,1,c	;volatile
+    63                           
+    64                           ;hello_world.c: 107: ADCON1bits.PCFG2 = 1;
+    65  007FB8  84C1               	bsf	4033,2,c	;volatile
+    66                           
+    67                           ;hello_world.c: 108: ADCON1bits.PCFG3 = 1;
+    68  007FBA  86C1               	bsf	4033,3,c	;volatile
+    69                           
+    70                           ;hello_world.c: 111: CMCONbits.CM2 = 1;
+    71  007FBC  84B4               	bsf	4020,2,c	;volatile
+    72                           
+    73                           ;hello_world.c: 112: CMCONbits.CM1 = 1;
+    74  007FBE  82B4               	bsf	4020,1,c	;volatile
+    75                           
+    76                           ;hello_world.c: 113: CMCONbits.CM0 = 1;
+    77  007FC0  80B4               	bsf	4020,0,c	;volatile
+    78                           
+    79                           ;hello_world.c: 115: TRISBbits.RB0 = 0;
+    80  007FC2  9093               	bcf	3987,0,c	;volatile
+    81                           
+    82                           ;hello_world.c: 116: LATBbits.LATB0 = 0;
+    83  007FC4  908A               	bcf	3978,0,c	;volatile
+    84  007FC6                     l15:
+    85                           
+    86                           ;hello_world.c: 121: {
+    87                           ;hello_world.c: 122: LATBbits.LATB0 = 1;
+    88  007FC6  808A               	bsf	3978,0,c	;volatile
+    89                           
+    90                           ;hello_world.c: 123: esperaSegundo();
+    91  007FC8  ECEA  F03F         	call	_esperaSegundo	;wreg free
+    92                           
+    93                           ;hello_world.c: 124: LATBbits.LATB0 = 0;
+    94  007FCC  908A               	bcf	3978,0,c	;volatile
+    95                           
+    96                           ;hello_world.c: 125: esperaSegundo();
+    97  007FCE  ECEA  F03F         	call	_esperaSegundo	;wreg free
+    98  007FD2  D7F9               	goto	l15
+    99  007FD4                     __end_of_main:
+   100                           	opt stack 0
+   101                           
+   102                           	psect	cinit
+   103  007FAE                     __pcinit:
+   104                           	opt stack 0
+   105  007FAE                     start_initialization:
+   106                           	opt stack 0
+   107  007FAE                     __initialization:
+   108                           	opt stack 0
+   109  007FAE                     end_of_initialization:
+   110                           	opt stack 0
+   111  007FAE                     __end_of__initialization:
+   112                           	opt stack 0
+   113  007FAE  0100               	movlb	0
+   114  007FB0  EFDA  F03F         	goto	_main	;jump to C main() function
+   115                           
+   116                           	psect	cstackCOMRAM
+   117  000001                     __pcstackCOMRAM:
+   118                           	opt stack 0
+   119  000001                     ??_esperaSegundo:
+   120                           
+   121                           ; 0 bytes @ 0x0
+   122  000001                     	ds	1
+   123  000002                     esperaSegundo@i:
+   124                           	opt stack 0
+   125                           
+   126                           ; 2 bytes @ 0x1
+   127  000002                     	ds	2
+   128  000004                     
+   129                           ; 2 bytes @ 0x3
+   130  000004                     	ds	2
+   131  000006                     
+   132                           ; 3 bytes @ 0x5
+   133  000006                     	ds	3
+   134  000009                     
+   135 ;; *************** function _esperaSegundo *****************
+   136 ;; Defined at:
+   137 ;;		line 129 in file "hello_world.c"
+   138 ;; Parameters:    Size  Location     Type
+   139 ;;		None
+   140 ;; Auto vars:     Size  Location     Type
+   141 ;;  i               2    1[COMRAM] unsigned int 
+   142 ;; Return value:  Size  Location     Type
+   143 ;;		None               void
+   144 ;; Registers used:
+   145 ;;		wreg, status,2, status,0
+   146 ;; Tracked objects:
+   147 ;;		On entry : 0/0
+   148 ;;		On exit  : 0/0
+   149 ;;		Unchanged: 0/0
+   150 ;; Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+   151 ;;      Params:         0       0       0       0       0       0       0       0       0
+   152 ;;      Locals:         2       0       0       0       0       0       0       0       0
+   153 ;;      Temps:          1       0       0       0       0       0       0       0       0
+   154 ;;      Totals:         3       0       0       0       0       0       0       0       0
+   155 ;;Total ram usage:        3 bytes
+   156 ;; Hardware stack levels used:    1
+   157 ;; This function calls:
+   158 ;;		Nothing
+   159 ;; This function is called by:
+   160 ;;		_main
+   161 ;; This function uses a non-reentrant model
+   162 ;;
+   163                           
+   164                           	psect	text1
+   165  007FD4                     __ptext1:
+   166                           	opt stack 0
+   167  007FD4                     _esperaSegundo:
+   168                           	opt stack 30
+   169                           
+   170                           ;hello_world.c: 131: for (unsigned int i=0; i<100; i++)
+   171                           
+   172                           ;incstack = 0
+   173  007FD4  0E00               	movlw	0
+   174  007FD6  6E03               	movwf	esperaSegundo@i+1,c
+   175  007FD8  0E00               	movlw	0
+   176  007FDA  6E02               	movwf	esperaSegundo@i,c
+   177  007FDC  0E64               	movlw	100
+   178  007FDE  5C02               	subwf	esperaSegundo@i,w,c
+   179  007FE0  0E00               	movlw	0
+   180  007FE2  5803               	subwfb	esperaSegundo@i+1,w,c
+   181  007FE4  B0D8               	btfsc	status,0,c
+   182  007FE6  D00B               	goto	l23
+   183                           
+   184                           ;hello_world.c: 132: {
+   185                           ;hello_world.c: 133: _delay((unsigned long)((10)*(20000000/4000.0)));
+   186  007FE8  0E41               	movlw	65
+   187  007FEA  6E01               	movwf	??_esperaSegundo& (0+255),c
+   188  007FEC  0EEE               	movlw	238
+   189  007FEE                     u37:
+   190  007FEE  2EE8               	decfsz	wreg,f,c
+   191  007FF0  D7FE               	goto	u37
+   192  007FF2  2E01               	decfsz	??_esperaSegundo& (0+255),f,c
+   193  007FF4  D7FC               	goto	u37
+   194  007FF6  D000               	nop2	
+   195  007FF8  4A02               	infsnz	esperaSegundo@i,f,c
+   196  007FFA  2A03               	incf	esperaSegundo@i+1,f,c
+   197  007FFC  D7EF               	goto	L1
+   198  007FFE                     l23:
+   199  007FFE  0012               	return	
+   200  008000                     __end_of_esperaSegundo:
+   201                           	opt stack 0
+   202  0000                     wreg	equ	0xFE8
+   203                           status	equ	0xFD8
+   204                           wreg	equ	0xFE8
+   205                           status	equ	0xFD8
+   206                           
+   207                           	psect	rparam
+   208  0000                     wreg	equ	0xFE8
+   209                           status	equ	0xFD8
+
+
+Data Sizes:
+    Strings     0
+    Constant    0
+    Data        0
+    BSS         0
+    Persistent  0
+    Stack       0
+
+Auto Spaces:
+    Space          Size  Autos    Used
+    COMRAM           95      8       8
+    BANK0           160      0       0
+    BANK1           256      0       0
+    BANK2           256      0       0
+    BANK3           256      0       0
+    BANK4           256      0       0
+    BANK5           256      0       0
+    BANK6           256      0       0
+    BANK7           256      0       0
+
+Pointer List with Targets:
+
+    None.
+
+Critical Paths under _main in COMRAM
+
+    _main->_esperaSegundo
+
+Critical Paths under _main in BANK0
+
+    None.
+
+Critical Paths under _main in BANK1
+
+    None.
+
+Critical Paths under _main in BANK2
+
+    None.
+
+Critical Paths under _main in BANK3
+
+    None.
+
+Critical Paths under _main in BANK4
+
+    None.
+
+Critical Paths under _main in BANK5
+
+    None.
+
+Critical Paths under _main in BANK6
+
+    None.
+
+Critical Paths under _main in BANK7
+
+    None.
+
+Call Graph Tables:
+
+ ---------------------------------------------------------------------------------
+ (Depth) Function   	        Calls       Base Space   Used Autos Params    Refs
+ ---------------------------------------------------------------------------------
+ (0) _main                                                 5     0      5      30
+                                              3 COMRAM     5     0      5
+                      _esperaSegundo
+ ---------------------------------------------------------------------------------
+ (1) _esperaSegundo                                        3     3      0      30
+                                              0 COMRAM     3     3      0
+ ---------------------------------------------------------------------------------
+ Estimated maximum stack depth 1
+ ---------------------------------------------------------------------------------
+
+ Call Graph Graphs:
+
+ _main (ROOT)
+   _esperaSegundo
+
+ Address spaces:
+Name               Size   Autos  Total    Cost      Usage
+BITCOMRAM           5F      0       0       0        0.0%
+EEDATA             100      0       0       0        0.0%
+NULL                 0      0       0       0        0.0%
+CODE                 0      0       0       0        0.0%
+COMRAM              5F      8       8       1        8.4%
+STACK                0      0       0       2        0.0%
+DATA                 0      0       0       3        0.0%
+BITBANK0            A0      0       0       4        0.0%
+BANK0               A0      0       0       5        0.0%
+BITBANK1           100      0       0       6        0.0%
+BANK1              100      0       0       7        0.0%
+BITBANK2           100      0       0       8        0.0%
+BANK2              100      0       0       9        0.0%
+BITBANK3           100      0       0      10        0.0%
+BANK3              100      0       0      11        0.0%
+BITBANK4           100      0       0      12        0.0%
+BANK4              100      0       0      13        0.0%
+BITBANK5           100      0       0      14        0.0%
+BANK5              100      0       0      15        0.0%
+BITBANK6           100      0       0      16        0.0%
+BANK6              100      0       0      17        0.0%
+BITBANK7           100      0       0      18        0.0%
+BANK7              100      0       0      19        0.0%
+ABS                  0      0       0      20        0.0%
+BIGRAM             7FF      0       0      21        0.0%
+BITSFR               0      0       0      40        0.0%
+SFR                  0      0       0      40        0.0%
+
+
+Microchip Technology PIC18 Macro Assembler V1.30 build 55553 
+Symbol Table                                                                                   Thu Sep  4 01:23:08 2014
+
+                     l23 7FFE                       l15 7FC6                       u37 7FEE  
+            __CFG_BOR$ON 000000              __CFG_BORV$3 000000             __CFG_CP0$OFF 000000  
+           __CFG_CP1$OFF 000000             __CFG_CP2$OFF 000000             __CFG_CP3$OFF 000000  
+            __CFG_LVP$ON 000000             __CFG_CPB$OFF 000000             __CFG_CPD$OFF 000000  
+                    wreg 000FE8             __CFG_FOSC$HS 000000             __CFG_WDT$OFF 000000  
+                   _main 7FB4                     start 0000            __CFG_IESO$OFF 000000  
+          __CFG_MCLRE$ON 000000            __CFG_PLLDIV$1 000000                    ?_main 0004  
+          __CFG_USBDIV$1 000000            __CFG_PWRT$OFF 000000            __CFG_WRT0$OFF 000000  
+          __CFG_WRT1$OFF 000000            __CFG_WRT2$OFF 000000            __CFG_WRT3$OFF 000000  
+         __CFG_EBTR0$OFF 000000           __CFG_FCMEN$OFF 000000           __CFG_EBTR1$OFF 000000  
+         __CFG_EBTR2$OFF 000000           __CFG_EBTR3$OFF 000000            __CFG_WRTB$OFF 000000  
+          __CFG_WRTC$OFF 000000            __CFG_WRTD$OFF 000000           __CFG_EBTRB$OFF 000000  
+                  status 000FD8           __CFG_PBADEN$ON 000000          __initialization 7FAE  
+ __size_of_esperaSegundo 002C             __end_of_main 7FD4                   ??_main 0009  
+          __activetblptr 000000          __CFG_CCP2MX$OFF 000000           __CFG_XINST$OFF 000000  
+         __CFG_STVREN$ON 000000            _esperaSegundo 7FD4               __accesstop 0060  
+__end_of__initialization 7FAE           __pcstackCOMRAM 0001           ?_esperaSegundo 0001  
+        __CFG_VREGEN$OFF 000000                  __Hparam 0000                  __Lparam 0000  
+              _CMCONbits 000FB4                  __pcinit 7FAE                  __ramtop 0800  
+                __ptext0 7FB4                  __ptext1 7FD4          ??_esperaSegundo 0001  
+   end_of_initialization 7FAE           esperaSegundo@i 0002                _TRISBbits 000F93  
+    start_initialization 7FAE         __CFG_LPT1OSC$OFF 000000                 _LATBbits 000F8A  
+       __CFG_WDTPS$32768 000000               _ADCON1bits 000FC1    __end_of_esperaSegundo 8000  
+               __Hrparam 0000                 __Lrparam 0000            __size_of_main 0020  
+               main@argc 0004                 main@argv 0006    __CFG_CPUDIV$OSC1_PLL2 000000  
