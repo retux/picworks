@@ -1,0 +1,456 @@
+[p LITE_MODE AUTOSTATIC LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F2550 ]
+[d frameptr 4065 ]
+"4 /opt/microchip/xc8/v1.30/sources/common/abdiv.c
+[v ___abdiv __abdiv `(c  1 e 1 0 ]
+"4 /opt/microchip/xc8/v1.30/sources/common/abmod.c
+[v ___abmod __abmod `(c  1 e 1 0 ]
+"31 /opt/microchip/xc8/v1.30/sources/common/abtofl.c
+[v ___abtofl __abtofl `(d  1 e 3 0 ]
+"33 /opt/microchip/xc8/v1.30/sources/common/abtoft.c
+[v ___abtoft __abtoft `(f  1 e 3 0 ]
+"8 /opt/microchip/xc8/v1.30/sources/common/aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+"8 /opt/microchip/xc8/v1.30/sources/common/almod.c
+[v ___almod __almod `(l  1 e 4 0 ]
+"36 /opt/microchip/xc8/v1.30/sources/common/altofl.c
+[v ___altofl __altofl `(d  1 e 3 0 ]
+"42 /opt/microchip/xc8/v1.30/sources/common/altoft.c
+[v ___altoft __altoft `(f  1 e 3 0 ]
+"8 /opt/microchip/xc8/v1.30/sources/common/atdiv.c
+[v ___atdiv __atdiv `(m  1 e 3 0 ]
+"8 /opt/microchip/xc8/v1.30/sources/common/atmod.c
+[v ___atmod __atmod `(m  1 e 3 0 ]
+"37 /opt/microchip/xc8/v1.30/sources/common/attofl.c
+[v ___attofl __attofl `(d  1 e 3 0 ]
+"37 /opt/microchip/xc8/v1.30/sources/common/attoft.c
+[v ___attoft __attoft `(f  1 e 3 0 ]
+"8 /opt/microchip/xc8/v1.30/sources/common/awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"8 /opt/microchip/xc8/v1.30/sources/common/awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"31 /opt/microchip/xc8/v1.30/sources/common/awtofl.c
+[v ___awtofl __awtofl `(d  1 e 3 0 ]
+"32 /opt/microchip/xc8/v1.30/sources/common/awtoft.c
+[v ___awtoft __awtoft `(f  1 e 3 0 ]
+"2 /opt/microchip/xc8/v1.30/sources/common/bmul.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+"492 /opt/microchip/xc8/v1.30/sources/common/doprnt.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+"63 /opt/microchip/xc8/v1.30/sources/common/double.c
+[v ___flpack __flpack `(d  1 e 3 0 ]
+"88 /opt/microchip/xc8/v1.30/sources/common/fladd.c
+[v ___fladd __fladd `(d  1 e 3 0 ]
+"49 /opt/microchip/xc8/v1.30/sources/common/fldiv.c
+[v ___fldiv __fldiv `(d  1 e 3 0 ]
+"4 /opt/microchip/xc8/v1.30/sources/common/flge.c
+[v ___flge __flge `(b  1 e 0 0 ]
+"50 /opt/microchip/xc8/v1.30/sources/common/flmul.c
+[v ___flmul __flmul `(d  1 e 3 0 ]
+"15 /opt/microchip/xc8/v1.30/sources/common/flneg.c
+[v ___flneg __flneg `(d  1 e 3 0 ]
+"62 /opt/microchip/xc8/v1.30/sources/common/float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"20 /opt/microchip/xc8/v1.30/sources/common/flsub.c
+[v ___flsub __flsub `(d  1 e 3 0 ]
+"43 /opt/microchip/xc8/v1.30/sources/common/fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+"86 /opt/microchip/xc8/v1.30/sources/common/ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"49 /opt/microchip/xc8/v1.30/sources/common/ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"4 /opt/microchip/xc8/v1.30/sources/common/ftge.c
+[v ___ftge __ftge `(b  1 e 0 0 ]
+"51 /opt/microchip/xc8/v1.30/sources/common/ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"15 /opt/microchip/xc8/v1.30/sources/common/ftneg.c
+[v ___ftneg __ftneg `(f  1 e 3 0 ]
+"20 /opt/microchip/xc8/v1.30/sources/common/ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+"44 /opt/microchip/xc8/v1.30/sources/common/fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+"8 /opt/microchip/xc8/v1.30/sources/common/isdigit.c
+[v _isdigit isdigit `(b  1 e 0 0 ]
+"4 /opt/microchip/xc8/v1.30/sources/common/lbdiv.c
+[v ___lbdiv __lbdiv `(uc  1 e 1 0 ]
+"4 /opt/microchip/xc8/v1.30/sources/common/lbmod.c
+[v ___lbmod __lbmod `(uc  1 e 1 0 ]
+"27 /opt/microchip/xc8/v1.30/sources/common/lbtofl.c
+[v ___lbtofl __lbtofl `(d  1 e 3 0 ]
+"27 /opt/microchip/xc8/v1.30/sources/common/lbtoft.c
+[v ___lbtoft __lbtoft `(f  1 e 3 0 ]
+"8 /opt/microchip/xc8/v1.30/sources/common/lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+"8 /opt/microchip/xc8/v1.30/sources/common/llmod.c
+[v ___llmod __llmod `(ul  1 e 4 0 ]
+"30 /opt/microchip/xc8/v1.30/sources/common/lltofl.c
+[v ___lltofl __lltofl `(d  1 e 3 0 ]
+"35 /opt/microchip/xc8/v1.30/sources/common/lltoft.c
+[v ___lltoft __lltoft `(f  1 e 3 0 ]
+"2 /opt/microchip/xc8/v1.30/sources/common/lmul.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"8 /opt/microchip/xc8/v1.30/sources/common/ltdiv.c
+[v ___ltdiv __ltdiv `(um  1 e 3 0 ]
+"8 /opt/microchip/xc8/v1.30/sources/common/ltmod.c
+[v ___ltmod __ltmod `(um  1 e 3 0 ]
+"30 /opt/microchip/xc8/v1.30/sources/common/lttofl.c
+[v ___lttofl __lttofl `(d  1 e 3 0 ]
+"30 /opt/microchip/xc8/v1.30/sources/common/lttoft.c
+[v ___lttoft __lttoft `(f  1 e 3 0 ]
+"8 /opt/microchip/xc8/v1.30/sources/common/lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"8 /opt/microchip/xc8/v1.30/sources/common/lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"28 /opt/microchip/xc8/v1.30/sources/common/lwtofl.c
+[v ___lwtofl __lwtofl `(d  1 e 3 0 ]
+"28 /opt/microchip/xc8/v1.30/sources/common/lwtoft.c
+[v ___lwtoft __lwtoft `(f  1 e 3 0 ]
+"2 /opt/microchip/xc8/v1.30/sources/common/tmul.c
+[v ___tmul __tmul `(um  1 e 3 0 ]
+"4 /opt/microchip/xc8/v1.30/sources/common/wmul.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"4 /opt/microchip/xc8/v1.30/sources/pic18/asfladd.c
+[v ___asfladd __asfladd `(d  1 e 3 0 ]
+"4 /opt/microchip/xc8/v1.30/sources/pic18/asfldiv.c
+[v ___asfldiv __asfldiv `(d  1 e 3 0 ]
+"4 /opt/microchip/xc8/v1.30/sources/pic18/asflmul.c
+[v ___asflmul __asflmul `(d  1 e 3 0 ]
+"4 /opt/microchip/xc8/v1.30/sources/pic18/asflsub.c
+[v ___asflsub __asflsub `(d  1 e 3 0 ]
+"4 /opt/microchip/xc8/v1.30/sources/pic18/asftadd.c
+[v ___asftadd __asftadd `(f  1 e 3 0 ]
+"4 /opt/microchip/xc8/v1.30/sources/pic18/asftdiv.c
+[v ___asftdiv __asftdiv `(f  1 e 3 0 ]
+"4 /opt/microchip/xc8/v1.30/sources/pic18/asftmul.c
+[v ___asftmul __asftmul `(f  1 e 3 0 ]
+"4 /opt/microchip/xc8/v1.30/sources/pic18/asftsub.c
+[v ___asftsub __asftsub `(f  1 e 3 0 ]
+"4 /opt/microchip/xc8/v1.30/sources/pic18/aslmul.c
+[v ___aslmul __aslmul `(ul  1 e 4 0 ]
+"8 /opt/microchip/xc8/v1.30/sources/pic18/d10ktcyx.c
+[v _Delay10KTCYx Delay10KTCYx `(v  1 e 0 0 ]
+"8 /opt/microchip/xc8/v1.30/sources/pic18/d1ktcyx.c
+[v _Delay1KTCYx Delay1KTCYx `(v  1 e 0 0 ]
+"11 /opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/busyxlcd.c
+[v _BusyXLCD BusyXLCD `(uc  1 e 1 0 ]
+"19 /opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/openxlcd.c
+[v _OpenXLCD OpenXLCD `(v  1 e 0 0 ]
+"16 /opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/putrxlcd.c
+[v _putrsXLCD putrsXLCD `(v  1 e 0 0 ]
+"13 /opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/setddram.c
+[v _SetDDRamAddr SetDDRamAddr `(v  1 e 0 0 ]
+"13 /opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/wcmdxlcd.c
+[v _WriteCmdXLCD WriteCmdXLCD `(v  1 e 0 0 ]
+"16 /opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/writdata.c
+[v _WriteDataXLCD WriteDataXLCD `(v  1 e 0 0 ]
+"36 /home/matias/usina/MPLABXProjects/xlcd_dynamic_display.X/xlcd_dyn_display_main.c
+[v _main main `(v  1 e 0 0 ]
+"100
+[v _DelayFor18TCY DelayFor18TCY `(v  1 e 0 0 ]
+"122
+[v _DelayPORXLCD DelayPORXLCD `(v  1 e 0 0 ]
+"133
+[v _DelayXLCD DelayXLCD `(v  1 e 0 0 ]
+"144
+[v _Delay_ms Delay_ms `(v  1 e 0 0 ]
+"2529 /opt/microchip/xc8/v1.30/include/pic18f2550.h
+[v _PORTB PORTB `VEuc  1 e 1 @3969 ]
+[s S297 . 1 `uc 1 LATB0 1 0 :1:0 
+`uc 1 LATB1 1 0 :1:1 
+`uc 1 LATB2 1 0 :1:2 
+`uc 1 LATB3 1 0 :1:3 
+`uc 1 LATB4 1 0 :1:4 
+`uc 1 LATB5 1 0 :1:5 
+`uc 1 LATB6 1 0 :1:6 
+`uc 1 LATB7 1 0 :1:7 
+]
+"3207
+[s S306 . 1 `uc 1 LB0 1 0 :1:0 
+]
+[s S308 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 LB1 1 0 :1:1 
+]
+[s S311 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 LB2 1 0 :1:2 
+]
+[s S314 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 LB3 1 0 :1:3 
+]
+[s S317 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 LB4 1 0 :1:4 
+]
+[s S320 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 LB5 1 0 :1:5 
+]
+[s S323 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 LB6 1 0 :1:6 
+]
+[s S326 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 LB7 1 0 :1:7 
+]
+[u S329 . 1 `S297 1 . 1 0 `S306 1 . 1 0 `S308 1 . 1 0 `S311 1 . 1 0 `S314 1 . 1 0 `S317 1 . 1 0 `S320 1 . 1 0 `S323 1 . 1 0 `S326 1 . 1 0 ]
+[v _LATBbits LATBbits `VES329  1 e 1 @3978 ]
+"3603
+[v _TRISB TRISB `VEuc  1 e 1 @3987 ]
+[s S385 . 1 `uc 1 TRISB0 1 0 :1:0 
+`uc 1 TRISB1 1 0 :1:1 
+`uc 1 TRISB2 1 0 :1:2 
+`uc 1 TRISB3 1 0 :1:3 
+`uc 1 TRISB4 1 0 :1:4 
+`uc 1 TRISB5 1 0 :1:5 
+`uc 1 TRISB6 1 0 :1:6 
+`uc 1 TRISB7 1 0 :1:7 
+]
+"3635
+[s S394 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+[u S403 . 1 `S385 1 . 1 0 `S394 1 . 1 0 ]
+[v _TRISBbits TRISBbits `VES403  1 e 1 @3987 ]
+[s S142 . 1 `uc 1 CM 1 0 :3:0 
+`uc 1 CIS 1 0 :1:3 
+`uc 1 C1INV 1 0 :1:4 
+`uc 1 C2INV 1 0 :1:5 
+`uc 1 C1OUT 1 0 :1:6 
+`uc 1 C2OUT 1 0 :1:7 
+]
+"5281
+[s S149 . 1 `uc 1 CM0 1 0 :1:0 
+`uc 1 CM1 1 0 :1:1 
+`uc 1 CM2 1 0 :1:2 
+]
+[s S153 . 1 `uc 1 CMEN0 1 0 :1:0 
+]
+[s S155 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 CMEN1 1 0 :1:1 
+]
+[s S158 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 CMEN2 1 0 :1:2 
+]
+[u S161 . 1 `S142 1 . 1 0 `S149 1 . 1 0 `S153 1 . 1 0 `S155 1 . 1 0 `S158 1 . 1 0 ]
+[v _CMCONbits CMCONbits `VES161  1 e 1 @4020 ]
+"6008
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @4033 ]
+[s S21 . 1 `uc 1 PCFG 1 0 :4:0 
+`uc 1 VCFG 1 0 :2:4 
+]
+"6039
+[s S24 . 1 `uc 1 PCFG0 1 0 :1:0 
+`uc 1 PCFG1 1 0 :1:1 
+`uc 1 PCFG2 1 0 :1:2 
+`uc 1 PCFG3 1 0 :1:3 
+`uc 1 VCFG0 1 0 :1:4 
+`uc 1 VCFG1 1 0 :1:5 
+]
+[s S31 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 CHSN3 1 0 :1:3 
+]
+[s S34 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 VCFG01 1 0 :1:4 
+]
+[s S37 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 VCFG11 1 0 :1:5 
+]
+[u S40 . 1 `S21 1 . 1 0 `S24 1 . 1 0 `S31 1 . 1 0 `S34 1 . 1 0 `S37 1 . 1 0 ]
+[v _ADCON1bits ADCON1bits `VES40  1 e 1 @4033 ]
+[s S66 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO_NOT_DONE 1 0 :1:1 
+]
+"6146
+[s S69 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 GO_nDONE 1 0 :1:1 
+`uc 1 CHS 1 0 :4:2 
+]
+[s S76 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO_DONE 1 0 :1:1 
+`uc 1 CHS0 1 0 :1:2 
+`uc 1 CHS1 1 0 :1:3 
+`uc 1 CHS2 1 0 :1:4 
+`uc 1 CHS3 1 0 :1:5 
+]
+[s S83 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 DONE 1 0 :1:1 
+]
+[s S86 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO 1 0 :1:1 
+]
+[s S89 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 NOT_DONE 1 0 :1:1 
+]
+[s S92 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 nDONE 1 0 :1:1 
+]
+[s S95 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GODONE 1 0 :1:1 
+]
+[u S98 . 1 `S66 1 . 1 0 `S69 1 . 1 0 `S66 1 . 1 0 `S76 1 . 1 0 `S83 1 . 1 0 `S86 1 . 1 0 `S89 1 . 1 0 `S92 1 . 1 0 `S95 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES98  1 e 1 @4034 ]
+"354 /opt/microchip/xc8/v1.30/sources/common/doprnt.c
+[v _dpowers dpowers `C[5]ui  1 s 10 dpowers ]
+"36 /home/matias/usina/MPLABXProjects/xlcd_dynamic_display.X/xlcd_dyn_display_main.c
+[v _main main `(v  1 e 0 0 ]
+{
+"67
+[v main@buffer buffer `[6]uc  1 a 6 44 ]
+"66
+[v main@cont cont `ui  1 a 2 50 ]
+"68
+[v main@max max `ui  1 a 2 42 ]
+"36
+[v main@argc argc `i  1 p 2 36 ]
+[v main@argv argv `*.2*.2uc  1 p 3 38 ]
+"98
+} 0
+"492 /opt/microchip/xc8/v1.30/sources/common/doprnt.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+{
+[s S286 . 5 `*.39Cuc 1 _cp 3 0 `ui 1 _len 2 3 ]
+"533
+[u S289 . 5 `ui 1 _val 2 0 `S286 1 _str 5 0 ]
+[v sprintf@_val _val `S289  1 a 5 27 ]
+"501
+[v sprintf@width width `i  1 a 2 33 ]
+"494
+[v sprintf@ap ap `[1]*.39v  1 a 2 24 ]
+"499
+[v sprintf@c c `c  1 a 1 35 ]
+"508
+[v sprintf@flag flag `uc  1 a 1 32 ]
+"506
+[v sprintf@prec prec `c  1 a 1 26 ]
+"492
+[v sprintf@sp sp `*.39uc  1 p 2 14 ]
+[v sprintf@f f `*.25Cuc  1 p 2 16 ]
+"1550
+} 0
+"8 /opt/microchip/xc8/v1.30/sources/common/isdigit.c
+[v _isdigit isdigit `(b  1 e 0 0 ]
+{
+[v isdigit@c c `uc  1 a 1 wreg ]
+[v isdigit@c c `uc  1 a 1 wreg ]
+"14
+[v isdigit@c c `uc  1 a 1 2 ]
+"15
+} 0
+"4 /opt/microchip/xc8/v1.30/sources/common/wmul.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"6
+[v ___wmul@product product `ui  1 a 2 4 ]
+"4
+[v ___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"31
+} 0
+"8 /opt/microchip/xc8/v1.30/sources/common/lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"11
+[v ___lwmod@counter counter `uc  1 a 1 13 ]
+"8
+[v ___lwmod@dividend dividend `ui  1 p 2 8 ]
+[v ___lwmod@divisor divisor `ui  1 p 2 10 ]
+"26
+} 0
+"8 /opt/microchip/xc8/v1.30/sources/common/lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"11
+[v ___lwdiv@quotient quotient `ui  1 a 2 5 ]
+"12
+[v ___lwdiv@counter counter `uc  1 a 1 7 ]
+"8
+[v ___lwdiv@dividend dividend `ui  1 p 2 0 ]
+[v ___lwdiv@divisor divisor `ui  1 p 2 2 ]
+"31
+} 0
+"16 /opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/putrxlcd.c
+[v _putrsXLCD putrsXLCD `(v  1 e 0 0 ]
+{
+[v putrsXLCD@buffer buffer `*.39Cuc  1 p 2 1 ]
+"25
+} 0
+"16 /opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/writdata.c
+[v _WriteDataXLCD WriteDataXLCD `(v  1 e 0 0 ]
+{
+[v WriteDataXLCD@data data `uc  1 a 1 wreg ]
+[v WriteDataXLCD@data data `uc  1 a 1 wreg ]
+"35
+[v WriteDataXLCD@data data `uc  1 a 1 0 ]
+"63
+} 0
+"19 /opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/openxlcd.c
+[v _OpenXLCD OpenXLCD `(v  1 e 0 0 ]
+{
+[v OpenXLCD@lcdtype lcdtype `uc  1 a 1 wreg ]
+[v OpenXLCD@lcdtype lcdtype `uc  1 a 1 wreg ]
+"31
+[v OpenXLCD@lcdtype lcdtype `uc  1 a 1 4 ]
+"80
+} 0
+"13 /opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/wcmdxlcd.c
+[v _WriteCmdXLCD WriteCmdXLCD `(v  1 e 0 0 ]
+{
+[v WriteCmdXLCD@cmd cmd `uc  1 a 1 wreg ]
+[v WriteCmdXLCD@cmd cmd `uc  1 a 1 wreg ]
+"32
+[v WriteCmdXLCD@cmd cmd `uc  1 a 1 0 ]
+"60
+} 0
+"13 /opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/setddram.c
+[v _SetDDRamAddr SetDDRamAddr `(v  1 e 0 0 ]
+{
+[v SetDDRamAddr@DDaddr DDaddr `uc  1 a 1 wreg ]
+[v SetDDRamAddr@DDaddr DDaddr `uc  1 a 1 wreg ]
+"32
+[v SetDDRamAddr@DDaddr DDaddr `uc  1 a 1 3 ]
+"60
+} 0
+"122 /home/matias/usina/MPLABXProjects/xlcd_dynamic_display.X/xlcd_dyn_display_main.c
+[v _DelayPORXLCD DelayPORXLCD `(v  1 e 0 0 ]
+{
+"131
+} 0
+"8 /opt/microchip/xc8/v1.30/sources/pic18/d1ktcyx.c
+[v _Delay1KTCYx Delay1KTCYx `(v  1 e 0 0 ]
+{
+[v Delay1KTCYx@unit unit `uc  1 a 1 wreg ]
+[v Delay1KTCYx@unit unit `uc  1 a 1 wreg ]
+[v Delay1KTCYx@unit unit `uc  1 a 1 0 ]
+"13
+} 0
+"8 /opt/microchip/xc8/v1.30/sources/pic18/d10ktcyx.c
+[v _Delay10KTCYx Delay10KTCYx `(v  1 e 0 0 ]
+{
+[v Delay10KTCYx@unit unit `uc  1 a 1 wreg ]
+[v Delay10KTCYx@unit unit `uc  1 a 1 wreg ]
+[v Delay10KTCYx@unit unit `uc  1 a 1 1 ]
+"13
+} 0
+"11 /opt/microchip/xc8/v1.30/sources/pic18/plib/XLCD/busyxlcd.c
+[v _BusyXLCD BusyXLCD `(uc  1 e 1 0 ]
+{
+"57
+} 0
+"100 /home/matias/usina/MPLABXProjects/xlcd_dynamic_display.X/xlcd_dyn_display_main.c
+[v _DelayFor18TCY DelayFor18TCY `(v  1 e 0 0 ]
+{
+"120
+} 0
+"144
+[v _Delay_ms Delay_ms `(v  1 e 0 0 ]
+{
+"146
+[v Delay_ms@i i `ui  1 a 2 3 ]
+"144
+[v Delay_ms@ms ms `ui  1 p 2 0 ]
+"148
+} 0
