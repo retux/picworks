@@ -1,0 +1,321 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$/tmp/cgtzpTxlW.obj
+end_init CODE 0 10 10 1 2
+reset_vec CODE 0 0 0 1 2
+config CONFIG 0 2007 2007 1 2
+$dist/default/production/soft_pwm_simple.X.production.obj
+cinit CODE 0 11 11 15 2
+intentry CODE 0 4 4 C 2
+text1 CODE 0 26 26 5C 2
+maintext CODE 0 82 82 12 2
+cstackBANK0 BANK0 1 26 26 4 1
+cstackCOMMON COMMON 1 70 70 4 1
+dataBANK0 BANK0 1 20 20 6 1
+dataCOMMON COMMON 1 77 77 2 1
+bssCOMMON COMMON 1 74 74 3 1
+idataBANK0 CODE 0 94 94 6 2
+idataCOMMON CODE 0 9A 9A 2 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+BANK0 002A-006F 1
+BANK1 00A0-00EF 1
+BANK2 0120-014F 1
+CODE 0001-0003 2
+CODE 009C-07FF 2
+COMMON 0079-007D 1
+CONST 0001-0003 2
+CONST 009C-07FF 2
+EEDATA 2100-217F 2
+ENTRY 0001-0003 2
+ENTRY 009C-07FF 2
+IDLOC 2000-2003 2
+RAM 002A-006F 1
+RAM 00A0-00EF 1
+RAM 0120-014F 1
+SFR0 0000-001F 1
+SFR1 0080-009F 1
+SFR2 0100-011F 1
+SFR3 0180-01EF 1
+STACK 00A0-00EF 1
+STRCODE 0001-0003 2
+STRCODE 009C-07FF 2
+STRING 0001-0003 2
+STRING 009C-07FF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <file name>:<line number> <address> <psect name> <class name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production/soft_pwm_simple.X.production.obj
+"/home/matias/usina/MPLABXProjects/soft_pwm_simple.X/soft_pwm_simple_main.c":59 4 intentry CODE
+"/tmp/cgtGsAnvy":190 11 cinit CODE
+"/tmp/cgtGsAnvy":193 11 cinit CODE
+"/tmp/cgtGsAnvy":235 11 cinit CODE
+"/tmp/cgtGsAnvy":236 12 cinit CODE
+"/tmp/cgtGsAnvy":237 13 cinit CODE
+"/tmp/cgtGsAnvy":242 14 cinit CODE
+"/tmp/cgtGsAnvy":243 15 cinit CODE
+"/tmp/cgtGsAnvy":244 16 cinit CODE
+"/tmp/cgtGsAnvy":245 17 cinit CODE
+"/tmp/cgtGsAnvy":246 18 cinit CODE
+"/tmp/cgtGsAnvy":247 19 cinit CODE
+"/tmp/cgtGsAnvy":248 1A cinit CODE
+"/tmp/cgtGsAnvy":249 1B cinit CODE
+"/tmp/cgtGsAnvy":250 1C cinit CODE
+"/tmp/cgtGsAnvy":251 1D cinit CODE
+"/tmp/cgtGsAnvy":252 1E cinit CODE
+"/tmp/cgtGsAnvy":253 1F cinit CODE
+"/tmp/cgtGsAnvy":257 20 cinit CODE
+"/tmp/cgtGsAnvy":258 21 cinit CODE
+"/tmp/cgtGsAnvy":259 22 cinit CODE
+"/tmp/cgtGsAnvy":260 23 cinit CODE
+"/tmp/cgtGsAnvy":266 24 cinit CODE
+"/tmp/cgtGsAnvy":267 24 cinit CODE
+"/tmp/cgtGsAnvy":268 25 cinit CODE
+"/home/matias/usina/MPLABXProjects/soft_pwm_simple.X/soft_pwm_simple_main.c":59 26 text1 CODE
+"/home/matias/usina/MPLABXProjects/soft_pwm_simple.X/soft_pwm_simple_main.c":62 26 text1 CODE
+"/home/matias/usina/MPLABXProjects/soft_pwm_simple.X/soft_pwm_simple_main.c":63 2D text1 CODE
+"/home/matias/usina/MPLABXProjects/soft_pwm_simple.X/soft_pwm_simple_main.c":65 30 text1 CODE
+"/home/matias/usina/MPLABXProjects/soft_pwm_simple.X/soft_pwm_simple_main.c":67 36 text1 CODE
+"/home/matias/usina/MPLABXProjects/soft_pwm_simple.X/soft_pwm_simple_main.c":68 42 text1 CODE
+"/home/matias/usina/MPLABXProjects/soft_pwm_simple.X/soft_pwm_simple_main.c":69 44 text1 CODE
+"/home/matias/usina/MPLABXProjects/soft_pwm_simple.X/soft_pwm_simple_main.c":70 44 text1 CODE
+"/home/matias/usina/MPLABXProjects/soft_pwm_simple.X/soft_pwm_simple_main.c":73 45 text1 CODE
+"/home/matias/usina/MPLABXProjects/soft_pwm_simple.X/soft_pwm_simple_main.c":74 51 text1 CODE
+"/home/matias/usina/MPLABXProjects/soft_pwm_simple.X/soft_pwm_simple_main.c":75 53 text1 CODE
+"/home/matias/usina/MPLABXProjects/soft_pwm_simple.X/soft_pwm_simple_main.c":76 53 text1 CODE
+"/home/matias/usina/MPLABXProjects/soft_pwm_simple.X/soft_pwm_simple_main.c":79 54 text1 CODE
+"/home/matias/usina/MPLABXProjects/soft_pwm_simple.X/soft_pwm_simple_main.c":80 60 text1 CODE
+"/home/matias/usina/MPLABXProjects/soft_pwm_simple.X/soft_pwm_simple_main.c":81 62 text1 CODE
+"/home/matias/usina/MPLABXProjects/soft_pwm_simple.X/soft_pwm_simple_main.c":82 62 text1 CODE
+"/home/matias/usina/MPLABXProjects/soft_pwm_simple.X/soft_pwm_simple_main.c":85 63 text1 CODE
+"/home/matias/usina/MPLABXProjects/soft_pwm_simple.X/soft_pwm_simple_main.c":86 6F text1 CODE
+"/home/matias/usina/MPLABXProjects/soft_pwm_simple.X/soft_pwm_simple_main.c":87 71 text1 CODE
+"/home/matias/usina/MPLABXProjects/soft_pwm_simple.X/soft_pwm_simple_main.c":88 71 text1 CODE
+"/home/matias/usina/MPLABXProjects/soft_pwm_simple.X/soft_pwm_simple_main.c":90 72 text1 CODE
+"/home/matias/usina/MPLABXProjects/soft_pwm_simple.X/soft_pwm_simple_main.c":92 74 text1 CODE
+"/home/matias/usina/MPLABXProjects/soft_pwm_simple.X/soft_pwm_simple_main.c":93 75 text1 CODE
+"/home/matias/usina/MPLABXProjects/soft_pwm_simple.X/soft_pwm_simple_main.c":94 77 text1 CODE
+"/home/matias/usina/MPLABXProjects/soft_pwm_simple.X/soft_pwm_simple_main.c":97 82 maintext CODE
+"/home/matias/usina/MPLABXProjects/soft_pwm_simple.X/soft_pwm_simple_main.c":98 82 maintext CODE
+"/home/matias/usina/MPLABXProjects/soft_pwm_simple.X/soft_pwm_simple_main.c":99 85 maintext CODE
+"/home/matias/usina/MPLABXProjects/soft_pwm_simple.X/soft_pwm_simple_main.c":102 88 maintext CODE
+"/home/matias/usina/MPLABXProjects/soft_pwm_simple.X/soft_pwm_simple_main.c":103 8A maintext CODE
+"/home/matias/usina/MPLABXProjects/soft_pwm_simple.X/soft_pwm_simple_main.c":104 8D maintext CODE
+"/home/matias/usina/MPLABXProjects/soft_pwm_simple.X/soft_pwm_simple_main.c":105 8E maintext CODE
+"/home/matias/usina/MPLABXProjects/soft_pwm_simple.X/soft_pwm_simple_main.c":110 8F maintext CODE
+"/home/matias/usina/MPLABXProjects/soft_pwm_simple.X/soft_pwm_simple_main.c":111 93 maintext CODE
+"/home/matias/usina/MPLABXProjects/soft_pwm_simple.X/soft_pwm_simple_main.c":114 94 maintext CODE
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__S0 2008 0 ABS 0 - -
+__S1 79 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+_ISR 4C 0 CODE 0 text1 dist/default/production/soft_pwm_simple.X.production.obj
+__Hintentry 20 0 CODE 0 intentry -
+__Lintentry 8 0 CODE 0 intentry -
+__CFG_BOREN$ON 0 0 ABS 0 - dist/default/production/soft_pwm_simple.X.production.obj
+__pintentry 8 0 CODE 0 intentry dist/default/production/soft_pwm_simple.X.production.obj
+_TMR0 1 0 ABS 0 - dist/default/production/soft_pwm_simple.X.production.obj
+_pwm0 77 0 COMMON 1 dataCOMMON dist/default/production/soft_pwm_simple.X.production.obj
+_pwm1 20 0 BANK0 1 dataBANK0 dist/default/production/soft_pwm_simple.X.production.obj
+_pwm2 22 0 BANK0 1 dataBANK0 dist/default/production/soft_pwm_simple.X.production.obj
+_pwm3 24 0 BANK0 1 dataBANK0 dist/default/production/soft_pwm_simple.X.production.obj
+_main 104 0 CODE 0 maintext dist/default/production/soft_pwm_simple.X.production.obj
+___sp 0 0 STACK 2 stack /tmp/cgtzpTxlW.obj
+btemp 7E 0 ABS 0 - dist/default/production/soft_pwm_simple.X.production.obj
+ltemp 7E 0 ABS 0 - dist/default/production/soft_pwm_simple.X.production.obj
+ttemp 7E 0 ABS 0 - dist/default/production/soft_pwm_simple.X.production.obj
+wtemp 7E 0 ABS 0 - dist/default/production/soft_pwm_simple.X.production.obj
+_cont 74 0 COMMON 1 bssCOMMON dist/default/production/soft_pwm_simple.X.production.obj
+start 20 0 CODE 0 init /tmp/cgtzpTxlW.obj
+_TRISB 86 0 ABS 0 - dist/default/production/soft_pwm_simple.X.production.obj
+reset_vec 0 0 CODE 0 reset_vec /tmp/cgtzpTxlW.obj
+_PORTB 6 0 ABS 0 - dist/default/production/soft_pwm_simple.X.production.obj
+ltemp0 7E 0 ABS 0 - dist/default/production/soft_pwm_simple.X.production.obj
+_sGPIO 76 0 COMMON 1 bssCOMMON dist/default/production/soft_pwm_simple.X.production.obj
+ttemp0 7E 0 ABS 0 - dist/default/production/soft_pwm_simple.X.production.obj
+wtemp0 7E 0 ABS 0 - dist/default/production/soft_pwm_simple.X.production.obj
+ltemp1 82 0 ABS 0 - dist/default/production/soft_pwm_simple.X.production.obj
+ttemp1 81 0 ABS 0 - dist/default/production/soft_pwm_simple.X.production.obj
+wtemp1 80 0 ABS 0 - dist/default/production/soft_pwm_simple.X.production.obj
+ltemp2 86 0 ABS 0 - dist/default/production/soft_pwm_simple.X.production.obj
+ttemp2 84 0 ABS 0 - dist/default/production/soft_pwm_simple.X.production.obj
+wtemp2 82 0 ABS 0 - dist/default/production/soft_pwm_simple.X.production.obj
+ltemp3 80 0 ABS 0 - dist/default/production/soft_pwm_simple.X.production.obj
+ttemp3 87 0 ABS 0 - dist/default/production/soft_pwm_simple.X.production.obj
+wtemp3 84 0 ABS 0 - dist/default/production/soft_pwm_simple.X.production.obj
+ttemp4 7F 0 ABS 0 - dist/default/production/soft_pwm_simple.X.production.obj
+wtemp4 86 0 ABS 0 - dist/default/production/soft_pwm_simple.X.production.obj
+wtemp5 88 0 ABS 0 - dist/default/production/soft_pwm_simple.X.production.obj
+wtemp6 7F 0 ABS 0 - dist/default/production/soft_pwm_simple.X.production.obj
+interrupt_function 8 0 CODE 0 intentry dist/default/production/soft_pwm_simple.X.production.obj
+__Hconfig 4010 0 CONFIG 0 config -
+__Lconfig 400E 0 CONFIG 0 config -
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+__end_of_ISR 104 0 CODE 0 text1 dist/default/production/soft_pwm_simple.X.production.obj
+__Hfunctab 0 0 CODE 0 functab -
+__Lfunctab 0 0 CODE 0 functab -
+__Hcommon 0 0 ABS 0 common -
+__Lcommon 0 0 ABS 0 common -
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+___int_sp 0 0 STACK 2 stack /tmp/cgtzpTxlW.obj
+__Habs1 0 0 ABS 0 abs1 -
+__Labs1 0 0 ABS 0 abs1 -
+_INTCON B 0 ABS 0 - dist/default/production/soft_pwm_simple.X.production.obj
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Hcode 0 0 ABS 0 code -
+__Lcode 0 0 ABS 0 code -
+stackhi 0 0 ABS 0 - /tmp/cgtzpTxlW.obj
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__pcstackBANK0 26 0 BANK0 1 cstackBANK0 dist/default/production/soft_pwm_simple.X.production.obj
+stacklo 0 0 ABS 0 - /tmp/cgtzpTxlW.obj
+saved_w 7E 0 ABS 0 - dist/default/production/soft_pwm_simple.X.production.obj
+__Hinit 20 0 CODE 0 init -
+__Linit 20 0 CODE 0 init -
+__end_of_main 128 0 CODE 0 maintext dist/default/production/soft_pwm_simple.X.production.obj
+__Htext 0 0 ABS 0 text -
+__Ltext 0 0 ABS 0 text -
+__HdataBANK0 0 0 ABS 0 dataBANK0 -
+__LdataBANK0 0 0 ABS 0 dataBANK0 -
+__CFG_LVP$ON 0 0 ABS 0 - dist/default/production/soft_pwm_simple.X.production.obj
+__pdataBANK0 20 0 BANK0 1 dataBANK0 dist/default/production/soft_pwm_simple.X.production.obj
+end_of_initialization 48 0 CODE 0 cinit dist/default/production/soft_pwm_simple.X.production.obj
+__size_of_ISR 0 0 ABS 0 - dist/default/production/soft_pwm_simple.X.production.obj
+__CFG_FOSC$XT 0 0 ABS 0 - dist/default/production/soft_pwm_simple.X.production.obj
+__Hstrings 0 0 ABS 0 strings -
+__Lstrings 0 0 ABS 0 strings -
+__Hbank0 0 0 ABS 0 bank0 -
+__Lbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 BANK3 1 bank3 -
+__Lbank3 0 0 BANK3 1 bank3 -
+___latbits 0 0 ABS 0 - dist/default/production/soft_pwm_simple.X.production.obj
+__Hpowerup 0 0 CODE 0 powerup -
+__Lpowerup 0 0 CODE 0 powerup -
+__ptext1 4C 0 CODE 0 text1 dist/default/production/soft_pwm_simple.X.production.obj
+__Hclrtext 0 0 ABS 0 clrtext -
+__Lclrtext 0 0 ABS 0 clrtext -
+__HdataCOMMON 0 0 ABS 0 dataCOMMON -
+__LdataCOMMON 0 0 ABS 0 dataCOMMON -
+__pdataCOMMON 77 0 COMMON 1 dataCOMMON dist/default/production/soft_pwm_simple.X.production.obj
+__CFG_WDTE$ON 0 0 ABS 0 - dist/default/production/soft_pwm_simple.X.production.obj
+__end_of__initialization 48 0 CODE 0 cinit dist/default/production/soft_pwm_simple.X.production.obj
+__Hidloc 0 0 IDLOC 0 idloc -
+__Lidloc 0 0 IDLOC 0 idloc -
+__Hstack 0 0 STACK 2 stack -
+__Lstack 0 0 STACK 2 stack -
+__Hcinit 4C 0 CODE 0 cinit -
+__Lcinit 22 0 CODE 0 cinit -
+__size_of_main 0 0 ABS 0 - dist/default/production/soft_pwm_simple.X.production.obj
+__HidataBANK0 0 0 ABS 0 idataBANK0 -
+__LidataBANK0 0 0 ABS 0 idataBANK0 -
+__pidataBANK0 128 0 CODE 0 idataBANK0 dist/default/production/soft_pwm_simple.X.production.obj
+__CFG_PWRTE$OFF 0 0 ABS 0 - dist/default/production/soft_pwm_simple.X.production.obj
+__HbssCOMMON 0 0 ABS 0 bssCOMMON -
+__LbssCOMMON 0 0 ABS 0 bssCOMMON -
+__pbssCOMMON 74 0 COMMON 1 bssCOMMON dist/default/production/soft_pwm_simple.X.production.obj
+_INTCONbits B 0 ABS 0 - dist/default/production/soft_pwm_simple.X.production.obj
+__Hend_init 22 0 CODE 0 end_init -
+__Lend_init 20 0 CODE 0 end_init -
+__Hreset_vec 2 0 CODE 0 reset_vec -
+__Lreset_vec 0 0 CODE 0 reset_vec -
+intlevel0 0 0 CODE 0 functab /tmp/cgtzpTxlW.obj
+intlevel1 0 0 CODE 0 functab /tmp/cgtzpTxlW.obj
+intlevel2 0 0 CODE 0 functab /tmp/cgtzpTxlW.obj
+intlevel3 0 0 CODE 0 functab /tmp/cgtzpTxlW.obj
+intlevel4 0 0 CODE 0 functab /tmp/cgtzpTxlW.obj
+intlevel5 0 0 CODE 0 functab /tmp/cgtzpTxlW.obj
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production/soft_pwm_simple.X.production.obj
+__CFG_CPD$OFF 0 0 ABS 0 - dist/default/production/soft_pwm_simple.X.production.obj
+start_initialization 22 0 CODE 0 cinit dist/default/production/soft_pwm_simple.X.production.obj
+__Hmaintext 0 0 ABS 0 maintext -
+__Lmaintext 0 0 ABS 0 maintext -
+__pmaintext 104 0 CODE 0 maintext dist/default/production/soft_pwm_simple.X.production.obj
+__CFG_MCLRE$ON 0 0 ABS 0 - dist/default/production/soft_pwm_simple.X.production.obj
+_OPTION_REGbits 81 0 ABS 0 - dist/default/production/soft_pwm_simple.X.production.obj
+__HidataCOMMON 0 0 ABS 0 idataCOMMON -
+__LidataCOMMON 0 0 ABS 0 idataCOMMON -
+__pidataCOMMON 134 0 CODE 0 idataCOMMON dist/default/production/soft_pwm_simple.X.production.obj
+__initialization 22 0 CODE 0 cinit dist/default/production/soft_pwm_simple.X.production.obj
+__CFG_CP$OFF 0 0 ABS 0 - dist/default/production/soft_pwm_simple.X.production.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect in on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+reset_vec 0 0 0 1 2
+intentry 0 4 8 98 2
+config 0 2007 400E 1 2
+cstackCOMMON 1 70 70 9 1
+dataBANK0 1 20 20 A 1
